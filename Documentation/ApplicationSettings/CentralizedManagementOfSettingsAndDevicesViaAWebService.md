@@ -1,8 +1,8 @@
 ---
-title: CentralizedManagementOfSettingsAndDevicesViaAWebService
+title: Централизованное управление настройками и устройствами через веб-сервис
 description: 
 published: true
-date: 2024-01-25T11:34:20.285Z
+date: 2024-01-25T12:06:55.926Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:42:56.971Z
