@@ -2,7 +2,7 @@
 title: DataStorage
 description: 
 published: true
-date: 2024-01-25T14:10:52.112Z
+date: 2024-01-25T14:11:27.880Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:19.215Z
@@ -245,3 +245,11 @@ with open('image-1.png', 'rb') as img_1:
     r = requests.post(url, auth=basic, data=img_1, headers=headers)
 ```
 
+## Полезные утилиты для работы с файлами в SimpleUtilites
+Для удобства есть возможность генерировать временные файлы нужного расширения методом **get_temp_file**
+```python
+from ru.travelfood.simple_ui import SimpleUtilites as subclass
+output_file = suClass.get_temp_file("txt")
+```
+Получить абсолютный путь к папке, в которой можно хранить свои файлы можно с помощью **get_temp_dir()**
+`targetDir = suClass.get_temp_dir()
