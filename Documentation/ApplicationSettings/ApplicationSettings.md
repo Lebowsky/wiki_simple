@@ -2,7 +2,7 @@
 title: ApplicationSettings
 description: 
 published: true
-date: 2024-01-25T06:59:12.640Z
+date: 2024-01-25T06:59:35.007Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-24T15:01:58.484Z
@@ -22,5 +22,5 @@ dateCreated: 2024-01-24T15:01:58.484Z
 <details>
 <summary>Выпадающий список тест</summary>
 <br>
-[Веб-сокет](/Документация/Веб-сокет/Веб-сокет)
+(/Документация/Веб-сокет/Веб-сокет)
 </details>
