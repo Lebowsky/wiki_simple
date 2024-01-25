@@ -1,3 +1,13 @@
+---
+title: Web-socket
+description: 
+published: true
+date: 2024-01-25T14:56:54.413Z
+tags: 
+editor: markdown
+dateCreated: 2024-01-25T07:44:11.346Z
+---
+
 # Web-socket
 
 **ConnectWebSocket** – соединиться с веб сокетом. Пример: `hashMap.put("ConnectWebSocket","ws://192.168.1.41:8765")`
@@ -21,7 +31,7 @@ hashMap.put("WSOnConnectHandlers",json.dumps(json_web))
 
 **CloseWebSocket** – команда завершения соединения. Также можно закрывать соединения со стороны сервера например.
 
-## Особенности работы.[](https://uitxt.readthedocs.io/ru/latest/sockets.html#id3 "Link to this heading")
+## Особенности работы
 
 > 1. При разрыве соединения автоматически происходит переподключение каждую секунду. Чтобы остановить попытки надо удалить переменную _ConnectWebSocket_
 >     
