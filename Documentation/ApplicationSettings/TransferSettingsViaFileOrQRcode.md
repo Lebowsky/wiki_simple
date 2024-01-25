@@ -2,7 +2,7 @@
 title: TransferSettingsViaFileOrQRcode
 description: 
 published: true
-date: 2024-01-25T10:04:48.437Z
+date: 2024-01-25T10:07:27.832Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:42:58.647Z
