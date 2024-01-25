@@ -2,7 +2,7 @@
 title: TransferSettingsViaFileOrQRcode
 description: 
 published: true
-date: 2024-01-25T10:01:56.399Z
+date: 2024-01-25T10:02:57.217Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:42:58.647Z
@@ -51,6 +51,7 @@ dateCreated: 2024-01-25T07:42:58.647Z
 
 Передача через QR-код:
 ![Pasted image 20240118095916.png](/files/Pasted image 20240118095916.png)
-![Pasted image 20240111171405.png](/files/Pasted image 20240111171405.png)
+![Pastedimage20240111171405.png](/files/Pastedimage20240111171405.png)
+![logo.png](/logo.png)
 ![[Pasted image 20240118100053.png]]
 Необходимо навести камеру на QR-код.
