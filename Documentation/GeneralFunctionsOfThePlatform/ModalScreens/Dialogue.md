@@ -16,5 +16,5 @@ elif hashMap.get("event") == 'onResultNegative':
 	hashMap.put("toast", "Негатив нажали")
 ```
 При этом диалог возвращает события onResultPositive и onResultNegative в зависимости от того, что выбрал пользователь.
-![[Pasted image 20240117145932.png]]
+![[Pastedimage20240117145932.png]]
 В случае запуска диалога из ActiveCV или сервиса событий, т.е. не обычных процессов, имеющих в своем составе экраны, следует указать переменную **ShowDialogProcess** содержащую имя процесса в котором следует искать экран с контейнером, указанный в ShowDialog либо использовать **ShowDialogLayout**

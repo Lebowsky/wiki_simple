@@ -155,4 +155,4 @@ for element in range(0,2):
 
 hashMap.put("cards",json.dumps(form_custom,ensure_ascii=False).encode('utf8').decode())
 ```
-![[Pasted image 20240115172510.png]]
+![[Pastedimage20240115172510.png]]

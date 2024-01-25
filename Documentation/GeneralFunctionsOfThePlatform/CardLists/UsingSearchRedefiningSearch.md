@@ -11,4 +11,4 @@
    }
 }
 ```
-![[Pasted image 20240115174217.png]]
+![[Pastedimage20240115174217.png]]

@@ -33,6 +33,6 @@ tiny_tile = {
 }
 ```
 >[!info]- ## Фотогайд
->![[Pasted image 20240116182533.png]]
->![[Pasted image 20240116182851.png]]
->![[Pasted image 20240116182743.png]]
+>![[Pastedimage20240116182533.png]]
+>![[Pastedimage20240116182851.png]]
+>![[Pastedimage20240116182743.png]]

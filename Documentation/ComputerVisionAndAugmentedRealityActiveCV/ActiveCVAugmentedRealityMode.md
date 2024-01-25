@@ -31,7 +31,7 @@
   hashMap.put("green_list", ';'.join(green_list))
   ```
   > [!info]- Фото пример
-  > ![[Pasted image 20240123174234.png]]
+  > ![[Pastedimage20240123174234.png]]
   
  - **object_info_list** - список информации к объектам(доступен html) - нижний. JSON-массив типа 
  ```python
@@ -40,7 +40,7 @@ json_list = [{"object": "740617303506",
 hashMap.put("object_info_list", json.dumps(json_list, ensure_ascii=False))
  ```
   > [!info]- Фото пример
-  > ![[Pasted image 20240123174934.png]]
+  > ![[Pastedimage20240123174934.png]]
   
 - **object_caption_list** - cписок информации к объектам (доступен html в Мультисканер) – в заголовке:  - JSON-массив типа
 ```python
@@ -49,7 +49,7 @@ json_list = [{"object": "740617303506",
 hashMap.put("object_caption_list", json.dumps(json_list, ensure_ascii=False))
 ```
   > [!info]- Фото пример
-  > ![[Pasted image 20240123175650.png]]
+  > ![[Pastedimage20240123175650.png]]
 
 - stop_listener_list - список пропуска обработки объектов (отключает обработчики новых объектов): , разделитель – “;”    
  

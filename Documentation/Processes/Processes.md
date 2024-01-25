@@ -1,6 +1,6 @@
 # Процессы
 
-![[Pasted image 20240111171507.png | 800]]
+![[Pastedimage20240111171507.png| 800]]
 
 >[!info]- Run at startup
 > ![[Run at startup]]

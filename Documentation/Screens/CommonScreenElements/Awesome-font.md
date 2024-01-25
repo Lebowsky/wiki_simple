@@ -9,5 +9,5 @@
 > - Надпись
 
 >[!info]- Фотогайд
->![[Pasted image 20240115122642.png]]
->![[Pasted image 20240115122700.png]]
+>![[Pastedimage20240115122642.png]]
+>![[Pastedimage20240115122700.png]]

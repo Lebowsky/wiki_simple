@@ -21,9 +21,9 @@
 Также в общем объекте определено поле **background_color** - в нем задается фон под плитками.
 
 >[!info]- ## Фотогайд
->![[Pasted image 20240116151639.png]]
->![[Pasted image 20240116151656.png]]
->![[Pasted image 20240116151712.png]]
+>![[Pastedimage20240116151639.png]]
+>![[Pastedimage20240116151656.png]]
+>![[Pastedimage20240116151712.png]]
 
 Пример кода:
 ```python

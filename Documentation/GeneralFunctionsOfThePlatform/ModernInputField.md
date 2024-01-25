@@ -14,7 +14,7 @@
 Также, можно задать counter – счетчик введенных символов внизу и counter_max – максимальное количество символов.
 Ключом events можно подключить генерацию событий с каждым введенным символом в поле, чтобы например записывать в БД сразу же введенный текст. Значение должно быть «true»
 Например:
-![[Pasted image 20240116164103.png]]
+![[Pastedimage20240116164103.png]]
 ```python
 def modern_start(hashMap,_files=None,_data=None):  
     modern_json = {  
@@ -31,4 +31,4 @@ def modern_start(hashMap,_files=None,_data=None):
 			    .encode('utf8').decode())  
     return hashMap
 ```
-![[Pasted image 20240116164313.png]]
+![[Pastedimage20240116164313.png]]

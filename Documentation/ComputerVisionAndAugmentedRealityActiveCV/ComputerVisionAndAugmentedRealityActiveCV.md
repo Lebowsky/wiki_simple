@@ -4,6 +4,6 @@
 > ![[ActiveCVAugmentedRealityMode]]
 
 >[!info]- Настройки OCR
-> ![[OCR Settings]]
+> ![[OCRSettings]]
 
 [[RecognitionSettings]]

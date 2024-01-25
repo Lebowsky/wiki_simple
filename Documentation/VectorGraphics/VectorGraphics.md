@@ -9,14 +9,14 @@
  - Можно указывать имя карты в явном виде (по ключу медиафайла), можно через переменную
 
 >[!info]- ## Фотогайд
->![[Pasted image 20240122113018.png]]
->![[Pasted image 20240122113127.png]]
->![[Pasted image 20240122113201.png]]
->![[Pasted image 20240122113242.png]]
->![[Pasted image 20240122113319.png]]
->![[Pasted image 20240122113340.png]]
->![[Pasted image 20240122113713.png]]
->![[Pasted image 20240122113738.png]]
+>![[Pastedimage20240122113018.png]]
+>![[Pastedimage20240122113127.png]]
+>![[Pastedimage20240122113201.png]]
+>![[Pastedimage20240122113242.png]]
+>![[Pastedimage20240122113319.png]]
+>![[Pastedimage20240122113340.png]]
+>![[Pastedimage20240122113713.png]]
+>![[Pastedimage20240122113738.png]]
 
 >[!info]- ## Работа с ячейками и схемами хранения
 >![[WorkingWithCellsAndStorageSchemes]]
