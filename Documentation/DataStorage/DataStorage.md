@@ -2,7 +2,7 @@
 title: DataStorage
 description: 
 published: true
-date: 2024-01-25T13:54:32.365Z
+date: 2024-01-25T13:55:44.607Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:19.215Z
@@ -18,7 +18,6 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >### **SQLConnectDatabase**
 >`hashMap.put("SQLConnectDatabase", "test1.DB")`
 >Так как указывается имя базы предполагается что можно использовать несколько баз, помимо дефолтной.
-> {.is-info}
 
 >### **SQLExec**
 >`{"query": "SQL statement", "params": "parameters with delimiter"}`
@@ -37,7 +36,6 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >		     "params":""}))
 >```
 >Выполняет запрос на изменение БД (все кроме SELECT), параметры в запросе указываются в неименованном виде, а в params, перечисляются через запятую
-{.is-info}
 
 >### **SQLExecMany**
 >`{"query": "SQL statement", "params": "parameters with delimiter"}`
@@ -61,13 +59,12 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >			"params": json.dumps(values, ensure_ascii=False)}))
 > ```
 > _
-{.is-info}
 
 
->[!info]- ## **SQLParameter**
+>### **SQLParameter**
 >Имеет смысл для SQLExecMany для передачи массива записей в качестве параметра из других обработчиков
 
->[!info]- ## **SQLQuery**
+>### **SQLQuery**
 >`{"query": "SQL statement","params": "parameters with delimiter"}`
 > Запрос типа SELECT, который пишет выборку в виде JSON-массива в стек переменных в SQLResult
 > Пример query:
@@ -80,7 +77,7 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >			headers={'Content-Type': 'Application/json;charset=utf-8'})
 >```
 
->[!info]- ## **SQLQueryMany**
+>### **SQLQueryMany**
 >`{"query": "SQL statement","params": "parameters with delimiter"}`
 > Запрос типа SELECT, который пишет выборку в виде JSON-массива во временный файл и в параметре SQLResultFile возвращает имя этого файла. Для очень больших выборок (>0.5 млн строк)
 
