@@ -1,3 +1,13 @@
+---
+title: Localization
+description: 
+published: true
+date: 2024-01-25T14:55:41.336Z
+tags: 
+editor: markdown
+dateCreated: 2024-01-25T07:43:44.537Z
+---
+
 # Локализация
 
 Можно разрабатывать решения, которые будут включать в себя мультиязычный интерфейс. Автоматизированному переводу подвергаются отображаемые названия процессов, экранов, любых надписей и визуальных элементов.
@@ -44,14 +54,3 @@ table  = {
 Для этого есть несколько команд:
 - **DEVICE_LOCALE** - константа в hashMap, в которой храниться язык, заданный в настройках системы на устройстве. `hashMap.get("DEVICE_LOCALE")`
 - **setLocale** - команда, задающая язык пользовательского интерфейса – т.е. указывающая приложению, какой словарь из списка словарей следует применить при загрузке. Например, `hashMap.put("setLocale", "en")`
-
-
-[[Узнать 2]]
-Пример к данной статье находится в [https://github.com/dvdocumentation/simpleui_samples/tree/main/Sample%204%20localization](https://github.com/dvdocumentation/simpleui_samples/tree/main/Sample%204%20localization)
-
-Не очень понимаю как именно он подтянул перевод с файла localization_example.json,
-вот в этой функции def on_start_barcode(hashMap,_files=None,_data=None):
-
-
-=
-Возможно впихнули напрямую в конфу, попробовать подтянуть
