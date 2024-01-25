@@ -2,7 +2,7 @@
 title: ApplicationSettings
 description: 
 published: true
-date: 2024-01-25T07:00:06.163Z
+date: 2024-01-25T07:00:27.064Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-24T15:01:58.484Z
@@ -24,3 +24,6 @@ dateCreated: 2024-01-24T15:01:58.484Z
 <br>
 [ApplicationSettings](/Documentation/ApplicationSettings/ApplicationSettings)
 </details>
+
+
+[ApplicationSettings](/Documentation/ApplicationSettings/ApplicationSettings)
