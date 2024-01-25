@@ -2,7 +2,7 @@
 title: ApplicationSettings
 description: 
 published: true
-date: 2024-01-25T13:13:20.636Z
+date: 2024-01-25T13:13:27.504Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-24T15:01:58.484Z
@@ -54,9 +54,9 @@ dateCreated: 2024-01-24T15:01:58.484Z
 <summary>How do I dropdown?</summary>
 <br>
 	<img src="/files/Pastedimage20240118095916.png">
-![Pastedimage20240118095916.png](/files/Pastedimage20240118095916.png)
+
 </details>
 
-
+![Pastedimage20240118095916.png](/files/Pastedimage20240118095916.png)
 ![Pastedimage20240118100053.png](/files/Pastedimage20240118100053.png)
 Необходимо навести камеру на QR-код.
