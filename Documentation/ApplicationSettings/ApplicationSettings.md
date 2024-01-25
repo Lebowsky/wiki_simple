@@ -2,7 +2,7 @@
 title: ApplicationSettings
 description: 
 published: true
-date: 2024-01-25T07:04:18.187Z
+date: 2024-01-25T07:05:19.340Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-24T15:01:58.484Z
@@ -22,7 +22,7 @@ dateCreated: 2024-01-24T15:01:58.484Z
 <details>
 <summary>Выпадающий список тест</summary>
 <br>
-[ApplicationSettings](/Documentation/ApplicationSettings/ApplicationSettings)
+<a href="/Documentation/ApplicationSettings/ApplicationSettings">ApplicationSettings</a>  
 </details>
 
 
