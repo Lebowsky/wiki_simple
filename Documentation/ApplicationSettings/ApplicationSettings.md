@@ -2,7 +2,7 @@
 title: ApplicationSettings
 description: 
 published: true
-date: 2024-01-26T10:22:27.050Z
+date: 2024-01-26T10:24:45.034Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-24T15:01:58.484Z
@@ -74,7 +74,5 @@ dateCreated: 2024-01-24T15:01:58.484Z
 где **UID** - произвольный UID, сгенерированный для идентификации конкретной команды, для ответного токена. JSON настроек - JSON строка с настройками из предыдущего раздела
 После получения настроек, если все в порядке в ответ отправляется запрос 
 `/service_response/{AndroidID}/{uuid}`
-
-
 
 
