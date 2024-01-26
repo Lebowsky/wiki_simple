@@ -2,7 +2,7 @@
 title: VectorGraphics
 description: 
 published: true
-date: 2024-01-26T09:28:33.219Z
+date: 2024-01-26T09:28:43.779Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:44:04.628Z
@@ -92,29 +92,3 @@ hashMap.put("map_highlight_cells", json.dumps(color))
 
 ## Запуск редактора карты в пользовательском режиме
 **RunVectorEditor**, "путь к файлу карты.sug" - открывает векторный редактор в режиме редактирования заданного файла, без возможности смены (если файла нет-создает). Доступна только кнопка сохранения. В случае успешного сохранения будет сгенерировано событие "vector_editor" `event == "vector_editor"`
-
-
-
->[!info]- ## Работа с ячейками и схемами хранения
->![[WorkingWithCellsAndStorageSchemes]]
-
->[!info]- ## Работа с событиями и тегами
->![[WorkingWithEventsAndTags]]
-
->[!info]- ## Взаимодействие с объектами, кроме рядов ячеек
->![[InteractionWithObjectsOtherThanRowsOfCells]]
-
->[!info]- ## Работа с картой
->![[WorkingWithTheMap]]
-
->[!info]- ## Запуск редактора карты в пользовательском режиме
->![[LaunchingTheMapEditorInUserMode]]
-
-
-
-[[Узнать 2]]
-Стоит ли вставлять ссылку на видео Дмитрия на ютубе? (С общими принципами работы можно ознакомиться в видео: [Векторная графика в Simple UI](https://youtu.be/cJ2_QtHgZ7c))
-
-
-=
-вставить
