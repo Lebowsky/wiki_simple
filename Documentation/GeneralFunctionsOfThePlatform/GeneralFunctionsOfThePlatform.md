@@ -2,7 +2,7 @@
 title: GeneralFunctionsOfThePlatform
 description: 
 published: true
-date: 2024-01-26T08:04:49.142Z
+date: 2024-01-26T08:07:44.341Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:31.012Z
