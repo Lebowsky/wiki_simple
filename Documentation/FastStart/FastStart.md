@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-01-29T09:38:27.538Z
+date: 2024-01-29T09:38:52.590Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -114,6 +114,7 @@ def input_example(hashMap, _files=None, _data=None):
 <img src="/files/Pastedimage20240126151707.png"> 
 <img src="/files/Pastedimage20240126151819.png"> 
 </details>
+
 ## Пример 2. Добавление товара в SQL базу. Вывод информации о товаре с помощью сканирования его штрихкода
 
 Реализуем 2 процесса.
