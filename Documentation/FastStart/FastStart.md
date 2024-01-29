@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-01-29T10:30:15.632Z
+date: 2024-01-29T10:30:28.472Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -123,7 +123,7 @@ def input_example(hashMap, _files=None, _data=None):
 1) Добавление в SQL базу данных о штрихкоде, его номер и название товара.
 2) Сканирование штрихкода и получение данных отсканированного товара.
 
-Подробнее про SQL можно прочитать [тут](../DataStorage/DataStorage)
+Подробнее про SQL хранение можно прочитать [тут](../DataStorage/DataStorage)
 
 **Шаги реализации**
 
