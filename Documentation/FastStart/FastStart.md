@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-01-29T10:30:02.087Z
+date: 2024-01-29T10:30:15.632Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -124,6 +124,7 @@ def input_example(hashMap, _files=None, _data=None):
 2) Сканирование штрихкода и получение данных отсканированного товара.
 
 Подробнее про SQL можно прочитать [тут](../DataStorage/DataStorage)
+
 **Шаги реализации**
 
 1) Добавляем "Общий обработчик", который будет отрабатывать при старте приложения и создавать SQL таблицу
