@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-01-29T10:30:28.472Z
+date: 2024-01-30T14:22:45.820Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -116,6 +116,53 @@ def input_example(hashMap, _files=None, _data=None):
 </details>
 
 ## Пример 2. Работа с NoSQL(SimpleBase)
+
+Реализовать будем с помощью SimpleBase, подробнее прочитать можно [тут](../DataStorage/DataStorage).
+1) Создадим процесс и добавим в него новый экран. Экран у нас будет содержать: 
+- Поле для ввода новой информации
+  ![Pastedimage20240129152240.png](/files/Pastedimage20240129152240.png)
+- Поле для вывода данных из БД
+	![[Pastedimage20240129152310.png]]
+- Кнопку сохранения новой информации
+	![[Pastedimage20240129152350.png]]
+- Кнопку полной очистки БД
+	 ![[Pastedimage20240129152420.png]]
+
+2) Так же к нашему экрану, необходимо добавить обработчик, который будет обрабатывать при открытии экрана (OnStart). К нему мы привяжем вывод информации из БД в переменную "names_elements"
+  ! **ВАЖНО**
+  OnStart отрабатывает не только в тот момент, когда мы открыли экран, но и после каждого события OnInput. На OnInput мы сделаем привязку нажатия на клавиши "Добавить" и "Очистить БД". При нажатии на клавишу у нас будет отрабатывать логика, которую мы пропишем в OnInput и после этого автоматически отработает логика, которая прописана в OnStart.
+  Эту логику можно отключить с помощью `hashMap.put("noRefresh", "")` подробнее [тут](../Screens/Screens)
+  ![[Pastedimage20240129155736.png]]
+```python
+from pysimplebase import SimpleBase  
+from ru.travelfood.simple_ui import SimpleUtilites as suClass    
+  
+  
+def start_simplebase(hashMap,_files=None,_data=None):  
+    db = SimpleBase("test_db",  
+                    path=suClass.get_simplebase_dir(),  
+                    timeout=200)  
+    result = db['goods'].all()  
+    list_result = [x["name"] for x in result]  
+    hashMap.put("names_elements", str(list_result))  
+    return hashMap
+```
+
+3) Обработчик OnInput
+![[Pastedimage20240129155918.png]]
+```python
+def input_simplebase(hashMap,_files=None,_data=None):  
+    if hashMap.get("listener") == "btn_add":  
+        db['goods'].insert({"name": hashMap.get("name_object")}) #Добавление из поля name_object данных в БД
+        hashMap.put("toast", "Сохранено")  
+    elif hashMap.get("listener") == "btn_delete":  
+        db['goods'].clear()  # Очистка БД
+        hashMap.put("toast", "База очищена")  
+    return hashMap
+```
+
+4) Результат
+![[Pastedimage20240129160228.png]]
 
 ## Пример 3. Добавление товара в SQL базу. Вывод информации о товаре с помощью сканирования его штрихкода
 
