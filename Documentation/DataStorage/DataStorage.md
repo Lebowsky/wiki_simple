@@ -2,7 +2,7 @@
 title: DataStorage
 description: 
 published: true
-date: 2024-01-25T14:11:27.880Z
+date: 2024-01-29T10:33:13.426Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:19.215Z
@@ -122,6 +122,7 @@ GitHub : [https://github.com/dvdocumentation/simplebase](https://github.com/dvd
 Инициализация будет выглядеть так
 ```python
 from pysimplebase import SimpleBase
+from ru.travelfood.simple_ui import SimpleUtilites as suClass
 db = SimpleBase("test_db", 
 				path=suClass.get_simplebase_dir(),
 				timeout=200)
