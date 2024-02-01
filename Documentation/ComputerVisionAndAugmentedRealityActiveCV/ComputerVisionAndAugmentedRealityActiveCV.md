@@ -2,7 +2,7 @@
 title: ComputerVisionAndAugmentedRealityActiveCV
 description: 
 published: true
-date: 2024-01-25T13:49:59.835Z
+date: 2024-02-01T08:30:10.150Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:17.515Z
@@ -43,7 +43,7 @@ dateCreated: 2024-01-25T07:43:17.515Z
 <details>
 <summary>Фото пример</summary>
 <br>
-<img src="/files/Pastedimage20240123174234.png">
+<img src="/files/Pastedimage20240123174234.png" width="400">
 </details>
 
   
@@ -56,7 +56,7 @@ hashMap.put("object_info_list", json.dumps(json_list, ensure_ascii=False))
 <details>
 <summary>Фото пример</summary>
 <br>
-<img src="/files/Pastedimage20240123174934.png">
+<img src="/files/Pastedimage20240123174934.png" width="400">
 </details>
 
 - **object_caption_list** - cписок информации к объектам (доступен html в Мультисканер) – в заголовке:  - JSON-массив типа
@@ -68,7 +68,7 @@ hashMap.put("object_caption_list", json.dumps(json_list, ensure_ascii=False))
 <details>
 <summary>Фото пример</summary>
 <br>
-<img src="/files/Pastedimage20240123175650.png">
+<img src="/files/Pastedimage20240123175650.png" width="400">
 </details>
 
 - stop_listener_list - список пропуска обработки объектов (отключает обработчики новых объектов): , разделитель – “;”    
