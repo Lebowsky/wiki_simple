@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-01T08:28:08.430Z
+date: 2024-02-01T09:36:47.153Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -16,41 +16,41 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240126134630.png">
-<img src="/files/Pastedimage20240126134752.png"> 
+<img src="/files/Pastedimage20240126134630.png" width=700>
+<img src="/files/Pastedimage20240126134752.png"width=700> 
 </details>
 
 3) Необходимо добавить к нашему процессу экран, который у нас будет отображаться и придумаем ему имя
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240126135020.png">
-<img src="/files/Pastedimage20240126135127.png"> 
+<img src="/files/Pastedimage20240126135020.png" width=700>
+<img src="/files/Pastedimage20240126135127.png" width=700> 
 </details>
 
 4) Добавим контейнер и начнем его наполнять
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240126135332.png">
-<img src="/files/Pastedimage20240126135423.png"> 
+<img src="/files/Pastedimage20240126135332.png" width=700>
+<img src="/files/Pastedimage20240126135423.png" width=700> 
 </details>
 
 5) Добавим надпись, и сделаем ее значение "Value" (текст который будет отображаться) в виде переменной "@text_example", знак @ обязательно использовать перед названием переменной.
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240126135530.png">
-<img src="/files/Pastedimage20240126135938.png"> 
-<img src="/files/Pastedimage20240126140057.png"> 
+<img src="/files/Pastedimage20240126135530.png" width=700>
+<img src="/files/Pastedimage20240126135938.png" width=700> 
+<img src="/files/Pastedimage20240126140057.png" width=700> 
 </details>
 
 6) Добавим кнопку при нажатии на которую будет выводиться текст. Укажем "Value" (Текст, который будет отображаться на кнопке) и Variable - переменная, которая будет отправляться в "listener" (переменная, которая имеет значение последнего элемента действия/нажатия. Далее в коде познакомимся с ней поближе)
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240126140200.png">
-<img src="/files/Pastedimage20240126140653.png"> 
+<img src="/files/Pastedimage20240126140200.png" width=700>
+<img src="/files/Pastedimage20240126140653.png" width=700> 
 </details>
 
 7) Необходимо добавить **"Handlers"** к нашему экрану, "Handlers" - обработчики, которые срабатывают в зависимости от каких-либо действий. Мы добавим 2 обработчика
@@ -60,9 +60,9 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240126141145.png">
-<img src="/files/Pastedimage20240126141211.png"> 
-<img src="/files/Pastedimage20240126141239.png"> 
+<img src="/files/Pastedimage20240126141145.png" width=700>
+<img src="/files/Pastedimage20240126141211.png" width=700> 
+<img src="/files/Pastedimage20240126141239.png" width=700> 
 </details>
 
 8) Необходимо создать файл **.py** где будут храниться наши обработчики и добавить этого файл во вкладку Python files
@@ -98,7 +98,7 @@ def input_example(hashMap, _files=None, _data=None):
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240126151049.png">
+<img src="/files/Pastedimage20240126151049.png" width=700>
 </details>
 
 11) Теперь у нас в приложении появился процесс "Пример 1" при клике на него мы увидим, что переменная "@text_example" заполнилась, значение, которое мы передали с помощью `hashMap.put("text_example", "Этим текстом мы наполняем переменную в TextView")`. При клике на кнопку, будет выводиться текст, который мы задали с помощью 
