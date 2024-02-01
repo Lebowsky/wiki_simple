@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-01T07:21:55.400Z
+date: 2024-02-01T07:25:48.969Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -120,7 +120,7 @@ def input_example(hashMap, _files=None, _data=None):
 Реализовать будем с помощью SimpleBase, подробнее прочитать можно [тут](../DataStorage/DataStorage).
 1) Создадим процесс и добавим в него новый экран. Экран у нас будет содержать: 
 - Поле для ввода новой информации
-![Pastedimage20240129152240.png](/files/Pastedimage20240129152240.png)
+![Pastedimage20240129152240.png](/files/Pastedimage20240129152240.png =600x)
 - Поле для вывода данных из БД
 ![Pastedimage20240129152310.png](/files/Pastedimage20240129152310.png)
 - Кнопку сохранения новой информации
@@ -162,7 +162,7 @@ def input_simplebase(hashMap,_files=None,_data=None):
 ```
 
 4) Результат
-![Pastedimage20240129160228.png](/files/Pastedimage20240129160228.png =400x)
+![Pastedimage20240129160228.png](/files/Pastedimage20240129160228.png =350x)
 
 ## Пример 3. Добавление товара в SQL базу. Вывод информации о товаре с помощью сканирования его штрихкода
 
