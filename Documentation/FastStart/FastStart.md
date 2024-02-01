@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-01T07:25:48.969Z
+date: 2024-02-01T08:23:42.991Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -120,19 +120,19 @@ def input_example(hashMap, _files=None, _data=None):
 Реализовать будем с помощью SimpleBase, подробнее прочитать можно [тут](../DataStorage/DataStorage).
 1) Создадим процесс и добавим в него новый экран. Экран у нас будет содержать: 
 - Поле для ввода новой информации
-![Pastedimage20240129152240.png](/files/Pastedimage20240129152240.png =600x)
+![Pastedimage20240129152240.png](/files/Pastedimage20240129152240.png =650x)
 - Поле для вывода данных из БД
-![Pastedimage20240129152310.png](/files/Pastedimage20240129152310.png)
+![Pastedimage20240129152310.png](/files/Pastedimage20240129152310.png =650x)
 - Кнопку сохранения новой информации
-![Pastedimage20240129152350.png](/files/Pastedimage20240129152350.png)
+![Pastedimage20240129152350.png](/files/Pastedimage20240129152350.png =650x)
 - Кнопку полной очистки БД
-![Pastedimage20240129152420.png](/files/Pastedimage20240129152420.png)
+![Pastedimage20240129152420.png](/files/Pastedimage20240129152420.png =650x)
 
 2) Так же к нашему экрану, необходимо добавить обработчик, который будет обрабатывать при открытии экрана (OnStart). К нему мы привяжем вывод информации из БД в переменную "names_elements"
   ! **ВАЖНО**
   OnStart отрабатывает не только в тот момент, когда мы открыли экран, но и после каждого события OnInput. На OnInput мы сделаем привязку нажатия на клавиши "Добавить" и "Очистить БД". При нажатии на клавишу у нас будет отрабатывать логика, которую мы пропишем в OnInput и после этого автоматически отработает логика, которая прописана в OnStart.
   Эту логику можно отключить с помощью `hashMap.put("noRefresh", "")` подробнее [тут](../Screens/Screens)
-![Pastedimage20240129155736.png](/files/Pastedimage20240129155736.png)
+![Pastedimage20240129155736.png](/files/Pastedimage20240129155736.png =650x)
 ```python
 from pysimplebase import SimpleBase  
 from ru.travelfood.simple_ui import SimpleUtilites as suClass    
@@ -149,7 +149,7 @@ def start_simplebase(hashMap,_files=None,_data=None):
 ```
 
 3) Обработчик OnInput
-![Pastedimage20240129155918.png](/files/Pastedimage20240129155918.png)
+![Pastedimage20240129155918.png](/files/Pastedimage20240129155918.png =650x)
 ```python
 def input_simplebase(hashMap,_files=None,_data=None):  
     if hashMap.get("listener") == "btn_add":  
@@ -178,8 +178,8 @@ def input_simplebase(hashMap,_files=None,_data=None):
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
-<img src="/files/Pastedimage20240129112554.png">  
-<img src="/files/Pastedimage20240129112613.png">  
+<img src="/files/Pastedimage20240129112554.png" width="700">  
+<img src="/files/Pastedimage20240129112613.png" width="700">  
 </details>  
 
 2) Напишем содержание этого обработчика
@@ -196,16 +196,16 @@ def init_on_start(hashMap,_files=None,_data=None):
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
-<img src="/files/Pastedimage20240129111614.png">  
-<img src="/files/Pastedimage20240129111638.png">
-<img src="/files/Pastedimage20240129111657.png">
+<img src="/files/Pastedimage20240129111614.png" width="700">  
+<img src="/files/Pastedimage20240129111638.png" width="700">
+<img src="/files/Pastedimage20240129111657.png" width="700">
 </details>
 
 4) Добавим обработчик для обработки события при нажатии на кнопку "Сохранить"
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
-<img src="/files/Pastedimage20240129113315.png">
+<img src="/files/Pastedimage20240129113315.png" width="700">
 </details>
 
 5) Напишем содержание этого обработчика
@@ -225,32 +225,32 @@ def input_save(hashMap,_files=None,_data=None):
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
-<img src="/files/Pastedimage20240129114423.png">
+<img src="/files/Pastedimage20240129114423.png" width="400">
 </details>
 
 6) Можно проверить создалась ли у нас таблица в БД и заполнилась ли она. В конструкторе необходимо выбрать "SQL Query" и ввести туда запрос.
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
-<img src="/files/Pastedimage20240129114933.png">
-<img src="/files/Pastedimage20240129115057.png">
+<img src="/files/Pastedimage20240129114933.png" width="700">
+<img src="/files/Pastedimage20240129115057.png" width="700">
 </details>
 
 7) Теперь нам необходимо создать процесс для Сканирование штрихкода и добавить экран где у нас будет находиться сканер штрихкодов (barcode) и текстовое поле для вывода информации.
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
-<img src="/files/Pastedimage20240129115447.png">
-<img src="/files/Pastedimage20240129115500.png">
-<img src="/files/Pastedimage20240129115533.png">
-<img src="/files/Pastedimage20240129115550.png">
+<img src="/files/Pastedimage20240129115447.png" width="700">
+<img src="/files/Pastedimage20240129115500.png" width="700">
+<img src="/files/Pastedimage20240129115533.png" width="700">
+<img src="/files/Pastedimage20240129115550.png" width="700">
 </details>
 
 8) Необходимо добавить обработчик, который будет отрабатывать при сканирование товара и заполнять данные для "@info_about_good".
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
-<img src="/files/Pastedimage20240129115734.png">
+<img src="/files/Pastedimage20240129115734.png" width="700">
 </details>
 
 9) Напишем код для обработчика
@@ -274,6 +274,6 @@ def scan_barcode(hashMap,_files=None,_data=None):
 <details>  
 <summary>Результат</summary>  
 <br>  
-<img src="/files/Pastedimage20240129120518.png">
-<img src="/files/Pastedimage20240129122638.png">
+<img src="/files/Pastedimage20240129120518.png" width="400">
+<img src="/files/Pastedimage20240129122638.png" width="400">
 </details>
