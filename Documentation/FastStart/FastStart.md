@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-01T08:23:42.991Z
+date: 2024-02-01T08:28:08.430Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -110,9 +110,9 @@ def input_example(hashMap, _files=None, _data=None):
 <details>
 <summary>Результаты</summary>
 <br>
-<img src="/files/Pastedimage20240126151642.png">
-<img src="/files/Pastedimage20240126151707.png"> 
-<img src="/files/Pastedimage20240126151819.png"> 
+<img src="/files/Pastedimage20240126151642.png" width="400">
+<img src="/files/Pastedimage20240126151707.png" width="400"> 
+<img src="/files/Pastedimage20240126151819.png" width="400"> 
 </details>
 
 ## Пример 2. Работа с NoSQL(SimpleBase)
