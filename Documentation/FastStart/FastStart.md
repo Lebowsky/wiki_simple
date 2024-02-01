@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-01-30T14:30:45.749Z
+date: 2024-02-01T07:21:55.400Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -162,7 +162,7 @@ def input_simplebase(hashMap,_files=None,_data=None):
 ```
 
 4) Результат
-![Pastedimage20240129160228.png](/files/Pastedimage20240129160228.png)
+![Pastedimage20240129160228.png](/files/Pastedimage20240129160228.png =400x)
 
 ## Пример 3. Добавление товара в SQL базу. Вывод информации о товаре с помощью сканирования его штрихкода
 
