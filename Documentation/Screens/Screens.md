@@ -2,7 +2,7 @@
 title: Screens
 description: 
 published: true
-date: 2024-02-01T09:17:19.599Z
+date: 2024-02-01T09:18:43.509Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:52.851Z
@@ -86,7 +86,7 @@ def screen_on_start(hashMap):
 - **StartTimer**, `{"handler": "массив обработчиков", "period": "периодичность, мс"}` - добавляет новый таймер и запускает его 
 - **StopTimers**, пустой параметр – останавливает объект таймеров и удаляет все ранее добавленные таймеры (командой StartTimer)
 
-![Pastedimage20240122162641.png](/files/Pastedimage20240122162641.png)
+![Pastedimage20240122162641.png](/files/Pastedimage20240122162641.png =700x)
 
 ## Режим работы с мультимедиа и файлами по ссылкам (флаг mm_local)
 Можно хранить мультимедиа и галереи в виде base64-строки, но это довольно ресурсозатратный процесс. Вследствие того что кодирование и раскодирование занимает время и место, обычно при таком подходе мультимедиа сильно сжимают и по размеру и по компрессии. Альтернатива этому новый режим который задействуется переменной **mm_local**
@@ -124,13 +124,13 @@ if hashMap.get("listener") == "photo":
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240115122642.png">
-<img src="/files/Pastedimage20240115122700.png">      
+<img src="/files/Pastedimage20240115122642.png" width=700>
+<img src="/files/Pastedimage20240115122700.png" width=400>      
 </details>
 
 ## Плавающие кнопки
 В ряду стандартных кнопок экрана можно добавлять свои кнопки (элемент «Плавающая кнопка»). Можно использовать стандартную иконку (выбрать из Иконка), либо установить через «#» [Awesome- иконку](Awesome-font.md), аналогично тому, как это сделано в других случаях. В этом случае возможно потребуется дополнительно отцентрировать иконку, для этого после надписи можно указать смещение по горизонтали и вертикали. Например: (#f1d8;1;-20)
-![Pastedimage20240122162137.png](/files/Pastedimage20240115122700.png)
+![Pastedimage20240122162137.png](/files/Pastedimage20240115122700.png =400x)
 
 # Прочие элементы интерфейса
 ## Звуковой сигнал
@@ -154,10 +154,10 @@ if hashMap.get("listener") == "voice":
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240115144953.png">
-<img src="/files/Pastedimage20240115145011.png">      
-<img src="/files/Pastedimage20240115145105.png">  
-<img src="/files/Pastedimage20240115145852.png">    
+<img src="/files/Pastedimage20240115144953.png" width=700>
+<img src="/files/Pastedimage20240115145011.png" width=700>      
+<img src="/files/Pastedimage20240115145105.png" width=400>  
+<img src="/files/Pastedimage20240115145852.png" width=400>    
 </details>
 
 ## Контейнеры
