@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-01T15:21:25.923Z
+date: 2024-02-02T06:53:16.734Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -289,6 +289,7 @@ def scan_barcode(hashMap,_files=None,_data=None):
 
 1) Создание базы данных мы будем производить как в "Примере 2"
 ![Pastedimage20240201173232.png](/files/Pastedimage20240201173232.png =650x)
+
 ```python
 def input_bd(hashMap,_files=None,_data=None):  
     db = SimpleBase("test_db",  
