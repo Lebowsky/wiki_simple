@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T14:02:06.060Z
+date: 2024-02-05T14:06:41.997Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -53,11 +53,6 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <img src="/files/Pastedimage20240126135938.png" width=700> 
 <br>  
 <img сlass="big" src="/files/Pastedimage20240126140057.png"> 
-<img class="big" src="/files/Pastedimage20240126140057.png">
-  <style>
-  img.big {cursor: pointer; max-width: 150px; transition: max-width 0.5s ease;}
-  img.big:hover {max-width: 75px;}
-</style>
 </details>
 
 
