@@ -2,7 +2,7 @@
 title: Screens
 description: 
 published: true
-date: 2024-02-05T09:48:47.246Z
+date: 2024-02-05T09:49:39.992Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:52.851Z
@@ -194,7 +194,7 @@ if hashMap.get("listener") == "photo":
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240115122642.png" width=700>
+<img src="/files/Pastedimage20240115122642.png" width=850>
 <br>
 <img src="/files/Pastedimage20240115122700.png" width=400>      
 </details>
