@@ -2,7 +2,7 @@
 title: VectorGraphics
 description: 
 published: true
-date: 2024-02-02T12:46:34.143Z
+date: 2024-02-05T09:50:24.443Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:44:04.628Z
@@ -28,9 +28,11 @@ dateCreated: 2024-01-25T07:44:04.628Z
   <br>
 <img src="/files/Pastedimage20240122113319.png" width=400> 
   <br>
-<img src="/files/Pastedimage20240122113340.png" width=700> 
-<img src="/files/Pastedimage20240122113713.png" width=700>
-<img src="/files/Pastedimage20240122113738.png" width=700> 
+<img src="/files/Pastedimage20240122113340.png" width=850> 
+<br>
+<img src="/files/Pastedimage20240122113713.png" width=850>
+<br>
+<img src="/files/Pastedimage20240122113738.png" width=850> 
 </details>
 
 ## Работа с ячейками и схемами хранения
