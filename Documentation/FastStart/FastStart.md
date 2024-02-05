@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T12:09:42.275Z
+date: 2024-02-05T12:10:09.039Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -11,7 +11,6 @@ dateCreated: 2024-01-26T10:34:57.952Z
 ## Пример 1. Создание процесса, добавление надписи, кнопки, подключение python обработчика
 
 
-<!DOCTYPE html>
 <html>
  <head>
   <meta charset="utf-8">
