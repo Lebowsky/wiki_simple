@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T09:17:32.064Z
+date: 2024-02-05T09:18:25.651Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -109,7 +109,7 @@ def input_example(hashMap, _files=None, _data=None):
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240126151049.png" width=700>
+<img src="/files/Pastedimage20240126151049.png" width=1100>
 </details>
 
 11) Теперь у нас в приложении появился процесс "Пример 1" при клике на него мы увидим, что переменная "@text_example" заполнилась, значение, которое мы передали с помощью `hashMap.put("text_example", "Этим текстом мы наполняем переменную в TextView")`. При клике на кнопку, будет выводиться текст, который мы задали с помощью 
