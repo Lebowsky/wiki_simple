@@ -2,7 +2,7 @@
 title: ApplicationSettings
 description: 
 published: true
-date: 2024-02-01T08:29:04.484Z
+date: 2024-02-05T09:22:29.849Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-24T15:01:58.484Z
@@ -53,8 +53,9 @@ dateCreated: 2024-01-24T15:01:58.484Z
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240118095916.png" width="700">
-<img src="/files/Pastedimage20240118100053.png" width="300"> 
+<img src="/files/Pastedimage20240118095916.png" width="900">
+<br>
+<img src="/files/Pastedimage20240118100053.png" width="400"> 
 <br>Необходимо навести камеру на QR-код.
 </details>
 
