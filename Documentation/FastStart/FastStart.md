@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T07:48:02.028Z
+date: 2024-02-05T07:55:19.563Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -16,6 +16,7 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <details>
 <summary>Фотогайд</summary>
 <br>
+
 <img src="/files/Pastedimage20240126134630.png" width=700>
 <img src="/files/Pastedimage20240126134752.png"width=700> 
 </details>
