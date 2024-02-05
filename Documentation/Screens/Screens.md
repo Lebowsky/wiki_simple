@@ -2,7 +2,7 @@
 title: Screens
 description: 
 published: true
-date: 2024-02-05T09:47:44.734Z
+date: 2024-02-05T09:48:11.075Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:52.851Z
@@ -97,7 +97,9 @@ element - переменная элемента (переменная=идент
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240112172533.png" width=700>
+<br>
 <img src="/files/Pastedimage20240112172558.png" width=700> 
+<br>
 <img src="/files/Pastedimage20240112172746.png" width=700> 
 </details>
 
