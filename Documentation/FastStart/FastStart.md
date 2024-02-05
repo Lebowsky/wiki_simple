@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T09:16:36.351Z
+date: 2024-02-05T09:17:32.064Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -18,7 +18,9 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240126134630.png" width=700>
+<br>
 <img src="/files/Pastedimage20240126134752.png" width=700>
+<br>
 </details>
 
 
@@ -27,6 +29,7 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240126135020.png" width=700>
+<br>
 <img src="/files/Pastedimage20240126135127.png" width=700> 
 </details>
 
@@ -35,6 +38,7 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240126135332.png" width=700>
+<br>
 <img src="/files/Pastedimage20240126135423.png" width=700> 
 </details>
 
@@ -54,6 +58,7 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240126140200.png" width=700>
+<br>
 <img src="/files/Pastedimage20240126140653.png" width=700> 
 </details>
 
@@ -65,7 +70,9 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240126141145.png" width=700>
+<br>
 <img src="/files/Pastedimage20240126141211.png" width=700> 
+<br>
 <img src="/files/Pastedimage20240126141239.png" width=700> 
 </details>
 
@@ -115,7 +122,9 @@ def input_example(hashMap, _files=None, _data=None):
 <summary>Результаты</summary>
 <br>
 <img src="/files/Pastedimage20240126151642.png" width="400">
+<br>
 <img src="/files/Pastedimage20240126151707.png" width="400"> 
+<br>
 <img src="/files/Pastedimage20240126151819.png" width="400"> 
 </details>
 
@@ -182,7 +191,8 @@ def input_simplebase(hashMap,_files=None,_data=None):
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
-<img src="/files/Pastedimage20240129112554.png" width="700">  
+<img src="/files/Pastedimage20240129112554.png" width="700">
+<br>  
 <img src="/files/Pastedimage20240129112613.png" width="700">  
 </details>  
 
@@ -200,8 +210,10 @@ def init_on_start(hashMap,_files=None,_data=None):
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
-<img src="/files/Pastedimage20240129111614.png" width="700">  
+<img src="/files/Pastedimage20240129111614.png" width="700">
+<br>  
 <img src="/files/Pastedimage20240129111638.png" width="700">
+<br>
 <img src="/files/Pastedimage20240129111657.png" width="700">
 </details>
 
@@ -237,6 +249,7 @@ def input_save(hashMap,_files=None,_data=None):
 <summary>Фотогайд</summary>  
 <br>  
 <img src="/files/Pastedimage20240129114933.png" width="700">
+<br>
 <img src="/files/Pastedimage20240129115057.png" width="700">
 </details>
 
@@ -245,8 +258,11 @@ def input_save(hashMap,_files=None,_data=None):
 <summary>Фотогайд</summary>  
 <br>  
 <img src="/files/Pastedimage20240129115447.png" width="700">
+<br>
 <img src="/files/Pastedimage20240129115500.png" width="700">
+<br>
 <img src="/files/Pastedimage20240129115533.png" width="700">
+<br>
 <img src="/files/Pastedimage20240129115550.png" width="700">
 </details>
 
@@ -279,6 +295,7 @@ def scan_barcode(hashMap,_files=None,_data=None):
 <summary>Результат</summary>  
 <br>  
 <img src="/files/Pastedimage20240129120518.png" width="400">
+<br>
 <img src="/files/Pastedimage20240129122638.png" width="400">
 </details>
 
