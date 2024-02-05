@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T12:09:15.565Z
+date: 2024-02-05T12:09:42.275Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
