@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T09:19:32.364Z
+date: 2024-02-05T09:20:42.359Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -309,7 +309,7 @@ def scan_barcode(hashMap,_files=None,_data=None):
 **Шаги реализации**
 
 1) Создание базы данных мы будем производить как в "Примере 2"
-[![Pastedimage20240201173232.png](/files/Pastedimage20240201173232.png =650x)](/files/Pastedimage20240201173232.png)
+[![Pastedimage20240201173232.png](/files/Pastedimage20240201173232.png =850x)](/files/Pastedimage20240201173232.png)
 
 
 ```python
