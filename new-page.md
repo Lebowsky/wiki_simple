@@ -2,7 +2,7 @@
 title: Работа с ячейками
 description: 
 published: true
-date: 2024-02-05T12:22:39.238Z
+date: 2024-02-05T12:27:34.709Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-24T12:08:38.586Z
@@ -12,7 +12,7 @@ dateCreated: 2024-01-24T12:08:38.586Z
 
 Your content here
 
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -45,3 +45,10 @@ Your content here
 </body>
 </html>
 
+
+<style>
+  img.big {cursor: pointer; max-width: 150px;}
+  img.big:hover {max-width: none;}
+</style>
+
+<img class="big" src="/files/Pastedimage20240126134630.png" />
