@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T07:40:54.960Z
+date: 2024-02-05T07:47:24.448Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -289,7 +289,6 @@ def scan_barcode(hashMap,_files=None,_data=None):
 
 1) Создание базы данных мы будем производить как в "Примере 2"
 [![Pastedimage20240201173232.png](/files/Pastedimage20240201173232.png =650x)](/files/Pastedimage20240201173232.png)
-[![Mazda FC RX-7 - A little drifting action](https://i.snap.as/2IxnDguK.png)](https://i.snap.as/2IxnDguK.png)
 
 ```python
 def input_bd(hashMap,_files=None,_data=None):  
