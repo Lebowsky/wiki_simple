@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T07:47:24.448Z
+date: 2024-02-05T07:48:02.028Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -322,4 +322,4 @@ def object_detect(hashMap,_files=None,_data=None):
 Подробнее информация [тут](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVisionAndAugmentedRealityActiveCV)
 
 Результат
-![Pastedimage20240201181332.png](/files/Pastedimage20240201181332.png =350x)
+[![Pastedimage20240201181332.png](/files/Pastedimage20240201181332.png =350x)](/files/Pastedimage20240201181332.png)
