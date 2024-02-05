@@ -2,7 +2,7 @@
 title: DataStorage
 description: 
 published: true
-date: 2024-02-05T09:31:12.398Z
+date: 2024-02-05T09:32:01.855Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:19.215Z
@@ -19,9 +19,6 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >### <kbd>SQLConnectDatabase</kbd>
 >`hashMap.put("SQLConnectDatabase", "test1.DB")`
 >Так как указывается имя базы предполагается что можно использовать несколько баз, помимо дефолтной.
-{.is-info}
-
-
 
 >### <kbd>**SQLExec**</kbd>
 >`{"query": "SQL statement", "params": "parameters with delimiter"}`
@@ -40,7 +37,6 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >		     "params":""}))
 >```
 >Выполняет запрос на изменение БД (все кроме SELECT), параметры в запросе указываются в неименованном виде, а в params, перечисляются через запятую
-{.is-info}
 
 >### <kbd>**SQLExecMany**</kbd>
 >`{"query": "SQL statement", "params": "parameters with delimiter"}`
@@ -63,13 +59,10 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >			json.dumps({"query": sql_query,
 >			"params": json.dumps(values, ensure_ascii=False)}))
 > ```
-> _
-{.is-info}
 
 
 >### <kbd>**SQLParameter**</kbd>
 >Имеет смысл для SQLExecMany для передачи массива записей в качестве параметра из других обработчиков
-{.is-info}
 
 >### <kbd>**SQLQuery**</kbd>
 >`{"query": "SQL statement","params": "parameters with delimiter"}`
@@ -84,12 +77,10 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >			headers={'Content-Type': 'Application/json;charset=utf-8'})
 >```
 >_
-{.is-info}
 
 >### <kbd>**SQLQueryMany**</kbd>
 >`{"query": "SQL statement","params": "parameters with delimiter"}`
 > Запрос типа SELECT, который пишет выборку в виде JSON-массива во временный файл и в параметре SQLResultFile возвращает имя этого файла. Для очень больших выборок (>0.5 млн строк)
-{.is-info}
 
 Те же функции можно вызывать из импортируемого класса напрямую. Этот вариант хорош тем что результат получаешь сразу а не на конец шага и его лучше использовать в python-обработчиках.
 
