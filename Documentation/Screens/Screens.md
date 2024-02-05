@@ -2,7 +2,7 @@
 title: Screens
 description: 
 published: true
-date: 2024-02-05T09:48:11.075Z
+date: 2024-02-05T09:48:47.246Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:52.851Z
@@ -119,6 +119,7 @@ def screen_on_start(hashMap):
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240112183031.png" width=700>
+<br>
 <img src="/files/Pastedimage20240112182924.png" width=400>   
 </details>
 
@@ -140,7 +141,9 @@ def screen_on_start(hashMap):
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240115103710.png" width=700>
-<img src="/files/Pastedimage20240115103735.png" width=700>   
+<br>
+<img src="/files/Pastedimage20240115103735.png" width=700>  
+<br> 
 <img src="/files/Pastedimage20240115104401.png" width=400>   
 </details>
 
@@ -192,6 +195,7 @@ if hashMap.get("listener") == "photo":
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240115122642.png" width=700>
+<br>
 <img src="/files/Pastedimage20240115122700.png" width=400>      
 </details>
 
@@ -222,7 +226,9 @@ if hashMap.get("listener") == "voice":
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240115144953.png" width=700>
-<img src="/files/Pastedimage20240115145011.png" width=700>      
+<br>
+<img src="/files/Pastedimage20240115145011.png" width=700> 
+<br>     
 <img src="/files/Pastedimage20240115145105.png" width=400>  
 <img src="/files/Pastedimage20240115145852.png" width=400>    
 </details>
