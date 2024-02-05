@@ -2,7 +2,7 @@
 title: BasicCommands
 description: 
 published: true
-date: 2024-02-05T14:52:09.691Z
+date: 2024-02-05T14:52:26.094Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:02.141Z
@@ -78,7 +78,7 @@ if hashMap.get("listener") == "reply_send":
 **RunCV** - запуск режима AciveCV из экрана. После завершения ActiveCV в таком варианте запуска, возникает событие ввода с listener=ActiveCV 
 **StartMediaGallery** - запуск выбора файла из галереи мультимедиа, котрый можно инициировать из кода (т.е. определить на свою кнопку например) 
 **StartCaptureCamera** - запуск камеры 
-**SetTitle** , параметра: заголовок экрана - переопределение заголовка экрана 
+**SetTitle**, параметра: заголовок экрана - переопределение заголовка экрана 
 **PrintPreview** ,параметр:html-строка - запуск окна с предпросмотром html. Для например, печатных форм, которые из этого окна можно отправить на принтер 
 **PrintService** команда запуска PDF-документа на печать встроенной службой печати.
 [Подробнее](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVisionAndAugmentedRealityActiveCV)
