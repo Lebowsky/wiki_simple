@@ -2,7 +2,7 @@
 title: Screens
 description: 
 published: true
-date: 2024-02-05T09:02:07.901Z
+date: 2024-02-05T09:47:44.734Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:52.851Z
@@ -10,7 +10,7 @@ dateCreated: 2024-01-25T07:43:52.851Z
 
 # Параметры экрана в конструкторе
 ## Common 
-[![Pastedimage20240202110741.png](/files/Pastedimage20240202110741.png =650x)](/files/Pastedimage20240202110741.png)
+[![Pastedimage20240202110741.png](/files/Pastedimage20240202110741.png =750x)](/files/Pastedimage20240202110741.png)
 
 - Name - имя экрана, к которому мы можем обращаться, например через 
 `hashMap.put("ShowScreen", "Новый экран")` - смена экрана на необходимый нам
