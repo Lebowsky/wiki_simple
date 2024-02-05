@@ -2,7 +2,7 @@
 title: Debugging
 description: 
 published: true
-date: 2024-02-01T08:32:18.122Z
+date: 2024-02-05T09:44:14.517Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:20.903Z
@@ -15,6 +15,7 @@ dateCreated: 2024-01-25T07:43:20.903Z
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240122163152.png" width=700>
+<br>
 <img src="/files/Pastedimage20240122163211.png" width=700> 
 </details>
 
