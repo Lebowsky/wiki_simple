@@ -2,35 +2,13 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T12:10:09.039Z
+date: 2024-02-05T12:11:00.359Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
 ---
 
 ## Пример 1. Создание процесса, добавление надписи, кнопки, подключение python обработчика
-
-
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>Увеличение изображения</title>
-  <style>
-   .scale {
-    transition: 1s; /* Время эффекта */
-   }
-   .scale:hover {
-    transform: scale(1.2); /* Увеличиваем масштаб */
-   }
-  </style>
- </head>
- <body>
-  <p>
-   <img src="/files/Pastedimage20240126134630.png" alt="" class="scale">
-  </p>
- </body>
-</html>
-
 
 
 Ссылка на конструктор
