@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T08:15:23.972Z
+date: 2024-02-05T08:51:28.858Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -13,95 +13,14 @@ dateCreated: 2024-01-26T10:34:57.952Z
 Ссылка на конструктор
 1) Создаем новый проект
 2) Необходимо создать новый процесс
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery</title>
-<style>
-/* Увеличить размер изображения при клике */
-.gallery-img {
-  width: 700px;
-  cursor: pointer;
-}
 
-/* Стили для модального окна */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow: auto;
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 800px;
-}
-
-.modal-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Закрыть модальное окно */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #ffffff;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-</style>
-</head>
-<body>
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img class="gallery-img" src="/files/Pastedimage20240126134630.png" onclick="openModal(this)">
-<img class="gallery-img" src="/files/Pastedimage20240126134752.png" onclick="openModal(this)">
+<img class="gallery-img" src="/files/Pastedimage20240126134630.png" width=700>
+<img class="gallery-img" src="/files/Pastedimage20240126134752.png" width=700>
 </details>
 
-<!-- Модальное окно -->
-<div id="myModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="img01">
-</div>
-
-<script>
-// Открыть модальное окно
-function openModal(img) {
-  var modal = document.getElementById("myModal");
-  var modalImg = document.getElementById("img01");
-  modal.style.display = "block";
-  modalImg.src = img.src;
-}
-
-// Закрыть модальное окно
-function closeModal() {
-  var modal = document.getElementById("myModal");
-  modal.style.display = "none";
-}
-</script>
-</body>
-</html>
 
 3) Необходимо добавить к нашему процессу экран, который у нас будет отображаться и придумаем ему имя
 <details>
