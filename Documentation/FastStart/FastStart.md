@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T09:18:25.651Z
+date: 2024-02-05T09:19:32.364Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -191,7 +191,7 @@ def input_simplebase(hashMap,_files=None,_data=None):
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
-<img src="/files/Pastedimage20240129112554.png" width="700">
+<img src="/files/Pastedimage20240129112554.png" width="900">
 <br>  
 <img src="/files/Pastedimage20240129112613.png" width="700">  
 </details>  
