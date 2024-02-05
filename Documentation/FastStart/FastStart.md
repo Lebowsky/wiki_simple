@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T07:55:19.563Z
+date: 2024-02-05T08:12:16.913Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -13,13 +13,48 @@ dateCreated: 2024-01-26T10:34:57.952Z
 Ссылка на конструктор
 1) Создаем новый проект
 2) Необходимо создать новый процесс
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<style>
+/* Скрыть изображения по умолчанию */
+.gallery-img {
+  display: none;
+}
+/* Увеличить размер изображения при клике */
+.gallery-img.fullscreen {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.9); /* Непрозрачный фон */
+  z-index: 9999;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
 <details>
 <summary>Фотогайд</summary>
 <br>
-
-<img src="/files/Pastedimage20240126134630.png" width=700>
-<img src="/files/Pastedimage20240126134752.png"width=700> 
+<img class="gallery-img" src="/files/Pastedimage20240126134630.png" width=700 onclick="showFullscreen(this)">
+<img class="gallery-img" src="/files/Pastedimage20240126134752.png" width=700 onclick="showFullscreen(this)">
 </details>
+
+<script>
+// Функция для отображения изображения на весь экран
+function showFullscreen(img) {
+  img.classList.toggle('fullscreen'); // Добавляем/удаляем класс fullscreen
+}
+</script>
+</body>
+</html>
 
 3) Необходимо добавить к нашему процессу экран, который у нас будет отображаться и придумаем ему имя
 <details>
