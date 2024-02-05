@@ -2,7 +2,7 @@
 title: Screens
 description: 
 published: true
-date: 2024-02-02T13:44:03.509Z
+date: 2024-02-05T06:49:43.498Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:52.851Z
@@ -59,7 +59,6 @@ jdata = json.loads(r.text)
 #Записываем в Переменные
 hashMap.put("text_info", jdata)
 ```
-
 
 ## Elements
 ![Pastedimage20240202125533.png](/files/Pastedimage20240202125533.png =650x)
