@@ -2,7 +2,7 @@
 title: GeneralFunctionsOfThePlatform
 description: 
 published: true
-date: 2024-02-05T09:45:30.692Z
+date: 2024-02-05T09:46:02.741Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:31.012Z
@@ -381,11 +381,11 @@ hashMap.put("cards",json.dumps(form_custom,ensure_ascii=False).encode('utf8').de
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240116151639.png" width=700>
+<img src="/files/Pastedimage20240116151639.png" width=1100>
 <br>
-<img src="/files/Pastedimage20240116151656.png" width=700> 
+<img src="/files/Pastedimage20240116151656.png" width=1100> 
 <br>
-<img src="/files/Pastedimage20240116151712.png" width=700> 
+<img src="/files/Pastedimage20240116151712.png" width=1100> 
 </details>
 
 Пример кода:
