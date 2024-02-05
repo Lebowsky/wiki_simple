@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T08:13:26.477Z
+date: 2024-02-05T08:15:23.972Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -26,15 +26,48 @@ dateCreated: 2024-01-26T10:34:57.952Z
   cursor: pointer;
 }
 
-.gallery-img.fullscreen {
+/* Стили для модального окна */
+.modal {
+  display: none;
   position: fixed;
-  top: 0;
+  z-index: 9999;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  background: rgba(0, 0, 0, 0.9); /* Непрозрачный фон */
-  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Закрыть модальное окно */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 </style>
 </head>
@@ -42,14 +75,29 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img class="gallery-img" src="/files/Pastedimage20240126134630.png" onclick="showFullscreen(this)">
-<img class="gallery-img" src="/files/Pastedimage20240126134752.png" onclick="showFullscreen(this)">
+<img class="gallery-img" src="/files/Pastedimage20240126134630.png" onclick="openModal(this)">
+<img class="gallery-img" src="/files/Pastedimage20240126134752.png" onclick="openModal(this)">
 </details>
 
+<!-- Модальное окно -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
 <script>
-// Функция для отображения изображения на весь экран
-function showFullscreen(img) {
-  img.classList.toggle('fullscreen'); // Добавляем/удаляем класс fullscreen
+// Открыть модальное окно
+function openModal(img) {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("img01");
+  modal.style.display = "block";
+  modalImg.src = img.src;
+}
+
+// Закрыть модальное окно
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
 }
 </script>
 </body>
