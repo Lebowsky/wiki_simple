@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T12:08:57.575Z
+date: 2024-02-05T12:09:15.565Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -28,8 +28,6 @@ dateCreated: 2024-01-26T10:34:57.952Z
  <body>
   <p>
    <img src="/files/Pastedimage20240126134630.png" alt="" class="scale">
-   <img src="image/meduza2.jpg" alt="" class="scale">
-   <img src="image/meduza3.jpg" alt="" class="scale">
   </p>
  </body>
 </html>
