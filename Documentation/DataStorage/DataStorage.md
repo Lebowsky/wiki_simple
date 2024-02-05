@@ -2,7 +2,7 @@
 title: DataStorage
 description: 
 published: true
-date: 2024-02-05T09:27:17.839Z
+date: 2024-02-05T09:28:51.583Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:19.215Z
@@ -19,6 +19,9 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >### <kbd>SQLConnectDatabase</kbd>
 >`hashMap.put("SQLConnectDatabase", "test1.DB")`
 >Так как указывается имя базы предполагается что можно использовать несколько баз, помимо дефолтной.
+{.is-info}
+
+
 
 >### <kbd>**SQLExec**</kbd>
 >`{"query": "SQL statement", "params": "parameters with delimiter"}`
@@ -37,6 +40,7 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >		     "params":""}))
 >```
 >Выполняет запрос на изменение БД (все кроме SELECT), параметры в запросе указываются в неименованном виде, а в params, перечисляются через запятую
+{.is-info}
 
 >### **SQLExecMany**
 >`{"query": "SQL statement", "params": "parameters with delimiter"}`
