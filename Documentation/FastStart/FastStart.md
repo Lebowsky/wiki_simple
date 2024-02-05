@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T08:12:16.913Z
+date: 2024-02-05T08:13:26.477Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -20,13 +20,13 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gallery</title>
 <style>
-/* Скрыть изображения по умолчанию */
-.gallery-img {
-  display: none;
-}
 /* Увеличить размер изображения при клике */
+.gallery-img {
+  width: 700px;
+  cursor: pointer;
+}
+
 .gallery-img.fullscreen {
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +35,6 @@ dateCreated: 2024-01-26T10:34:57.952Z
   object-fit: contain;
   background: rgba(0, 0, 0, 0.9); /* Непрозрачный фон */
   z-index: 9999;
-  cursor: pointer;
 }
 </style>
 </head>
@@ -43,8 +42,8 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img class="gallery-img" src="/files/Pastedimage20240126134630.png" width=700 onclick="showFullscreen(this)">
-<img class="gallery-img" src="/files/Pastedimage20240126134752.png" width=700 onclick="showFullscreen(this)">
+<img class="gallery-img" src="/files/Pastedimage20240126134630.png" onclick="showFullscreen(this)">
+<img class="gallery-img" src="/files/Pastedimage20240126134752.png" onclick="showFullscreen(this)">
 </details>
 
 <script>
