@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-05T12:11:00.359Z
+date: 2024-02-05T14:02:06.060Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -44,6 +44,7 @@ dateCreated: 2024-01-26T10:34:57.952Z
 </details>
 
 5) Добавим надпись, и сделаем ее значение "Value" (текст который будет отображаться) в виде переменной "@text_example", знак @ обязательно использовать перед названием переменной.
+
 <details>
 <summary>Фотогайд</summary>
 <br>
@@ -51,8 +52,14 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <br>
 <img src="/files/Pastedimage20240126135938.png" width=700> 
 <br>  
-<img src="/files/Pastedimage20240126140057.png" width=700> 
+<img сlass="big" src="/files/Pastedimage20240126140057.png"> 
+<img class="big" src="/files/Pastedimage20240126140057.png">
+  <style>
+  img.big {cursor: pointer; max-width: 150px; transition: max-width 0.5s ease;}
+  img.big:hover {max-width: 75px;}
+</style>
 </details>
+
 
 6) Добавим кнопку при нажатии на которую будет выводиться текст. Укажем "Value" (Текст, который будет отображаться на кнопке) и Variable - переменная, которая будет отправляться в "listener" (переменная, которая имеет значение последнего элемента действия/нажатия. Далее в коде познакомимся с ней поближе)
 <details>
