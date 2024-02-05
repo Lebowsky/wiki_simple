@@ -2,7 +2,7 @@
 title: DataStorage
 description: 
 published: true
-date: 2024-02-05T09:26:33.445Z
+date: 2024-02-05T09:27:17.839Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:19.215Z
@@ -20,7 +20,7 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >`hashMap.put("SQLConnectDatabase", "test1.DB")`
 >Так как указывается имя базы предполагается что можно использовать несколько баз, помимо дефолтной.
 
->### **SQLExec**
+>### <kbd>**SQLExec**</kbd>
 >`{"query": "SQL statement", "params": "parameters with delimiter"}`
 >Например:
 >```sql
