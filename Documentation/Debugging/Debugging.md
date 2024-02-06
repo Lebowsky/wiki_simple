@@ -2,8 +2,8 @@
 title: Debugging
 description: 
 published: true
-date: 2024-02-05T09:44:41.864Z
-tags: 
+date: 2024-02-06T11:14:36.636Z
+tags: консоль запросов, логирование, отладка
 editor: markdown
 dateCreated: 2024-01-25T07:43:20.903Z
 ---
