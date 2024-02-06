@@ -2,7 +2,7 @@
 title: Работа с ячейками
 description: 
 published: true
-date: 2024-02-05T14:15:32.931Z
+date: 2024-02-06T06:24:52.102Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-24T12:08:38.586Z
@@ -36,3 +36,12 @@ sss
 </details>
 
 
+<style>
+  p {
+    color: #26b72b;
+  }
+</style>
+
+<p>This text will be green. Inline styles take precedence over CSS included externally.</p>
+
+<p style="color: blue">The <code>style</code> attribute can override it, though.</p>
