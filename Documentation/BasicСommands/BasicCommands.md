@@ -2,8 +2,8 @@
 title: BasicCommands
 description: 
 published: true
-date: 2024-02-06T09:42:11.016Z
-tags: обработчик, экран, диалог, процесс, уведомления, toast, screen, handler, beep, speak, звук, речь, notification, show, event
+date: 2024-02-06T09:46:43.458Z
+tags: обработчик, экран, диалог, процесс, уведомления, toast, screen, handler, beep, speak, звук, речь, notification, show, event, runpy, функции, getjson
 editor: markdown
 dateCreated: 2024-01-25T07:43:02.141Z
 ---
