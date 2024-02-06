@@ -2,7 +2,7 @@
 title: VectorGraphics
 description: 
 published: true
-date: 2024-02-06T11:40:35.028Z
+date: 2024-02-06T13:01:07.061Z
 tags: event, события, векторная графика, карта, map
 editor: markdown
 dateCreated: 2024-01-25T07:44:04.628Z
@@ -86,7 +86,7 @@ hashMap.put("map_highlight_cells", json.dumps(color))
 ```
 
 ## Работа с картой
-- map_edit_mode** – включение режима пользовательского редактирования 
+- **map_edit_mode** – включение режима пользовательского редактирования 
 `hashMap.put("map_edit_mode", "")`
 - **map_background_picture** – установка фона – картинки. Принципы работы такие же как с картинками в [Simple UI](../GeneralFunctionsOfThePlatform/GeneralFunctionsOfThePlatform) 
 - **map_background_html** – установка в качестве картинки html на экране, по сути скриншот содержимого html. 
