@@ -2,8 +2,8 @@
 title: Debugging
 description: 
 published: true
-date: 2024-02-01T08:32:18.122Z
-tags: 
+date: 2024-02-06T11:14:36.636Z
+tags: консоль запросов, логирование, отладка
 editor: markdown
 dateCreated: 2024-01-25T07:43:20.903Z
 ---
@@ -14,8 +14,9 @@ dateCreated: 2024-01-25T07:43:20.903Z
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240122163152.png" width=700>
-<img src="/files/Pastedimage20240122163211.png" width=700> 
+<img src="/files/Pastedimage20240122163152.png" width=1100>
+<br>
+<img src="/files/Pastedimage20240122163211.png" width=1100> 
 </details>
 
 

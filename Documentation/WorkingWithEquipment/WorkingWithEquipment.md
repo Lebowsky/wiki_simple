@@ -2,8 +2,8 @@
 title: WorkingWithEquipment
 description: 
 published: true
-date: 2024-01-26T09:32:39.589Z
-tags: 
+date: 2024-02-06T13:00:45.244Z
+tags: сканер, устройства, bluetooth, tcp_ip, usb, urovo, meferi, тсд
 editor: markdown
 dateCreated: 2024-01-25T07:44:17.960Z
 ---
@@ -114,7 +114,7 @@ usb.print_usb(data, handlers)
 `from ru.travelfood.simple_ui import SimpleUtilites`
 
 - **urovo_set_lock_trigger("статус")** - блокировка/разблокировка сканера(если заблокирован, то заблокирована кнопка сканирования). Статус – истина(заблокировано), ложь (разблокировано)
-- ** urovo_open_scanner()** - открыть объект сканера (не запускает сканирование, а просто инициализирует сканер и проверяет доступность) . Эта функция должна предшествовать urovo_start_decode
+- **urovo_open_scanner()** - открыть объект сканера (не запускает сканирование, а просто инициализирует сканер и проверяет доступность) . Эта функция должна предшествовать urovo_start_decode
 - **urovo_start_decode()** - включает сканер в режим сканирования
 - **urovo_stop_decode()** - выключает режим сканирования
 - **urovo_close_scanner()**-  завершает работу со сканером
@@ -130,24 +130,4 @@ manager = Meferi().getScanManager()
 #далее работа с объектом, утилизация методов
 manager.setScanEnable(True)
 manager.keyScan(True)
-
-
-
-[[WorkingWithBarcodeScannersThroughStandardSettings]]
-[[ConnectingToExternalDevicesViaBluetoothWi-FiAndUSB]]
-
-> [!info]- ## Подключение к устройству через TCP_IP (только отправка)
-   ![[ConnectingToTheDeviceViaTCP_IP]]
-
-> [!info]- ## Подключение к устройству через USB (только отправка)
-   ![[ConnectingToTheDeviceViaUSB]]
-
-> [!info]- ## Расширенное взаимодействие с SDK некоторых устройств(Urovo, Meferi)
-   ![[EnhancedInteractionWithTheSDKofSomeDevices]]
-
-
-[[Узнать 2]]
-Стоит ли освещать "работу с POS принтерами" (https://uitxt.readthedocs.io/ru/latest/devices.html)? 
-
-=
-Пока оставить
+```

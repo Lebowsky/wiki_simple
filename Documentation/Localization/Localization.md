@@ -2,8 +2,8 @@
 title: Localization
 description: 
 published: true
-date: 2024-01-25T14:55:41.336Z
-tags: 
+date: 2024-02-06T11:33:21.745Z
+tags: локализация, json
 editor: markdown
 dateCreated: 2024-01-25T07:43:44.537Z
 ---

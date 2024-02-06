@@ -2,29 +2,39 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-02T06:53:16.734Z
-tags: 
+date: 2024-02-06T09:36:24.602Z
+tags: sql, nosql, хранение данных, быстрый старт, simplebase, sqlexec, sqlclass, sqlquery, activecv, надпись, обработчик
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
 ---
 
+## Запуск конструктора и вот это вот все
+Сюда надо будет добавить ссылки туда сюда
+
+
 ## Пример 1. Создание процесса, добавление надписи, кнопки, подключение python обработчика
+
 
 Ссылка на конструктор
 1) Создаем новый проект
 2) Необходимо создать новый процесс
+
 <details>
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240126134630.png" width=700>
-<img src="/files/Pastedimage20240126134752.png"width=700> 
+<br>
+<img src="/files/Pastedimage20240126134752.png" width=700>
+<br>
 </details>
+
 
 3) Необходимо добавить к нашему процессу экран, который у нас будет отображаться и придумаем ему имя
 <details>
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240126135020.png" width=700>
+<br>
 <img src="/files/Pastedimage20240126135127.png" width=700> 
 </details>
 
@@ -33,23 +43,29 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240126135332.png" width=700>
+<br>
 <img src="/files/Pastedimage20240126135423.png" width=700> 
 </details>
 
 5) Добавим надпись, и сделаем ее значение "Value" (текст который будет отображаться) в виде переменной "@text_example", знак @ обязательно использовать перед названием переменной.
+
 <details>
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240126135530.png" width=700>
+<br>
 <img src="/files/Pastedimage20240126135938.png" width=700> 
-<img src="/files/Pastedimage20240126140057.png" width=700> 
+<br>  
+<img сlass="big" src="/files/Pastedimage20240126140057.png"> 
 </details>
+
 
 6) Добавим кнопку при нажатии на которую будет выводиться текст. Укажем "Value" (Текст, который будет отображаться на кнопке) и Variable - переменная, которая будет отправляться в "listener" (переменная, которая имеет значение последнего элемента действия/нажатия. Далее в коде познакомимся с ней поближе)
 <details>
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240126140200.png" width=700>
+<br>
 <img src="/files/Pastedimage20240126140653.png" width=700> 
 </details>
 
@@ -61,7 +77,9 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <summary>Фотогайд</summary>
 <br>
 <img src="/files/Pastedimage20240126141145.png" width=700>
+<br>
 <img src="/files/Pastedimage20240126141211.png" width=700> 
+<br>
 <img src="/files/Pastedimage20240126141239.png" width=700> 
 </details>
 
@@ -98,7 +116,7 @@ def input_example(hashMap, _files=None, _data=None):
 <details>
 <summary>Фотогайд</summary>
 <br>
-<img src="/files/Pastedimage20240126151049.png" width=700>
+<img src="/files/Pastedimage20240126151049.png" width=1100>
 </details>
 
 11) Теперь у нас в приложении появился процесс "Пример 1" при клике на него мы увидим, что переменная "@text_example" заполнилась, значение, которое мы передали с помощью `hashMap.put("text_example", "Этим текстом мы наполняем переменную в TextView")`. При клике на кнопку, будет выводиться текст, который мы задали с помощью 
@@ -111,7 +129,9 @@ def input_example(hashMap, _files=None, _data=None):
 <summary>Результаты</summary>
 <br>
 <img src="/files/Pastedimage20240126151642.png" width="400">
+<br>
 <img src="/files/Pastedimage20240126151707.png" width="400"> 
+<br>
 <img src="/files/Pastedimage20240126151819.png" width="400"> 
 </details>
 
@@ -162,7 +182,7 @@ def input_simplebase(hashMap,_files=None,_data=None):
 ```
 
 4) Результат
-![Pastedimage20240129160228.png](/files/Pastedimage20240129160228.png =350x)
+[![Pastedimage20240129160228.png](/files/Pastedimage20240129160228.png =350x)](/files/Pastedimage20240129160228.png)
 
 ## Пример 3. Добавление товара в SQL базу. Вывод информации о товаре с помощью сканирования его штрихкода
 
@@ -178,7 +198,8 @@ def input_simplebase(hashMap,_files=None,_data=None):
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
-<img src="/files/Pastedimage20240129112554.png" width="700">  
+<img src="/files/Pastedimage20240129112554.png" width="900">
+<br>  
 <img src="/files/Pastedimage20240129112613.png" width="700">  
 </details>  
 
@@ -196,8 +217,10 @@ def init_on_start(hashMap,_files=None,_data=None):
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
-<img src="/files/Pastedimage20240129111614.png" width="700">  
+<img src="/files/Pastedimage20240129111614.png" width="700">
+<br>  
 <img src="/files/Pastedimage20240129111638.png" width="700">
+<br>
 <img src="/files/Pastedimage20240129111657.png" width="700">
 </details>
 
@@ -233,6 +256,7 @@ def input_save(hashMap,_files=None,_data=None):
 <summary>Фотогайд</summary>  
 <br>  
 <img src="/files/Pastedimage20240129114933.png" width="700">
+<br>
 <img src="/files/Pastedimage20240129115057.png" width="700">
 </details>
 
@@ -241,8 +265,11 @@ def input_save(hashMap,_files=None,_data=None):
 <summary>Фотогайд</summary>  
 <br>  
 <img src="/files/Pastedimage20240129115447.png" width="700">
+<br>
 <img src="/files/Pastedimage20240129115500.png" width="700">
+<br>
 <img src="/files/Pastedimage20240129115533.png" width="700">
+<br>
 <img src="/files/Pastedimage20240129115550.png" width="700">
 </details>
 
@@ -275,6 +302,7 @@ def scan_barcode(hashMap,_files=None,_data=None):
 <summary>Результат</summary>  
 <br>  
 <img src="/files/Pastedimage20240129120518.png" width="400">
+<br>
 <img src="/files/Pastedimage20240129122638.png" width="400">
 </details>
 
@@ -285,10 +313,11 @@ def scan_barcode(hashMap,_files=None,_data=None):
 1) SimpleBase база данные, куда мы будем добавлять значения с помощью полей ввода и сохранять по нажатию кнопки. Подробнее про [SimpleBase](../DataStorage/DataStorage)
 2) ActiveCV процесс, в котором при наведении на штрихкод, будет проверяться его значение в базе данных и если данные о продукте добавлены в базу данных, то будем выводить название и кол-во товара в реальном времени
 
-### Шаги реализации
+**Шаги реализации**
 
 1) Создание базы данных мы будем производить как в "Примере 2"
-![Pastedimage20240201173232.png](/files/Pastedimage20240201173232.png =650x)
+[![Pastedimage20240201173232.png](/files/Pastedimage20240201173232.png =850x)](/files/Pastedimage20240201173232.png)
+
 
 ```python
 def input_bd(hashMap,_files=None,_data=None):  
@@ -322,4 +351,4 @@ def object_detect(hashMap,_files=None,_data=None):
 Подробнее информация [тут](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVisionAndAugmentedRealityActiveCV)
 
 Результат
-![Pastedimage20240201181332.png](/files/Pastedimage20240201181332.png ==350x)
+[![Pastedimage20240201181332.png](/files/Pastedimage20240201181332.png =350x)](/files/Pastedimage20240201181332.png)
