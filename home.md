@@ -2,7 +2,7 @@
 title: home
 description: 
 published: true
-date: 2024-02-06T09:14:30.052Z
+date: 2024-02-06T09:14:53.431Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-24T11:22:25.515Z
@@ -14,7 +14,7 @@ dateCreated: 2024-01-24T11:22:25.515Z
 
 Если Вы здесь впервые, советуем начать свой путь с вкладки "[Быстрый старт](../Documentation/FastStart/FastStart)"
 
-Для последующего более глубокого понимания, советуем ознакомиться с вкладками
+Для последующего более глубокого понимания, советуем ознакомиться с разделами:
 - [Переменные](../Documentation/Variables/Variables)
 - [Экраны](../Documentation/Screens/Screens)
 - [Хранение данных](../Documentation/DataStorage/DataStorage)
