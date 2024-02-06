@@ -2,8 +2,8 @@
 title: ComputerVisionAndAugmentedRealityActiveCV
 description: 
 published: true
-date: 2024-02-05T09:24:49.891Z
-tags: 
+date: 2024-02-06T10:50:05.067Z
+tags: activecv, дополненная реальность, ocr, распознование, runcv, сканер
 editor: markdown
 dateCreated: 2024-01-25T07:43:17.515Z
 ---
