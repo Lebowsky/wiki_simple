@@ -2,8 +2,8 @@
 title: Web-socket
 description: 
 published: true
-date: 2024-01-25T14:56:54.413Z
-tags: 
+date: 2024-02-06T11:40:54.185Z
+tags: веб-сокет, web-socket
 editor: markdown
 dateCreated: 2024-01-25T07:44:11.346Z
 ---
