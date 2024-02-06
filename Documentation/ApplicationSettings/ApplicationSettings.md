@@ -2,8 +2,8 @@
 title: ApplicationSettings
 description: 
 published: true
-date: 2024-02-06T09:38:28.580Z
-tags: передача настроек через файл или qr-код, off-line, настройка, настройки
+date: 2024-02-06T09:38:37.210Z
+tags: передача настроек через файл или qr-код, off-line, настройки
 editor: markdown
 dateCreated: 2024-01-24T15:01:58.484Z
 ---
