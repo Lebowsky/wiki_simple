@@ -2,8 +2,8 @@
 title: GeneralFunctionsOfThePlatform
 description: 
 published: true
-date: 2024-02-05T09:46:02.741Z
-tags: 
+date: 2024-02-06T11:25:35.389Z
+tags: диалог, уведомления, toast, изображения, таблицы, карточки, списки, плитки, корзина, современное поле ввода, модальный экран, пин-код
 editor: markdown
 dateCreated: 2024-01-25T07:43:31.012Z
 ---
