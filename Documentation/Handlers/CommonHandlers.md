@@ -2,8 +2,8 @@
 title: CommonHandlers
 description: 
 published: true
-date: 2024-02-05T09:47:23.030Z
-tags: 
+date: 2024-02-06T11:32:53.035Z
+tags: обработчик, handler, event, события
 editor: markdown
 dateCreated: 2024-01-25T07:43:39.402Z
 ---
