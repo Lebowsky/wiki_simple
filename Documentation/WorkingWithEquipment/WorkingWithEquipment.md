@@ -2,8 +2,8 @@
 title: WorkingWithEquipment
 description: 
 published: true
-date: 2024-02-05T07:06:34.734Z
-tags: 
+date: 2024-02-06T11:42:38.922Z
+tags: сканер, устройства, bluetooth, tcp_ip, usb, urovo, meferi, тсд
 editor: markdown
 dateCreated: 2024-01-25T07:44:17.960Z
 ---
