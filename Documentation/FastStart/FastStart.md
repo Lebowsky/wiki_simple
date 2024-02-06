@@ -2,8 +2,8 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-06T09:33:06.847Z
-tags: sql, nosql, хранение данных
+date: 2024-02-06T09:33:28.413Z
+tags: sql, nosql, хранение данных, быстрый старт
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
 ---
