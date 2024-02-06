@@ -2,8 +2,8 @@
 title: Screens
 description: 
 published: true
-date: 2024-02-05T09:49:39.992Z
-tags: 
+date: 2024-02-06T11:39:35.066Z
+tags: обработчик, экран, screen, handler, beep, звук, речь, сканер, изображения, elements, видимость элементов, штрихкод, таймер, файлы, awesome-шрифт, плавающие кнопки, voice, контейнеры, авторизация
 editor: markdown
 dateCreated: 2024-01-25T07:43:52.851Z
 ---
