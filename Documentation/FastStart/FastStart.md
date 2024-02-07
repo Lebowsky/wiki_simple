@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-07T09:02:22.365Z
+date: 2024-02-07T09:42:56.656Z
 tags: sql, nosql, хранение данных, быстрый старт, simplebase, sqlexec, sqlclass, sqlquery, activecv, надпись, обработчик
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -150,17 +150,17 @@ def input_example(hashMap, _files=None, _data=None):
 ## Пример 2. Работа с NoSQL(SimpleBase)
 
 Реализовать будем с помощью SimpleBase, подробнее прочитать можно [тут](../DataStorage/DataStorage).
-1) Создадим процесс и добавим в него новый экран. Экран у нас будет содержать: 
-- Поле для ввода новой информации
+1) Создадим процесс и добавим в него новый экран. Экран у нас будет содержать контейнер(LinearLayout), контейнер мы наполним следующими элементами: 
+- Поле для ввода новой информации. EditTextText, Value - @name_object, Variable - name_object
 ![Pastedimage20240129152240.png](/files/Pastedimage20240129152240.png =650x)
-- Поле для вывода данных из БД
+- Поле для вывода данных из БД. TextView, Value - @names_elements
 ![Pastedimage20240129152310.png](/files/Pastedimage20240129152310.png =650x)
-- Кнопку сохранения новой информации
+- Кнопку сохранения новой информации. Button, Value - Добавить, Variable - btn_add
 ![Pastedimage20240129152350.png](/files/Pastedimage20240129152350.png =650x)
-- Кнопку полной очистки БД
+- Кнопку полной очистки БД. Button, Value - Очистить БД, Variable - btn_delete
 ![Pastedimage20240129152420.png](/files/Pastedimage20240129152420.png =650x)
 
-2) Так же к нашему экрану, необходимо добавить обработчик, который будет обрабатывать при открытии экрана (OnStart). К нему мы привяжем вывод информации из БД в переменную "names_elements"
+2) Так же к нашему экрану, необходимо добавить обработчик(Handlers), который будет обрабатывать при открытии экрана (OnStart). К нему мы привяжем вывод информации из БД в переменную "names_elements"
   ! **ВАЖНО**
   OnStart отрабатывает не только в тот момент, когда мы открыли экран, но и после каждого события OnInput. На OnInput мы сделаем привязку нажатия на клавиши "Добавить" и "Очистить БД". При нажатии на клавишу у нас будет отрабатывать логика, которую мы пропишем в OnInput и после этого автоматически отработает логика, которая прописана в OnStart.
   Эту логику можно отключить с помощью `hashMap.put("noRefresh", "")` подробнее [тут](../Screens/Screens)
@@ -206,7 +206,10 @@ def input_simplebase(hashMap,_files=None,_data=None):
 
 **Шаги реализации**
 
-1) Добавляем "Общий обработчик", который будет отрабатывать при старте приложения и создавать SQL таблицу
+1) Добавляем "Общий обработчик"(Common handlers), который будет отрабатывать при старте приложения и создавать SQL таблицу
+- Event - onLaunch
+- Action - run
+- Method - init_on_start(Имя обработчика)
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
@@ -225,7 +228,12 @@ def init_on_start(hashMap,_files=None,_data=None):
 - SQLConnectDatabase - подключение к базе данных, если указать пустую строку то будет БД по умолчанию “SimpleWMS”.
 - SQLExec - Запрос на изменение БД, создаем новую таблицу
 
-3) Создадим процесс для добавление данных о товаре и добавим экран для него. На экране разместим, строки для ввода данных и кнопку для сохранения данных.
+3) Создадим процесс для добавление данных о товаре и добавим экран для него. На экране разместим контейнер LinearLayout, в контейнер добавим следующие элементы:
+- TextView(Текстовая плашка), Value - "Введите название"
+- EditTextText(Поле ввода), Value - @name_good, Variable - name_good
+- TextView(Текстовая плашка), Value - "Введите штрихкод"
+- EditTextText(Поле ввода), Value - @barcode_good, Variable - barcode_good
+- Button(кнопка), Value - "Сохранить данные", Variable - btn_save
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
@@ -236,7 +244,11 @@ def init_on_start(hashMap,_files=None,_data=None):
 <img src="/files/Pastedimage20240129111657.png" width="700">
 </details>
 
-4) Добавим обработчик для обработки события при нажатии на кнопку "Сохранить"
+4) Добавим(Add) обработчик(Handlers) для обработки события при нажатии на кнопку "Сохранить".
+- Event - onInput
+- Action - run
+- Type - python
+- Method - input_save
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
