@@ -2,12 +2,13 @@
 title: ConstructionGuide
 description: 
 published: true
-date: 2024-02-07T14:09:43.869Z
+date: 2024-02-07T14:14:57.995Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-07T12:03:40.417Z
 ---
 
+# Основные
 ## Common
 
 ## Processes
@@ -55,4 +56,5 @@ dateCreated: 2024-02-07T12:03:40.417Z
 - Mediafilekey - Ключ по которому мы будем обращаться к данному медиафайлу
 ## Common handlers
 [![Pastedimage20240207170905.png](/files/Pastedimage20240207170905.png =700x)](/files/Pastedimage20240207170905.png)
-
+Система порождает и отлавливает множество событий которые имеют теперь единую точку входа и единый формат обработчиков.
+Подробнее про общие обработчики можно прочитать [тут](../Handlers/CommonHandlers)
