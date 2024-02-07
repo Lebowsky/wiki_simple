@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-07T09:46:51.897Z
+date: 2024-02-07T10:04:27.019Z
 tags: sql, nosql, хранение данных, быстрый старт, simplebase, sqlexec, sqlclass, sqlquery, activecv, надпись, обработчик
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -346,6 +346,14 @@ def scan_barcode(hashMap,_files=None,_data=None):
 **Шаги реализации**
 
 1) Создание базы данных мы будем производить как в "Примере 2"
+На экран добавим контейнер(LinearLayout) заполним его:
+- TextView(Текстовое поле), Value - Имя элемента
+- EditTextText(Поле ввода), Value - @name_element, Variable - name_element
+- TextView(Текстовое поле), Value - Штрихкод
+- EditTextText(Поле ввода), Value - @barcode, Variable - barcode
+- TextView(Текстовое поле), Value - Количество элементов
+- EditTextText(Поле ввода), Value - @amount, Variable - amount
+- Button(Кнопка), Value - Сохранить, Variable - btn_save
 [![Pastedimage20240201173232.png](/files/Pastedimage20240201173232.png =850x)](/files/Pastedimage20240201173232.png)
 
 
