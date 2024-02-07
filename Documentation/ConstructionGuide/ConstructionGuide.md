@@ -2,7 +2,7 @@
 title: ConstructionGuide
 description: 
 published: true
-date: 2024-02-07T14:14:57.995Z
+date: 2024-02-07T14:34:37.319Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-07T12:03:40.417Z
@@ -10,7 +10,16 @@ dateCreated: 2024-02-07T12:03:40.417Z
 
 # Основные
 ## Common
-
+[![Pastedimage20240207171641.png](/files/Pastedimage20240207171641.png =700x)](/files/Pastedimage20240207171641.png)
+- Configuration-name - Имя конфигурации
+- Version - Версия продукта
+- Description - Описание
+- Enable event service - Включить сервис событий
+- Stop service on application exit - Останавливать сервис при закрытии приложения
+- Intent broadcast name - Пописка на событие, имя
+- Intent broadcast variable - Подписка на событие, переменная
+- URL face recognition host - URL распознования лиц
+- Keyboard reading in Main menu - Чтение клавиатуры в главном меню
 ## Processes
 Во вкладке процессы происходит добавление основного внешнего контента в приложения. 
 Существует 2 вида процессов, которые вы можете добавить
@@ -58,3 +67,15 @@ dateCreated: 2024-02-07T12:03:40.417Z
 [![Pastedimage20240207170905.png](/files/Pastedimage20240207170905.png =700x)](/files/Pastedimage20240207170905.png)
 Система порождает и отлавливает множество событий которые имеют теперь единую точку входа и единый формат обработчиков.
 Подробнее про общие обработчики можно прочитать [тут](../Handlers/CommonHandlers)
+
+# Выпадающие меню
+[![Pastedimage20240207172814.png](/files/Pastedimage20240207172814.png =700x)](/files/Pastedimage20240207172814.png)
+- New Project - Создание нового продукта
+- Open Project - Открытие продукта из имеющихся
+- Save Project - Сохранение изменений в проекте
+- QR Settings - Открывает штрихкод, в котором хранится информация для обновления изменений в приложении.[Подробнее](../ApplicationSettings/ApplicationSettings)
+- Preview - Показывает как будет выглядить приложение
+- SQL Query - Окно для SQL запросов к БД
+- Send request - Отправка различных запросов к устройству по IP address
+- Search Elements - Поиск элементов по ключевым словам
+- Login - Авторизация в конструктор, если присутствует
