@@ -2,12 +2,13 @@
 title: ConstructionGuide
 description: 
 published: true
-date: 2024-02-07T14:12:48.890Z
+date: 2024-02-07T14:14:57.995Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-07T12:03:40.417Z
 ---
 
+# Основные
 ## Common
 
 ## Processes
