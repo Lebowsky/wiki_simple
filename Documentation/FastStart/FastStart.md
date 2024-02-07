@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-07T08:56:55.930Z
+date: 2024-02-07T09:02:22.365Z
 tags: sql, nosql, хранение данных, быстрый старт, simplebase, sqlexec, sqlclass, sqlquery, activecv, надпись, обработчик
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -124,7 +124,7 @@ def input_example(hashMap, _files=None, _data=None):
     return hashMap
 ```
 
-11) Теперь нам необходимо в приложении на телефоне отсканировать QR-код из конструктора и после этого перезагрузить приложение
+11) Теперь нам необходимо в приложении на телефоне отсканировать QR-код из конструктора и после этого перезагрузить приложение. В настройках приложения на телефоне выбрать "QR-настройки", а в конструкторе выбрать вкладку "QR settings"
 <details>
 <summary>Фотогайд</summary>
 <br>
