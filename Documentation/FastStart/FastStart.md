@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-07T08:47:23.012Z
+date: 2024-02-07T08:48:25.857Z
 tags: sql, nosql, хранение данных, быстрый старт, simplebase, sqlexec, sqlclass, sqlquery, activecv, надпись, обработчик
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -50,7 +50,7 @@ dateCreated: 2024-01-26T10:34:57.952Z
 <img src="/files/Pastedimage20240126135423.png" width=700> 
 </details>
 
-5) Добавим надпись, и сделаем ее значение "Value" (текст который будет отображаться) в виде переменной "@text_example", знак @ обязательно использовать перед названием переменной.
+5) Добавим надпись(TextView), и сделаем ее значение "Value" (текст который будет отображаться) в виде переменной "@text_example", знак @ обязательно использовать перед названием переменной.
 
 <details>
 <summary>Фотогайд</summary>
