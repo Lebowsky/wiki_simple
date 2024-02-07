@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-07T09:42:56.656Z
+date: 2024-02-07T09:45:38.484Z
 tags: sql, nosql, хранение данных, быстрый старт, simplebase, sqlexec, sqlclass, sqlquery, activecv, надпись, обработчик
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -275,7 +275,7 @@ def input_save(hashMap,_files=None,_data=None):
 <img src="/files/Pastedimage20240129114423.png" width="400">
 </details>
 
-6) Можно проверить создалась ли у нас таблица в БД и заполнилась ли она. В конструкторе необходимо выбрать "SQL Query" и ввести туда запрос.
+6) Можно проверить создалась ли у нас таблица в БД и заполнилась ли она. В конструкторе необходимо выбрать "SQL Query" и ввести туда SQL запрос.
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
@@ -285,6 +285,8 @@ def input_save(hashMap,_files=None,_data=None):
 </details>
 
 7) Теперь нам необходимо создать процесс для Сканирование штрихкода и добавить экран где у нас будет находиться сканер штрихкодов (barcode) и текстовое поле для вывода информации.
+- barcode, Variable - barcode
+- В LinearLayout, добавим TextView(Текстовое поле), Value - @info_about_good
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
