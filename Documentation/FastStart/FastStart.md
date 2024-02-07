@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-07T09:45:38.484Z
+date: 2024-02-07T09:46:51.897Z
 tags: sql, nosql, хранение данных, быстрый старт, simplebase, sqlexec, sqlclass, sqlquery, activecv, надпись, обработчик
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -299,7 +299,11 @@ def input_save(hashMap,_files=None,_data=None):
 <img src="/files/Pastedimage20240129115550.png" width="700">
 </details>
 
-8) Необходимо добавить обработчик, который будет отрабатывать при сканирование товара и заполнять данные для "@info_about_good".
+8) Необходимо добавить обработчик(Handlers), который будет отрабатывать при сканирование товара и заполнять данные для "@info_about_good".
+- Event - onInput
+- Action - run
+- Type - python
+- Method - scan_barcode
 <details>  
 <summary>Фотогайд</summary>  
 <br>  
