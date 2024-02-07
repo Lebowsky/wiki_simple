@@ -2,7 +2,7 @@
 title: ApplicationSettings
 description: 
 published: true
-date: 2024-02-06T09:38:37.210Z
+date: 2024-02-07T11:18:03.633Z
 tags: передача настроек через файл или qr-код, off-line, настройки
 editor: markdown
 dateCreated: 2024-01-24T15:01:58.484Z
@@ -48,6 +48,28 @@ dateCreated: 2024-01-24T15:01:58.484Z
 **hardwarescan** – отключение кнопки сканирование камерой для экранов со штрих-кодом (для аппаратного сканера)
 **conf_id** – ID конфигурации для запросов вида `/get_configuration?confid=…`
 **configuration** - загрузка текста конфигурации. Можно передать в настройках конфигурацию (через файл), она будет сразу же загружена
+Пример:
+```JSON
+{
+  "onlineURL": "http://192.168.1.102:4444/TestSimple",
+  "onlineUser": "usr",
+  "onlineCode": "12",
+  "onlinePass": "",
+  "backendURL": "http://5.4.3.1:2000",
+  "backendUser": "user1",
+  "offSettings":false,
+  "offChat":false,
+  "offToDo":true,
+  "connection_limit":"5",
+  "offlineMode": true,
+  "beep": true,
+  "torch": true,
+  "oDataURL": "",
+  "gps": true,
+  "hardwarescan": false,
+  "conf_id": "1"
+}
+```
 
 Передача через QR-код:
 <details>
@@ -58,6 +80,8 @@ dateCreated: 2024-01-24T15:01:58.484Z
 <img src="/files/Pastedimage20240118100053.png" width="400"> 
 <br>Необходимо навести камеру на QR-код.
 </details>
+
+Помимо QR-код можно передать весь файл конфигурации в виде ui файла и запустить его на устройстве.
 
 ## Передача конфигурации на устройство в режиме OFF-line через прямой запрос на сервер
 При работе через веб-сервер на стороне учетной системы, каждый раз когда скачивается конфигурация, она сохраняется на мобильном устройстве. При этом в настройках можно увидеть дату последнего скачивания (last update)
