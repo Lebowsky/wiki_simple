@@ -2,13 +2,13 @@
 title: ConstructionGuide
 description: 
 published: true
-date: 2024-02-07T14:34:37.319Z
+date: 2024-02-08T06:36:59.303Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-07T12:03:40.417Z
 ---
 
-# Основные
+# Основные элементы
 ## Common
 [![Pastedimage20240207171641.png](/files/Pastedimage20240207171641.png =700x)](/files/Pastedimage20240207171641.png)
 - Configuration-name - Имя конфигурации
