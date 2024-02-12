@@ -2,7 +2,7 @@
 title: Screens
 description: 
 published: true
-date: 2024-02-12T12:33:50.449Z
+date: 2024-02-12T12:34:07.450Z
 tags: обработчик, экран, screen, handler, beep, звук, речь, сканер, изображения, elements, видимость элементов, штрихкод, таймер, файлы, awesome-шрифт, плавающие кнопки, voice, контейнеры, авторизация
 editor: markdown
 dateCreated: 2024-01-25T07:43:52.851Z
@@ -115,7 +115,7 @@ def tst_input(hashMap,_files=None,_data=None):
     
     return hashMap 
 ```
-[![Pastedimage20240212152034.png](/files/Pastedimage20240212152034.png =350x)](/files/Pastedimage20240212152034.png)
+[![Pastedimage20240212152034.png](/files/Pastedimage20240212152034.png =300x)](/files/Pastedimage20240212152034.png)
 # Общие элементы экранов
 ## Сканирование штрихкода
 Если на экране требуется распознавание штрихкода, то необходимо добавить на экран элемент «Штрих-код» и указать переменную(variable), которую будет воспринимать hashMap, в которую он будет записываться по факту сканирования.
