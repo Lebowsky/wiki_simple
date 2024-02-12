@@ -2,7 +2,7 @@
 title: Screens
 description: 
 published: true
-date: 2024-02-06T11:39:35.066Z
+date: 2024-02-12T12:34:07.450Z
 tags: обработчик, экран, screen, handler, beep, звук, речь, сканер, изображения, elements, видимость элементов, штрихкод, таймер, файлы, awesome-шрифт, плавающие кнопки, voice, контейнеры, авторизация
 editor: markdown
 dateCreated: 2024-01-25T07:43:52.851Z
@@ -90,6 +90,32 @@ element - переменная элемента (переменная=идент
 Команда noRefresh, отключает перерисовку элементов - т.е. обновление экрана при выполнении обработчика. Пример:
 `hashMap.put("noRefresh", "")`
 Отключает вызов onstart после oninput, лучше класть в oninput, автоматически удаляется после единичного срабатывания
+
+# Кастомизация интерфейса
+Имеется возможность кастомизировать элементы так как вам хочется, для получения любого элемента интерфейса, выведенного на экране, включая контейнеры используется симпловский метод getView("ИД"), где ИД - переменная элемента. Для изменения элемента используется библиотека [GradientDrawable](https://developer.android.com/reference/android/graphics/drawable/GradientDrawable)
+```Python
+def tst_input(hashMap,_files=None,_data=None):
+    from ru.travelfood.simple_ui import ImportUtils as iuClass
+    from android.graphics.drawable import GradientDrawable
+    from android.graphics import Color
+    
+
+    v = iuClass.getView("btn_tst")
+    v.setTextColor(-65536)
+
+    shape =  GradientDrawable()
+    shape.setShape(GradientDrawable.OVAL)
+    shape.setColor(Color.WHITE)
+    shape.setStroke(40, Color.WHITE)
+
+
+    v.setBackground(shape)
+
+    hashMap.put("noRefresh","")
+    
+    return hashMap 
+```
+[![Pastedimage20240212152034.png](/files/Pastedimage20240212152034.png =300x)](/files/Pastedimage20240212152034.png)
 # Общие элементы экранов
 ## Сканирование штрихкода
 Если на экране требуется распознавание штрихкода, то необходимо добавить на экран элемент «Штрих-код» и указать переменную(variable), которую будет воспринимать hashMap, в которую он будет записываться по факту сканирования.
