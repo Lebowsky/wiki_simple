@@ -2,7 +2,7 @@
 title: LibraryPython
 description: 
 published: true
-date: 2024-02-12T14:13:21.331Z
+date: 2024-02-12T14:13:34.080Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-12T13:15:10.920Z
@@ -11,7 +11,7 @@ dateCreated: 2024-02-12T13:15:10.920Z
 # Подключение Python библиотек
 Существует возможность подключить любую python библиотеку
 1) Скачать python библиотеку в формате whl
-[![Pastedimage20240212164320.png](/files/Pastedimage20240212164320.png =350x)](/files/Pastedimage20240212164320.png)
+[![Pastedimage20240212164320.png](/files/Pastedimage20240212164320.png =650x)](/files/Pastedimage20240212164320.png)
 2) Необходимо добавить этот файл в медиафайлы в конструкторе, сделаем key == названию библиотеки
 3) Необходимо в обработчик вставить такой код:
 ```Python
