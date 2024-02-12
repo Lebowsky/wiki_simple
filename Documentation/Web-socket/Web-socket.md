@@ -2,7 +2,7 @@
 title: Web-socket
 description: 
 published: true
-date: 2024-02-06T11:40:54.185Z
+date: 2024-02-12T14:26:52.469Z
 tags: веб-сокет, web-socket
 editor: markdown
 dateCreated: 2024-01-25T07:44:11.346Z
@@ -10,7 +10,10 @@ dateCreated: 2024-01-25T07:44:11.346Z
 
 # Web-socket
 
-**ConnectWebSocket** – соединиться с веб сокетом. Пример: `hashMap.put("ConnectWebSocket","ws://192.168.1.41:8765")`
+**ConnectWebSocket** – соединиться с веб сокетом.
+```Python
+hashMap.put("ConnectWebSocket","ws://192.168.1.41:8765")
+```
 
 **WSOnConnectHandlers** – подключить обработчики события успешного соединения с сокетом.
 Пример: 
