@@ -2,7 +2,7 @@
 title: HandlerManagementCommands
 description: 
 published: true
-date: 2024-02-12T08:40:08.670Z
+date: 2024-02-12T08:40:34.497Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-25T07:43:05.534Z
@@ -22,7 +22,12 @@ hashMap.put('RunEvent', json.dumps([{"action": "run", "type": "python", "method"
 **BreakHandlers** - прерывание выполнения массива обработчиков. Может быть вызвана в каком то обработчике массива (например, проверка ввода) чтобы прервать весь остальной массив 
 
 ``` python
-hashMap.put('RunEvent', json.dumps([{"action": "run", "type": "python", "method": "post_online"}])
+hashMap.put('BreakHandlers', '')
 ```
 
 **BreakHandlersIfError**, без параметра – прерывает дальнейшее выполнение массива обработчиков если в текущем обработчике ошибка
+
+
+``` python
+hashMap.put('BreakHandlersIfError', '')
+```
