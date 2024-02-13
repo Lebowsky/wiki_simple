@@ -2,7 +2,7 @@
 title: BasicCommands
 description: 
 published: true
-date: 2024-02-13T11:28:46.135Z
+date: 2024-02-13T11:47:30.106Z
 tags: обработчик, экран, диалог, процесс, уведомления, toast, screen, handler, beep, speak, звук, речь, notification, show, event, runpy, функции, getjson
 editor: markdown
 dateCreated: 2024-01-25T07:43:02.141Z
@@ -94,7 +94,21 @@ hashMap.put("StartMediaGallery", "photo_from_camera")
 hashMap.put("StartCaptureCamera","photo_from_camera")  
 ```
 **SetTitle**, параметра: заголовок экрана - переопределение заголовка экрана 
+```Python
+hashMap.put("SetTitle","Новый заголовок")
+```
 **PrintPreview** ,параметр:html-строка - запуск окна с предпросмотром html. Для например, печатных форм, которые из этого окна можно отправить на принтер 
+```Python
+def test_html_input(hashMap, _files=None, _data=None):
+    test_template = Template("""{% for user in users -%}
+    <p>Привет, {{ user }}!</p>
+    {% endfor %}""")
+    res = test_template.render(users=["admin", "Alex", "prog1C"])
+
+    hashMap.put("PrintPreview", res)
+
+    return hashMap
+```
 **PrintService** команда запуска PDF-документа на печать встроенной службой печати.
 [Подробнее](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVisionAndAugmentedRealityActiveCV)
 
