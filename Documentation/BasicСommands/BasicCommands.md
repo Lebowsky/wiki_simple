@@ -2,7 +2,7 @@
 title: BasicCommands
 description: 
 published: true
-date: 2024-02-13T12:57:46.781Z
+date: 2024-02-13T13:13:25.050Z
 tags: обработчик, экран, диалог, процесс, уведомления, toast, screen, handler, beep, speak, звук, речь, notification, show, event, runpy, функции, getjson
 editor: markdown
 dateCreated: 2024-01-25T07:43:02.141Z
@@ -10,13 +10,78 @@ dateCreated: 2024-01-25T07:43:02.141Z
 
 # Основные команды
 ## Экраны, диалоги и процессы
-- **ShowScreen** – команда переключения экрана. В переменную передается точное название запускаемого экрана. Экраны запускаются в рамках одного процесса, то есть он должен присутствовать в процессе в видимом или невидимом виде. В случае отсутствия система выдаст ошибку. Переменные при этом сохраняются между экранами. `hashMap.put("ShowScreen", "Процесс 1")`
+- **ShowScreen** – команда переключения экрана. В переменную передается точное название запускаемого экрана. Экраны запускаются в рамках одного процесса, то есть он должен присутствовать в процессе в видимом или невидимом виде. В случае отсутствия система выдаст ошибку. Переменные при этом сохраняются между экранами. 
+	```Python
+	hashMap.put("ShowScreen", "Процесс 1")
+	```
 - **BackScreen** – Возврат на предыдущий экран, если вызов был с ShowScreen. 
-	`hashMap.put("BackScreen", "")`
+	```Python
+  hashMap.put("BackScreen", "")
+  ```
 - **ShowDialog** – команда вызова модального диалога в стандартном виде (визуально отличается от StartScreen). Диалог может содержать поля ввода и другие отображаемые элементы контейнера. При нажатии ОК возникает событие onResult и заполняются переменные полей ввода. 
+	```Python
+  hashMap.put("ShowDialog", "")
+  ```
 - **ShowDialogLayout**, <JSON-структура котнейнера> - определяет содержимое окна диалога. Используется совместно с командой ShowDialog 
+	```Python
+      layout = {
+            "Value": "",
+            "Variable": "",
+            "type": "LinearLayout",
+            "weight": "0",
+            "height": "match_parent",
+            "width": "match_parent",
+            "orientation": "vertical",
+            "Elements": [
+                {
+                    "type": "TextView",
+                    "height": "wrap_content",
+                    "width": "match_parent",
+                    "weight": "0",
+                    "Value": "Имя",
+                    "Variable": ""
+                },
+                {
+                    "type": "EditTextText",
+                    "height": "wrap_content",
+                    "width": "match_parent",
+                    "weight": "0",
+                    "Value": "",
+                    "Variable": "name"
+                },
+                {
+                    "type": "TextView",
+                    "height": "wrap_content",
+                    "width": "match_parent",
+                    "weight": "0",
+                    "Value": "Должность",
+                    "Variable": ""
+                },
+                {
+                    "type": "EditTextText",
+                    "height": "wrap_content",
+                    "width": "match_parent",
+                    "weight": "0",
+                    "Value": "",
+                    "Variable": "position"
+                }
+            ],
+            "BackgroundColor": "",
+            "StrokeWidth": "",
+            "Padding": ""
+        }
+    
+
+    hashMap.put("ShowDialogLayout",json.dumps(layout,ensure_ascii=False))
+    hashMap.put("ShowDialog","")
+  ```
+  [![Pastedimage20240213161248.png](/files/Pastedimage20240213161248.png =350x)](/files/Pastedimage20240213161248.png)
+  
 - **ShowDialogStyle**, `{"title": "заголовок","yes": "кнопка Да","no": "кнопка Нет"}`
 	 Переопределяет заголовок и кнопки диалога 
+   ```Python
+   hashMap.put("ShowDialogStyle", '{"title": "Авторизируйтесь", "yes": "Войти", "no": "Отмена"}')
+   ```
 - **StartScreen** – запуск обычного экрана в режиме модального диалога, но как обычный экран. Отличается от команды ShowDialog внешним видом и тем, что это полноценный экран Т.е. это экран который появляется поверх экрана с кнопками «Ок/Отмена» внизу и ожидает успешного или неуспешного завершения диалога. В случае успешного завершения возникает событие ввода 
 - **StartProcess** или **RunNewProcess**- запуск нового процесса в новом окне с закрытием текущего, т.е. без возможности возврата на текущий процесс. Локальные переменные сохраняются. В качестве параметра передается имя запускаемого процесса. 
 - **StartProcessHashMap** - запуск нового процесса в новом окне с возможностью возврата на текущий процесс (т.е. текущий процесс остается на том же месте). Локальные переменные сохраняются. В качестве параметра передается имя запускаемого процесса.
