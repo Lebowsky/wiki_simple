@@ -2,7 +2,7 @@
 title: BasicCommands
 description: 
 published: true
-date: 2024-02-13T10:07:04.251Z
+date: 2024-02-13T10:09:07.753Z
 tags: обработчик, экран, диалог, процесс, уведомления, toast, screen, handler, beep, speak, звук, речь, notification, show, event, runpy, функции, getjson
 editor: markdown
 dateCreated: 2024-01-25T07:43:02.141Z
@@ -75,6 +75,9 @@ hashMap.put("getJSONScreen","")
 ```
 **setJSONScreen** применяет измененную структуру экрана
 **getJSONConfiguration** - считывает в переменную _configuration текущую конфигурацию 
+```Python
+hashMap.put("getJSONConfiguration","")
+```
 **setJSONConfiguration** - применяет измененную конфигурацию немедленно.
 
 ## Прочие команды Экранов
