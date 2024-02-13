@@ -2,7 +2,7 @@
 title: WorkManager
 description: 
 published: true
-date: 2024-02-13T10:04:21.681Z
+date: 2024-02-13T10:05:26.928Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-13T08:04:15.781Z
@@ -121,9 +121,8 @@ def upload_input(hashMap,_files=None,_data=None):
 Для отправки:
 ```Python
 hashMap.put(StartUploadWorkRequest, {"request": "описание запроса","tag": "тег задачи","title": "необязательный, заголовок в шторке уведомлений","body": "необязательный, текст в уведомлении"})
-```
-Описание запроса: {"url": "URL или псевдоним точки доступа","method": "метод HTTP","file": "имя файла, куда будет производиться запись","postExecute": "при необходимости, массив обработчиков по окончанию выполнения"}
-
+``` 
+Описание запроса(request): {"url": "URL или псевдоним точки доступа","method": "метод HTTP","file": "имя файла, куда будет производиться запись","postExecute": "при необходимости, массив обработчиков по окончанию выполнения"}.
 ```Python
 def download_input(hashMap,_files=None,_data=None):
     if hashMap.get('listener')=='btn_run':
