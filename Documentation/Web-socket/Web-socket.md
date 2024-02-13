@@ -2,7 +2,7 @@
 title: Web-socket
 description: 
 published: true
-date: 2024-02-13T14:42:38.150Z
+date: 2024-02-13T14:44:58.949Z
 tags: веб-сокет, web-socket
 editor: markdown
 dateCreated: 2024-01-25T07:44:11.346Z
@@ -79,6 +79,9 @@ def ws_failure(hashMap,_files=None,_data=None):
 ```
 
 **WebSocketSend** – команда отправки сообщения в сокет.
+```Python
+hashMap.put("WebSocketSend",hashMap.get("message"))
+```
 
 **CloseWebSocket** – команда завершения соединения. Также можно закрывать соединения со стороны сервера например.
 
