@@ -2,7 +2,7 @@
 title: WorkManager
 description: 
 published: true
-date: 2024-02-13T09:21:56.389Z
+date: 2024-02-13T09:22:39.345Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-13T08:04:15.781Z
@@ -72,11 +72,8 @@ hashMap.put("StartPeriodicWork", {"work": "массив обработчиков
     
 ```Python
 def run_periodic_worker(hashMap,_files=None,_data=None):
-   
-
-    if hashMap.get("listener") == "btn_run_periodic":
-        workercode=[{"action":"run","type":"set","method":"beep"}]
-          hashMap.put("StartPeriodicWork",json.dumps({"work":workercode,"period":15,"tag":"periodic1","conditions":"CONNECTED"},ensure_ascii=False))
+    if hashMap.get("listener") == "btn_run_periodic": workercode=[{"action":"run","type":"set","method":"beep"}]         
+	hashMap.put("StartPeriodicWork",json.dumps({"work":workercode,"period":15,"tag":"periodic1","conditions":"CONNECTED"},ensure_ascii=False))
 
     if hashMap.get("listener") == "btn_stop_periodic":
          hashMap.put("StopWork","periodic1")
