@@ -2,7 +2,7 @@
 title: WorkManager
 description: 
 published: true
-date: 2024-02-13T09:50:50.258Z
+date: 2024-02-13T09:55:30.152Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-13T08:04:15.781Z
@@ -123,3 +123,13 @@ def upload_input(hashMap,_files=None,_data=None):
 hashMap.put(StartUploadWorkRequest, {"request": "описание запроса","tag": "тег задачи","title": "необязательный, заголовок в шторке уведомлений","body": "необязательный, текст в уведомлении"})
 ```
 Описание запроса: {"url": "URL или псевдоним точки доступа","method": "метод HTTP","file": "имя файла, куда будет производиться запись","postExecute": "при необходимости, массив обработчиков по окончанию выполнения"}
+
+```Python
+def download_input(hashMap,_files=None,_data=None):
+    if hashMap.get('listener')=='btn_run':
+        filename =suClass.get_temp_file("mp4") 
+        postExecute=[{"action":"run","type":"python","method":"request_download_callback"}]
+        r = {"url":"#long1c/download","method":"GET","file":filename,"postExecute":postExecute}
+        hashMap.put("StartDownloadWorkRequest",json.dumps({"request":r,"tag":"my_task_download","title":"Загрузка","body":"видео.mp4"},ensure_ascii=False))
+    return hashMap  
+```
