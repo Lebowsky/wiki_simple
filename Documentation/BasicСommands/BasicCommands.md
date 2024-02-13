@@ -2,7 +2,7 @@
 title: BasicCommands
 description: 
 published: true
-date: 2024-02-13T11:04:33.232Z
+date: 2024-02-13T11:28:46.135Z
 tags: обработчик, экран, диалог, процесс, уведомления, toast, screen, handler, beep, speak, звук, речь, notification, show, event, runpy, функции, getjson
 editor: markdown
 dateCreated: 2024-01-25T07:43:02.141Z
@@ -82,8 +82,17 @@ hashMap.put("getJSONConfiguration","")
 
 ## Прочие команды Экранов
 **RunCV** - запуск режима AciveCV из экрана. После завершения ActiveCV в таком варианте запуска, возникает событие ввода с listener=ActiveCV 
+```Python
+hashMap.put("RunCV","NameCV")
+```
 **StartMediaGallery** - запуск выбора файла из галереи мультимедиа, котрый можно инициировать из кода (т.е. определить на свою кнопку например) 
+```Python
+hashMap.put("StartMediaGallery", "photo_from_camera")
+```
 **StartCaptureCamera** - запуск камеры 
+```Python
+hashMap.put("StartCaptureCamera","photo_from_camera")  
+```
 **SetTitle**, параметра: заголовок экрана - переопределение заголовка экрана 
 **PrintPreview** ,параметр:html-строка - запуск окна с предпросмотром html. Для например, печатных форм, которые из этого окна можно отправить на принтер 
 **PrintService** команда запуска PDF-документа на печать встроенной службой печати.
