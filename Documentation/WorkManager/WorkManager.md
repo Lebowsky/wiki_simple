@@ -2,7 +2,7 @@
 title: WorkManager
 description: 
 published: true
-date: 2024-02-13T08:40:19.165Z
+date: 2024-02-13T08:41:15.967Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-13T08:04:15.781Z
@@ -40,16 +40,11 @@ hashMap.put(StartWork, {"work": "массив обработчиков",
 ```Python
 def run_request_task_native(hashMap,_files=None,_data=None):  
     hashMap.put("BreakHandlersIfError","")  
-      
     workercode=[{"action":"run","type":"http","method":"GET #long1c/get_goods"},
 			    {"action":"run","type":"set","method":"SQLParameter=@ResultMessage"},
 			    {"action":"run","type":"sql","method":"insert into goods(art,barcode,nom) values(?,?,?)"},
 			    {"action":"run","type":"set","method":"speak=Данные загружены"}]		    
-    hashMap.put("StartWork",json.dumps({"work": workercode,
-			    														  "tag": "my_single_task",
-          															"retry": True,
-															          "conditions":"BATTERY_NOT_LOW;CHARGING;CONNECTED"},
-                                        ensure_ascii=False))  
+    hashMap.put("StartWork",json.dumps({"work": workercode, "tag": "my_single_task", "retry": True, "conditions":"BATTERY_NOT_LOW;CHARGING;CONNECTED"}, ensure_ascii=False))  
 		      
     return hashMap
 ```
