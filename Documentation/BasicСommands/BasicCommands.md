@@ -2,7 +2,7 @@
 title: BasicCommands
 description: 
 published: true
-date: 2024-02-13T11:47:30.106Z
+date: 2024-02-13T11:50:09.962Z
 tags: обработчик, экран, диалог, процесс, уведомления, toast, screen, handler, beep, speak, звук, речь, notification, show, event, runpy, функции, getjson
 editor: markdown
 dateCreated: 2024-01-25T07:43:02.141Z
@@ -109,6 +109,7 @@ def test_html_input(hashMap, _files=None, _data=None):
 
     return hashMap
 ```
+[![Pastedimage20240213144851.png](/files/Pastedimage20240213144851.png =350x)](/files/Pastedimage20240213144851.png)
 **PrintService** команда запуска PDF-документа на печать встроенной службой печати.
 [Подробнее](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVisionAndAugmentedRealityActiveCV)
 
