@@ -2,7 +2,7 @@
 title: WorkManager
 description: 
 published: true
-date: 2024-02-13T09:20:09.598Z
+date: 2024-02-13T09:21:56.389Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-13T08:04:15.781Z
@@ -53,7 +53,7 @@ def run_request_task_native(hashMap,_files=None,_data=None):
 Обработчик отработает и после перезагрузки устройства, но команда speak не отработает, т.к приложение отсутствует в процессах.
 
 ## Периодические задания
-Определение задачи такое же, как у однократной, только указывается период. RETRY для периодических не работает. 
+Выполняются с определенной периодичностью, определение задачи такое же, как у однократной, только указывается период. RETRY для периодических не работает. 
 ```Python
 hashMap.put("StartPeriodicWork", {"work": "массив обработчиков",
                                   "period": "период",
@@ -69,3 +69,17 @@ hashMap.put("StartPeriodicWork", {"work": "массив обработчиков
     - CHARGING – устройство находится на зарядке
     - BATTERY_NOT_LOW – заряд батареи достаточен
     - IDLE – устройство не используется
+    
+```Python
+def run_periodic_worker(hashMap,_files=None,_data=None):
+   
+
+    if hashMap.get("listener") == "btn_run_periodic":
+        workercode=[{"action":"run","type":"set","method":"beep"}]
+          hashMap.put("StartPeriodicWork",json.dumps({"work":workercode,"period":15,"tag":"periodic1","conditions":"CONNECTED"},ensure_ascii=False))
+
+    if hashMap.get("listener") == "btn_stop_periodic":
+         hashMap.put("StopWork","periodic1")
+    
+    return hashMap  
+```
