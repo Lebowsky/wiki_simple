@@ -2,7 +2,7 @@
 title: BasicCommands
 description: 
 published: true
-date: 2024-02-06T09:46:43.458Z
+date: 2024-02-13T10:07:04.251Z
 tags: обработчик, экран, диалог, процесс, уведомления, toast, screen, handler, beep, speak, звук, речь, notification, show, event, runpy, функции, getjson
 editor: markdown
 dateCreated: 2024-01-25T07:43:02.141Z
@@ -70,6 +70,9 @@ if hashMap.get("listener") == "reply_send":
 
 ## Динамическое изменение элементов экрана и конфигурации в целом
 **getJSONScreen** записывает в переменную **JSONScreen** исходную структуру текущего экрана. 
+```Python
+hashMap.put("getJSONScreen","")
+```
 **setJSONScreen** применяет измененную структуру экрана
 **getJSONConfiguration** - считывает в переменную _configuration текущую конфигурацию 
 **setJSONConfiguration** - применяет измененную конфигурацию немедленно.
