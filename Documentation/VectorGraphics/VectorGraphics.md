@@ -2,7 +2,7 @@
 title: VectorGraphics
 description: 
 published: true
-date: 2024-02-13T14:14:50.797Z
+date: 2024-02-13T14:20:28.736Z
 tags: event, события, векторная графика, карта, map
 editor: markdown
 dateCreated: 2024-01-25T07:44:04.628Z
@@ -85,12 +85,13 @@ my_set = [{"tag": "arr1",
           "color": "#000000"}]
 hashMap.put("map_set_color",json.dumps(my_set))
 ```
-**map_map_set_visibility** – включить/выключить видимость элемента. 
-```json
-[{"tag": "arr2",
-  "visible": 1},
- {"tag": "btn2",
- "visible": 1}]
+**map_set_visibility** – включить/выключить видимость элемента. 
+```Python
+my_set = [{"tag": "arr2",
+           "visible": 0},
+          {"tag": "btn2",
+           "visible": 1}]
+hashMap.put("map_set_visibility",json.dumps(my_set))    
 ```
 
 ## Работа с картой
