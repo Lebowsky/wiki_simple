@@ -2,7 +2,7 @@
 title: Web-socket
 description: 
 published: true
-date: 2024-02-13T14:44:58.949Z
+date: 2024-02-13T14:45:12.310Z
 tags: веб-сокет, web-socket
 editor: markdown
 dateCreated: 2024-01-25T07:44:11.346Z
@@ -37,7 +37,6 @@ def ws_message(hashMap,_files=None,_data=None):
     hashMap.put("speak",jmessage.get("message",""))
     hashMap.put("basic_notification",json.dumps([{"number":1,"title":"Чат","message":jmessage.get("message","")}]))
     hashMap.put("_messages",add_message_to_table(hashMap,jmessage.get("message",""),jmessage.get("user","")))
-    #hashMap.put("basic_notification",hashMap.get("messages"))
     hashMap.put("RefreshScreen","")
         conn = sqlite3.connect('//data/data/ru.travelfood.simple_ui/databases/SimpleWMS')
 
