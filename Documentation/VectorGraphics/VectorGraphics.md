@@ -2,7 +2,7 @@
 title: VectorGraphics
 description: 
 published: true
-date: 2024-02-13T14:08:27.787Z
+date: 2024-02-13T14:12:32.875Z
 tags: event, события, векторная графика, карта, map
 editor: markdown
 dateCreated: 2024-01-25T07:44:04.628Z
@@ -47,17 +47,24 @@ hashMap.put("map_highlight_cells", json.dumps(color))
 ```Python
 hashMap.put("map_add_move",json.dumps([{"from":"1-2","to":"2-2"}]))
 ```
-
 **map_nav_mode** - включает режим навигации с помощью алгоритмов(может строить пути, которыми в реальной жизни человек не пойдет, но с алгоритмической точки зрения он будет являться самым коротким) 
-**map_set_size** - задает относительные размеры холста. Пример параметра `{"width":1000,"height":2000}` 
+```Python
+hashMap.put("map_nav_mode", "")
+```
+**map_set_size** - задает относительные размеры холста. Пример параметра:
+```Python
+hashMap.put("map_set_size",json.dumps({"width":1000,"height":2000})) 
+```
 **map_add_rows** – добавляет новый ряд ячеек с параметрами x,y – верхний левый угол, количество рядов и строк а также размер ячейки. Также задаются сразу адреса ячеек. Все переменные обязательны. Пример параметра команды: 
-```json
-[{"x": 20,
-  "y": 30,
-  "row_count": 5,
-  "column_count": 1,
-  "cell_size": 50,
-  "tags": [["1-1","1-2","1-3","1-4","1-5"]]}]` 
+```Python
+row_list = [{"x": 20,
+             "y": 30,
+             "row_count": 5,
+             "column_count": 1,
+             "cell_size": 50,
+             "tags": [["1-1","1-2","1-3","1-4","1-5"]]}]`
+             
+hashMap.put("map_add_rows",json.dumps(row_list)) 
 ```
 **map_clear_rows** - очистка списка рядов
 
