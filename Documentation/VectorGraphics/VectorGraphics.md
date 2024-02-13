@@ -2,7 +2,7 @@
 title: VectorGraphics
 description: 
 published: true
-date: 2024-02-06T13:01:07.061Z
+date: 2024-02-13T14:08:27.787Z
 tags: event, события, векторная графика, карта, map
 editor: markdown
 dateCreated: 2024-01-25T07:44:04.628Z
@@ -44,8 +44,8 @@ color = [{"color": "#f56042",
 hashMap.put("map_highlight_cells", json.dumps(color))
 ```
 **map_add_move** – задание маршрута (шага) из ячейки в ячейку. 
-```json
-[{"from":"1-2","to":"2-2"}]
+```Python
+hashMap.put("map_add_move",json.dumps([{"from":"1-2","to":"2-2"}]))
 ```
 
 **map_nav_mode** - включает режим навигации с помощью алгоритмов(может строить пути, которыми в реальной жизни человек не пойдет, но с алгоритмической точки зрения он будет являться самым коротким) 
