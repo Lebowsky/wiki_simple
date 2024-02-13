@@ -2,7 +2,7 @@
 title: WorkManager
 description: 
 published: true
-date: 2024-02-13T09:17:25.252Z
+date: 2024-02-13T09:18:29.981Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-13T08:04:15.781Z
@@ -58,5 +58,5 @@ def run_request_task_native(hashMap,_files=None,_data=None):
 hashMap.put("StartPeriodicWork", {"work": "массив обработчиков",
                         "period": "период",
                         "tag": "тэг задачи",
-                        ”conditions": "список условий"})  
+                        "conditions": "список условий"})  
 ```
