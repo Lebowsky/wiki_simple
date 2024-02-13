@@ -2,7 +2,7 @@
 title: BasicCommands
 description: 
 published: true
-date: 2024-02-13T11:50:09.962Z
+date: 2024-02-13T11:56:13.565Z
 tags: обработчик, экран, диалог, процесс, уведомления, toast, screen, handler, beep, speak, звук, речь, notification, show, event, runpy, функции, getjson
 editor: markdown
 dateCreated: 2024-01-25T07:43:02.141Z
@@ -110,7 +110,11 @@ def test_html_input(hashMap, _files=None, _data=None):
     return hashMap
 ```
 [![Pastedimage20240213144851.png](/files/Pastedimage20240213144851.png =350x)](/files/Pastedimage20240213144851.png)
-**PrintService** команда запуска PDF-документа на печать встроенной службой печати.
+**PrintService** команда запуска PDF-документа на печать встроенной службой печати. В качестве значения нужно передать строку параметров запроса который пойдет на сервер.
+```Python
+hashMap.put("PrintService","operation=print, barcode=123")
+```
+Если print не работает - попробуйте view. Это зависит от устройства и софта.
 [Подробнее](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVisionAndAugmentedRealityActiveCV)
 
 ## Прочие функции, запускаемые из фонового сервиса или общих обработчиков
