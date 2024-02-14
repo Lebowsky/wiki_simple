@@ -2,7 +2,7 @@
 title: DataStorage
 description: 
 published: true
-date: 2024-02-08T06:41:36.751Z
+date: 2024-02-14T07:05:03.256Z
 tags: sql, nosql, хранение данных, simplebase, статические ресурсы, изображения, simpleutilites
 editor: markdown
 dateCreated: 2024-01-25T07:43:19.215Z
@@ -17,11 +17,15 @@ dateCreated: 2024-01-25T07:43:19.215Z
 Справочник команд-переменных:
 
 >### <kbd>SQLConnectDatabase</kbd>
->`hashMap.put("SQLConnectDatabase", "test1.DB")`
+>```Python
+> hashMap.put("SQLConnectDatabase", "test1.DB")
+> ```
 >Так как указывается имя базы предполагается что можно использовать несколько баз, помимо дефолтной.
 
 >### <kbd>**SQLExec**</kbd>
->`{"query": "SQL statement", "params": "parameters with delimiter"}`
+>```Python
+>{"query": "SQL statement", "params": "parameters with delimiter"}
+>```
 >Например:
 >```sql
 >sql_query = "CREATE TABLE IF NOT EXISTS Record
@@ -39,7 +43,9 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >Выполняет запрос на изменение БД (все кроме SELECT), параметры в запросе указываются в неименованном виде, а в params, перечисляются через запятую
 
 >### <kbd>**SQLExecMany**</kbd>
->`{"query": "SQL statement", "params": "parameters with delimiter"}`
+>```Python
+>{"query": "SQL statement", "params": "parameters with delimiter"}
+>```
 > Выполняет запрос в BULK-режиме с массивом из множества записей. Параметры запроса передаются в виде массива записей в неименованном виде (через ?)
 > Пример:
 > ```SQL
@@ -65,7 +71,9 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >Имеет смысл для SQLExecMany для передачи массива записей в качестве параметра из других обработчиков
 
 >### <kbd>**SQLQuery**</kbd>
->`{"query": "SQL statement","params": "parameters with delimiter"}`
+>```Python
+>{"query": "SQL statement","params": "parameters with delimiter"}
+>```
 > Запрос типа SELECT, который пишет выборку в виде JSON-массива в стек переменных в SQLResult
 > Пример query:
 >```SQL
@@ -79,7 +87,9 @@ dateCreated: 2024-01-25T07:43:19.215Z
 >_
 
 >### <kbd>**SQLQueryMany**</kbd>
->`{"query": "SQL statement","params": "parameters with delimiter"}`
+>```Python
+>{"query": "SQL statement","params": "parameters with delimiter"}
+>```
 > Запрос типа SELECT, который пишет выборку в виде JSON-массива во временный файл и в параметре SQLResultFile возвращает имя этого файла. Для очень больших выборок (>0.5 млн строк)
 
 Те же функции можно вызывать из импортируемого класса напрямую. Этот вариант хорош тем что результат получаешь сразу а не на конец шага и его лучше использовать в python-обработчиках.
