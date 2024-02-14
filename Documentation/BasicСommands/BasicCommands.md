@@ -2,7 +2,7 @@
 title: BasicCommands
 description: 
 published: true
-date: 2024-02-14T13:43:04.649Z
+date: 2024-02-14T13:54:52.011Z
 tags: обработчик, экран, диалог, процесс, уведомления, toast, screen, handler, beep, speak, звук, речь, notification, show, event, runpy, функции, getjson
 editor: markdown
 dateCreated: 2024-01-25T07:43:02.141Z
@@ -10,6 +10,11 @@ dateCreated: 2024-01-25T07:43:02.141Z
 
 # Основные команды
 ## Экраны, диалоги и процессы
+- **UpdateConfigurations** - Перезапуск и обновление конфигурации
+```Python
+hashMap.put("UpdateConfigurations", "")
+```
+
 - **ShowScreen** – команда переключения экрана. В переменную передается точное название запускаемого экрана. Экраны запускаются в рамках одного процесса, то есть он должен присутствовать в процессе в видимом или невидимом виде. В случае отсутствия система выдаст ошибку. Переменные при этом сохраняются между экранами. 
 	```Python
 	hashMap.put("ShowScreen", "Процесс 1")
