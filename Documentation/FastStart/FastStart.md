@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-07T11:23:32.726Z
+date: 2024-02-14T06:45:22.893Z
 tags: sql, nosql, хранение данных, быстрый старт, simplebase, sqlexec, sqlclass, sqlquery, activecv, надпись, обработчик
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -148,13 +148,30 @@ def input_example(hashMap, _files=None, _data=None):
 Реализовать будем с помощью SimpleBase, подробнее прочитать можно [тут](../DataStorage/DataStorage).
 1) Создадим процесс и добавим в него новый экран. Экран у нас будет содержать контейнер(LinearLayout), контейнер мы наполним следующими элементами: 
 - Поле для ввода новой информации. EditTextText, Value - @name_object, Variable - name_object
-![Pastedimage20240129152240.png](/files/Pastedimage20240129152240.png =650x)
+<details>
+<summary>Фото</summary>
+<br>
+<img src="/files/Pastedimage20240129152240.png" width=700>
+</details>
 - Поле для вывода данных из БД. TextView, Value - @names_elements
-![Pastedimage20240129152310.png](/files/Pastedimage20240129152310.png =650x)
+<details>
+<summary>Фото</summary>
+<br>
+<img src="/files/Pastedimage20240129152310.png" width=700>
+</details>
 - Кнопку сохранения новой информации. Button, Value - Добавить, Variable - btn_add
-![Pastedimage20240129152350.png](/files/Pastedimage20240129152350.png =650x)
+<details>
+<summary>Фото</summary>
+<br>
+<img src="/files/Pastedimage20240129152350.png" width=700>
+</details>
 - Кнопку полной очистки БД. Button, Value - Очистить БД, Variable - btn_delete
-![Pastedimage20240129152420.png](/files/Pastedimage20240129152420.png =650x)
+<details>
+<summary>Фото</summary>
+<br>
+<img src="/files/Pastedimage20240129152420.png" width=700>
+</details>
+![Pastedimage20240129152420.png]( =650x)
 
 2) Так же к нашему экрану, необходимо добавить обработчик(Handlers), который будет обрабатывать при открытии экрана (OnStart). К нему мы привяжем вывод информации из БД в переменную "names_elements"
   ! **ВАЖНО**
