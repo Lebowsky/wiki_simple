@@ -2,7 +2,7 @@
 title: ComputerVisionAndAugmentedRealityActiveCV
 description: 
 published: true
-date: 2024-02-06T10:50:05.067Z
+date: 2024-02-14T11:33:34.415Z
 tags: activecv, дополненная реальность, ocr, распознование, runcv, сканер
 editor: markdown
 dateCreated: 2024-01-25T07:43:17.515Z
@@ -85,6 +85,9 @@ hashMap.put("object_caption_list", json.dumps(json_list, ensure_ascii=False))
 Настройки распознавания (поле VisionSettings) можно задавать в конструкторе и также можно задать настройки из кода перед началом распознавания (для экранов и ActiveCV) с помощью команды-переменной:
 
 **SetVisionSettings{словарь с настройками}** – команда для экранов и ActiveCV которая, если ее выполнить до запуска распознавания, задаст настройки детектора
+```Python
+hashMap.put("SetVisionSettings",json.dumps({"min_length":3,"max_length":5,"ReplaceO":True,"ToUpcase":True,"OnlyNumbers":True}))
+```
 
 Доступны следующие настройки:
 
