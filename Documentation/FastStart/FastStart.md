@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-14T06:47:50.508Z
+date: 2024-02-14T06:49:43.582Z
 tags: sql, nosql, хранение данных, быстрый старт, simplebase, sqlexec, sqlclass, sqlquery, activecv, надпись, обработчик
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -383,7 +383,11 @@ def scan_barcode(hashMap,_files=None,_data=None):
 - TextView(Текстовое поле), Value - Количество элементов
 - EditTextText(Поле ввода), Value - @amount, Variable - amount
 - Button(Кнопка), Value - Сохранить, Variable - btn_save
-[![Pastedimage20240201173232.png](/files/Pastedimage20240201173232.png =850x)](/files/Pastedimage20240201173232.png)
+<details>  
+<summary>Фотогайд</summary>  
+<br>  
+<img src="/files/Pastedimage20240201173232.png" width="700">
+</details>
 
 
 ```python
@@ -418,4 +422,8 @@ def object_detect(hashMap,_files=None,_data=None):
 Подробнее информация [тут](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVisionAndAugmentedRealityActiveCV)
 
 Результат
-[![Pastedimage20240201181332.png](/files/Pastedimage20240201181332.png =350x)](/files/Pastedimage20240201181332.png)
+<details>  
+<summary>Фотогайд</summary>  
+<br>  
+<img src="/files/Pastedimage20240201181332.png" width="450">
+</details>
