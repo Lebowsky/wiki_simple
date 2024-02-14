@@ -2,7 +2,7 @@
 title: Localization
 description: 
 published: true
-date: 2024-02-13T14:03:21.584Z
+date: 2024-02-14T06:33:18.155Z
 tags: локализация, json
 editor: markdown
 dateCreated: 2024-01-25T07:43:44.537Z
@@ -44,9 +44,7 @@ table  = {
       "name": "qty",
       "header": "[Qty]",
       "weight": "1"
-  }
-  ]
-  }
+  }]}
 ```
 
 Таким образом нужно задать все переводы ключей. Если перевод отсутствует, будет отображен просто ключ.
