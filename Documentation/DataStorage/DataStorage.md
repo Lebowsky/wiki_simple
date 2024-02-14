@@ -2,7 +2,7 @@
 title: DataStorage
 description: 
 published: true
-date: 2024-02-14T08:16:35.296Z
+date: 2024-02-14T08:24:40.485Z
 tags: sql, nosql, хранение данных, simplebase, статические ресурсы, изображения, simpleutilites
 editor: markdown
 dateCreated: 2024-01-25T07:43:19.215Z
