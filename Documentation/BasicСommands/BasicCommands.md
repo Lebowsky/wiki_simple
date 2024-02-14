@@ -2,7 +2,7 @@
 title: BasicCommands
 description: 
 published: true
-date: 2024-02-06T09:46:43.458Z
+date: 2024-02-13T13:39:34.565Z
 tags: обработчик, экран, диалог, процесс, уведомления, toast, screen, handler, beep, speak, звук, речь, notification, show, event, runpy, функции, getjson
 editor: markdown
 dateCreated: 2024-01-25T07:43:02.141Z
@@ -10,28 +10,107 @@ dateCreated: 2024-01-25T07:43:02.141Z
 
 # Основные команды
 ## Экраны, диалоги и процессы
-- **ShowScreen** – команда переключения экрана. В переменную передается точное название запускаемого экрана. Экраны запускаются в рамках одного процесса, то есть он должен присутствовать в процессе в видимом или невидимом виде. В случае отсутствия система выдаст ошибку. Переменные при этом сохраняются между экранами. `hashMap.put("ShowScreen", "Процесс 1")`
+- **ShowScreen** – команда переключения экрана. В переменную передается точное название запускаемого экрана. Экраны запускаются в рамках одного процесса, то есть он должен присутствовать в процессе в видимом или невидимом виде. В случае отсутствия система выдаст ошибку. Переменные при этом сохраняются между экранами. 
+	```Python
+	hashMap.put("ShowScreen", "Процесс 1")
+	```
 - **BackScreen** – Возврат на предыдущий экран, если вызов был с ShowScreen. 
-	`hashMap.put("BackScreen", "")`
+	```Python
+  hashMap.put("BackScreen", "")
+  ```
 - **ShowDialog** – команда вызова модального диалога в стандартном виде (визуально отличается от StartScreen). Диалог может содержать поля ввода и другие отображаемые элементы контейнера. При нажатии ОК возникает событие onResult и заполняются переменные полей ввода. 
+	```Python
+  hashMap.put("ShowDialog", "")
+  ```
 - **ShowDialogLayout**, <JSON-структура котнейнера> - определяет содержимое окна диалога. Используется совместно с командой ShowDialog 
+	```Python
+      layout = {
+            "Value": "",
+            "Variable": "",
+            "type": "LinearLayout",
+            "weight": "0",
+            "height": "match_parent",
+            "width": "match_parent",
+            "orientation": "vertical",
+            "Elements": [
+                {
+                    "type": "TextView",
+                    "height": "wrap_content",
+                    "width": "match_parent",
+                    "weight": "0",
+                    "Value": "Имя",
+                    "Variable": ""
+                },
+                {
+                    "type": "EditTextText",
+                    "height": "wrap_content",
+                    "width": "match_parent",
+                    "weight": "0",
+                    "Value": "",
+                    "Variable": "name"
+                },
+                {
+                    "type": "TextView",
+                    "height": "wrap_content",
+                    "width": "match_parent",
+                    "weight": "0",
+                    "Value": "Должность",
+                    "Variable": ""
+                },
+                {
+                    "type": "EditTextText",
+                    "height": "wrap_content",
+                    "width": "match_parent",
+                    "weight": "0",
+                    "Value": "",
+                    "Variable": "position"
+                }
+            ],
+            "BackgroundColor": "",
+            "StrokeWidth": "",
+            "Padding": ""
+        }
+    
+
+    hashMap.put("ShowDialogLayout",json.dumps(layout,ensure_ascii=False))
+    hashMap.put("ShowDialog","")
+  ```
+  [![Pastedimage20240213161248.png](/files/Pastedimage20240213161248.png =350x)](/files/Pastedimage20240213161248.png)
+  
 - **ShowDialogStyle**, `{"title": "заголовок","yes": "кнопка Да","no": "кнопка Нет"}`
 	 Переопределяет заголовок и кнопки диалога 
+   ```Python
+   hashMap.put("ShowDialogStyle", '{"title": "Авторизируйтесь", "yes": "Войти", "no": "Отмена"}')
+   ```
 - **StartScreen** – запуск обычного экрана в режиме модального диалога, но как обычный экран. Отличается от команды ShowDialog внешним видом и тем, что это полноценный экран Т.е. это экран который появляется поверх экрана с кнопками «Ок/Отмена» внизу и ожидает успешного или неуспешного завершения диалога. В случае успешного завершения возникает событие ввода 
+	```Python
+  hashMap.put("StartScreen", "НовыйЭкран")
+  ```
 - **StartProcess** или **RunNewProcess**- запуск нового процесса в новом окне с закрытием текущего, т.е. без возможности возврата на текущий процесс. Локальные переменные сохраняются. В качестве параметра передается имя запускаемого процесса. 
 - **StartProcessHashMap** - запуск нового процесса в новом окне с возможностью возврата на текущий процесс (т.е. текущий процесс остается на том же месте). Локальные переменные сохраняются. В качестве параметра передается имя запускаемого процесса.
+	```Python
+  hashMap.put("StartProcessHashMap", "НовыйПроцесс")
+	```
 - **ShowProcessResult** , "имя процесса|имя экрана" запускает процесс и выбранный экран, ожидая что в нем произойдет вызов **FinishProcessResult**. Стек переменных при этом на запускаемый и запускающий процесс – общий. Для того чтобы обработать именно нужное событие а не просто событие (по умолчанию listener="имя вызываемого процесса") совместно с этой командой можно установить имя события, которое будет сгенерировано после вызова FinishProcessResult , командой 
-- **SetResultListener** , <имя события> **FinishProcessResult**, без параметров – завершает процесс с генерацией события в вызывающем процессе **SetResultListener** , <имя события> - устанавливает имя события при завершении процесса `self.hash_map.put('SetResultListener', listener)` 
+- **SetResultListener** , <имя события> **FinishProcessResult**, без параметров – завершает процесс с генерацией события в вызывающем процессе **SetResultListener** , <имя события> - устанавливает имя события при завершении процесса 
+	```Python
+	hash_map.put('SetResultListener', listener)
+  ```
 - **RunTestScreen** - запуск экрана в режиме замера времени. Используется для замера времени алгоритмов и отрисовки экрана. Измеряемые алгоритмы нужно помещать в «ПриОткрытии» тогда после открытия будет произведено вычисление времени с момента запуска команды до момент отрисовки. После загрузки в переменную TestResult будет помещено время выполнения в миллисекундах. 
 - **hold** - удержание экрана. Без параметра. Экран не будет перерисован при отправке обработчика события. 
-- **break** - немедленное закрытие экрана без подтверждения **FinishProcess** - немедленное закрытие процесса без подтверждения `hashMap.put("break", "")`
+- **break** - немедленное закрытие экрана без подтверждения **FinishProcess** - немедленное закрытие процесса без подтверждения 
+	```Python
+  hashMap.put("break", "")
+  ```
 - **ExitProcess** - закрытие процесса с диалогом подтверждения 
-	`hashMap.put("ExitProcess", "")`
+	```Python
+  hashMap.put("ExitProcess", "")
+  ```
 - **report_table** - открытие экрана с произвольной таблицей просто для отображения. В качестве параметра передается JSON с таблицей
-```python
-hashMap.put("report_table", json.dumps(json_test, 
-							ensure_ascii=False).encode('utf8').decode())
-```
+  ```python
+  hashMap.put("report_table", json.dumps(json_test, 
+                ensure_ascii=False).encode('utf8').decode())
+  ```
 - **сentral_table** - установка произвольной таблицы на экран «План-факт». Когда пользователь запустит «План/Факт» из нижней панели он увидит эту таблицу. В качестве параметра передается JSON с таблицей
 
 ## Команды управления обработчиками
@@ -70,22 +149,60 @@ if hashMap.get("listener") == "reply_send":
 
 ## Динамическое изменение элементов экрана и конфигурации в целом
 **getJSONScreen** записывает в переменную **JSONScreen** исходную структуру текущего экрана. 
-**setJSONScreen** применяет измененную структуру экрана
+```Python
+hashMap.put("getJSONScreen","")
+```
+**setJSONScreen** применяет измененную структуру экрана	
 **getJSONConfiguration** - считывает в переменную _configuration текущую конфигурацию 
+```Python
+hashMap.put("getJSONConfiguration","")
+```
 **setJSONConfiguration** - применяет измененную конфигурацию немедленно.
 
 ## Прочие команды Экранов
 **RunCV** - запуск режима AciveCV из экрана. После завершения ActiveCV в таком варианте запуска, возникает событие ввода с listener=ActiveCV 
+```Python
+hashMap.put("RunCV","NameCV")
+```
 **StartMediaGallery** - запуск выбора файла из галереи мультимедиа, котрый можно инициировать из кода (т.е. определить на свою кнопку например) 
+```Python
+hashMap.put("StartMediaGallery", "photo_from_camera")
+```
 **StartCaptureCamera** - запуск камеры 
+```Python
+hashMap.put("StartCaptureCamera","photo_from_camera")  
+```
 **SetTitle**, параметра: заголовок экрана - переопределение заголовка экрана 
+```Python
+hashMap.put("SetTitle","Новый заголовок")
+```
 **PrintPreview** ,параметр:html-строка - запуск окна с предпросмотром html. Для например, печатных форм, которые из этого окна можно отправить на принтер 
-**PrintService** команда запуска PDF-документа на печать встроенной службой печати.
+```Python
+def test_html_input(hashMap, _files=None, _data=None):
+    test_template = Template("""{% for user in users -%}
+    <p>Привет, {{ user }}!</p>
+    {% endfor %}""")
+    res = test_template.render(users=["admin", "Alex", "prog1C"])
+
+    hashMap.put("PrintPreview", res)
+
+    return hashMap
+```
+[![Pastedimage20240213144851.png](/files/Pastedimage20240213144851.png =350x)](/files/Pastedimage20240213144851.png)
+**PrintService** команда запуска PDF-документа на печать встроенной службой печати. В качестве значения нужно передать строку параметров запроса который пойдет на сервер.
+```Python
+hashMap.put("PrintService","operation=print, barcode=123")
+```
+Если print не работает - попробуйте view. Это зависит от устройства и софта.
 [Подробнее](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVisionAndAugmentedRealityActiveCV)
 
 ## Прочие функции, запускаемые из фонового сервиса или общих обработчиков
 **ShowProcessScreen**, параметр: {"process": "process", "screen": "screen"} - запуск любого экрана любого процесса из любого состояния приложения (в случае если основной контекст приложения запущен) 
-**SpeechRecognitionListener**, параметр: задержка - запуск распознавания речи с паузой для ожидания ответа 
+```Python
+hashMap.put("ShowProcessScreen", "{'process': 'Некий процесс','screen': 'Экран 1'}")
+```
+**SpeechRecognitionListener**, в качестве значения можно указать количество миллисекунд отсрочки. Дело в том, что обычно запуск ввода осуществляется после озвучки голосом какого то вопроса, а эта звучка может длится какое то время, причем асинхронно. Поэтому надо примерно поставить время отсрочки пока ваш вопрос звучит, чтобы прослушивание не запустилось раньше
+В случае успешного распознавания генерируется событие ввода **voice_success** и в переменную **voice_result** возвращается результат
 **SendIntent** - отправка из фона некоего события ввода, на которое подписаны экраны и ActiveCV (там возникает событие ввода) 
 **BackgroundCommand** - команда, которой можно передать управление в фоновый Сервис событий и запустить там какой то обработчик
 

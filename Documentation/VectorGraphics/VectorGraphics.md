@@ -2,7 +2,7 @@
 title: VectorGraphics
 description: 
 published: true
-date: 2024-02-06T13:01:07.061Z
+date: 2024-02-13T14:32:22.081Z
 tags: event, события, векторная графика, карта, map
 editor: markdown
 dateCreated: 2024-01-25T07:44:04.628Z
@@ -44,20 +44,27 @@ color = [{"color": "#f56042",
 hashMap.put("map_highlight_cells", json.dumps(color))
 ```
 **map_add_move** – задание маршрута (шага) из ячейки в ячейку. 
-```json
-[{"from":"1-2","to":"2-2"}]
+```Python
+hashMap.put("map_add_move",json.dumps([{"from":"1-2","to":"2-2"}]))
 ```
-
 **map_nav_mode** - включает режим навигации с помощью алгоритмов(может строить пути, которыми в реальной жизни человек не пойдет, но с алгоритмической точки зрения он будет являться самым коротким) 
-**map_set_size** - задает относительные размеры холста. Пример параметра `{"width":1000,"height":2000}` 
+```Python
+hashMap.put("map_nav_mode", "")
+```
+**map_set_size** - задает относительные размеры холста. Пример параметра:
+```Python
+hashMap.put("map_set_size",json.dumps({"width":1000,"height":2000})) 
+```
 **map_add_rows** – добавляет новый ряд ячеек с параметрами x,y – верхний левый угол, количество рядов и строк а также размер ячейки. Также задаются сразу адреса ячеек. Все переменные обязательны. Пример параметра команды: 
-```json
-[{"x": 20,
-  "y": 30,
-  "row_count": 5,
-  "column_count": 1,
-  "cell_size": 50,
-  "tags": [["1-1","1-2","1-3","1-4","1-5"]]}]` 
+```Python
+row_list = [{"x": 20,
+             "y": 30,
+             "row_count": 5,
+             "column_count": 1,
+             "cell_size": 50,
+             "tags": [["1-1","1-2","1-3","1-4","1-5"]]}]`
+             
+hashMap.put("map_add_rows",json.dumps(row_list)) 
 ```
 **map_clear_rows** - очистка списка рядов
 
@@ -71,29 +78,48 @@ hashMap.put("map_highlight_cells", json.dumps(color))
  
 ## Взаимодействие с объектами, кроме рядов ячеек
 **map_set_color** – установить цвет элемента.
-```json
-[{"tag": "arr1",
-  "color": "#000000"},
- {"tag": "btn1",
- "color": "#000000"}]
+```Python
+my_set = [{"tag": "arr1",
+           "color": "#000000"},
+          {"tag": "btn1",
+          "color": "#000000"}]
+hashMap.put("map_set_color",json.dumps(my_set))
 ```
-**map_map_set_visibility** – включить/выключить видимость элемента. 
-```json
-[{"tag": "arr2",
-  "visible": 1},
- {"tag": "btn2",
- "visible": 1}]
+**map_set_visibility** – включить/выключить видимость элемента. 
+```Python
+my_set = [{"tag": "arr2",
+           "visible": 0},
+          {"tag": "btn2",
+           "visible": 1}]
+hashMap.put("map_set_visibility",json.dumps(my_set))    
 ```
 
 ## Работа с картой
 - **map_edit_mode** – включение режима пользовательского редактирования 
-`hashMap.put("map_edit_mode", "")`
+```Python
+hashMap.put("map_edit_mode", "")
+```
 - **map_background_picture** – установка фона – картинки. Принципы работы такие же как с картинками в [Simple UI](../GeneralFunctionsOfThePlatform/GeneralFunctionsOfThePlatform) 
+```Python
+hashMap.put("map_background_picture",hashMap.get("photo_path"))  # Получение из сделанного фото на устройстве
+```
 - **map_background_html** – установка в качестве картинки html на экране, по сути скриншот содержимого html. 
 **Важно!** Данный метод можно вызывать только на экране, где есть html поле, т.е. до экрана в котором присутствует поле карты. Таким образом если нужно передать на редактирование печатную форму/отчет html, то должно быть 2 экрана – сначала html, потом экран редактирования 
-- **map_save** – сохранение того, что нарисовал пользователь вместе с фоном. В случае с включенным режимом mm_local возвращается переменная **map_saved_file** с именем файла, куда это записалось, если не включен этот режим то возвращается в **map_saved_base64** 
+```Python
+hashMap.put("map_background_html","") 
+```
+- **map_save** – сохранение того, что нарисовал пользователь вместе с фоном. В случае с включенным режимом mm_local возвращается переменная **map_saved_file** с именем файла, куда это записалось, если не включен этот режим то возвращается в **map_saved_base64**
+```Python
+hashMap.put("map_save","") 
+```
 - **map_zoom** – увеличение карты. Пример «1.5» - увеличение в 1,5 раза 
+```Python
+hashMap.put("map_zoom","1.5")
+```
 - **map_move_x** и **map_move_y** – сдвиги по осям. Имеет смысл использовать совместно с **map_zoom**. Можно указывать положительные (вправо, вниз) и отрицательные (влево, вверх)
+```Python
+hashMap.put("map_move_x","-50")
+```
 
 ## Запуск редактора карты в пользовательском режиме
 **RunVectorEditor**, "путь к файлу карты.sug" - открывает векторный редактор в режиме редактирования заданного файла, без возможности смены (если файла нет-создает). Доступна только кнопка сохранения. В случае успешного сохранения будет сгенерировано событие "vector_editor" `event == "vector_editor"`
