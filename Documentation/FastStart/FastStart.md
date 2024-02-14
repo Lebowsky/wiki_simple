@@ -2,7 +2,7 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-14T06:50:32.154Z
+date: 2024-02-14T06:51:44.463Z
 tags: sql, nosql, хранение данных, быстрый старт, simplebase, sqlexec, sqlclass, sqlquery, activecv, надпись, обработчик
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
@@ -185,6 +185,7 @@ def input_example(hashMap, _files=None, _data=None):
 <br>
 <img src="/files/Pastedimage20240129155736.png" width=700>
 </details>
+
 ```python
 from pysimplebase import SimpleBase  
 from ru.travelfood.simple_ui import SimpleUtilites as suClass    
@@ -206,6 +207,7 @@ def start_simplebase(hashMap,_files=None,_data=None):
 <br>
 <img src="/files/Pastedimage20240129155918.png" width=700>
 </details>
+
 ```python
 def input_simplebase(hashMap,_files=None,_data=None):  
     if hashMap.get("listener") == "btn_add":  
