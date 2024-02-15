@@ -2,7 +2,7 @@
 title: example№1
 description: 
 published: true
-date: 2024-02-15T11:36:20.718Z
+date: 2024-02-15T12:17:17.156Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-15T10:16:05.912Z
