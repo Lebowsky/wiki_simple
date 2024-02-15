@@ -2,12 +2,14 @@
 title: FastStart
 description: 
 published: true
-date: 2024-02-14T06:51:44.463Z
+date: 2024-02-15T11:32:41.126Z
 tags: sql, nosql, хранение данных, быстрый старт, simplebase, sqlexec, sqlclass, sqlquery, activecv, надпись, обработчик
 editor: markdown
 dateCreated: 2024-01-26T10:34:57.952Z
 ---
 
+
+[Пример 1. Создание процесса, добавление надписи, кнопки, подключение python обработчика](/Documentation/FastStart/example№1)
 ## Запуск конструктора и вот это вот все
 Сюда надо будет добавить ссылки туда сюда
 
