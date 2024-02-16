@@ -2,11 +2,13 @@
 title: GeneralFunctionsOfThePlatform
 description: 
 published: true
-date: 2024-02-16T12:34:16.766Z
+date: 2024-02-16T12:34:34.244Z
 tags: диалог, уведомления, toast, изображения, таблицы, карточки, списки, плитки, корзина, современное поле ввода, модальный экран, пин-код
 editor: markdown
 dateCreated: 2024-01-25T07:43:31.012Z
 ---
+
+# Общие функции платформы
 
 > **[Экраны, диалоги и процессы](/Documentation/GeneralFunctionsOfThePlatform/Tables)**
 {.is-info}
