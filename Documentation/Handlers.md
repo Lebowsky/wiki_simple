@@ -1,5 +1,15 @@
+---
+title: CommonHandlers
+description: 
+published: true
+date: 2024-02-16T12:59:32.030Z
+tags: обработчик, handler, event, события
+editor: markdown
+dateCreated: 2024-01-25T07:43:39.402Z
+---
+
 # Обработчики
-1
+
 # Общие обработчики
 [![Pastedimage20240122162004.png](/files/Pastedimage20240122162004.png =850x)](/files/Pastedimage20240122162004.png)
 > **onLaunch** 
