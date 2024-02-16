@@ -2,7 +2,7 @@
 title: CommonHandlers
 description: 
 published: true
-date: 2024-02-16T13:01:32.933Z
+date: 2024-02-16T13:02:54.307Z
 tags: обработчик, handler, event, события
 editor: markdown
 dateCreated: 2024-01-25T07:43:39.402Z
@@ -12,6 +12,10 @@ dateCreated: 2024-01-25T07:43:39.402Z
 
 > **[Общие обработчики](/Documentation/CommonHandlers/CommonsHandlers)**
 {.is-info}
+
+> **[События](/Documentation/CommonHandlers/Events)**
+{.is-info}
+
 
 # Общие обработчики
 [![Pastedimage20240122162004.png](/files/Pastedimage20240122162004.png =850x)](/files/Pastedimage20240122162004.png)
