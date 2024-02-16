@@ -1,0 +1,1 @@
+Enhanced interaction with the SDK
