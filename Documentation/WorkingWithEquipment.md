@@ -2,11 +2,12 @@
 title: WorkingWithEquipment
 description: 
 published: true
-date: 2024-02-16T12:52:01.960Z
+date: 2024-02-16T12:52:14.789Z
 tags: сканер, устройства, bluetooth, tcp_ip, usb, urovo, meferi, тсд
 editor: markdown
 dateCreated: 2024-01-25T07:44:17.960Z
 ---
+
 
 > **[Работа со сканерами штрихкода через стандартные настройки](/Documentation/WorkingWithEquipment/WorkingWithBarcodeScanners)**
 {.is-info}
