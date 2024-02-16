@@ -2,13 +2,13 @@
 title: ConstructionGuide
 description: 
 published: true
-date: 2024-02-16T14:48:22.315Z
+date: 2024-02-16T14:48:25.262Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-07T12:03:40.417Z
 ---
 
-# Конструкторs
+# Конструктор
 > **[Основные элементы](/Documentation/ConstructionGuide/MainElements)**
 {.is-info}
 
