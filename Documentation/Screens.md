@@ -2,11 +2,14 @@
 title: Screens
 description: 
 published: true
-date: 2024-02-16T08:07:59.550Z
+date: 2024-02-16T09:42:34.087Z
 tags: обработчик, экран, screen, handler, beep, звук, речь, сканер, изображения, elements, видимость элементов, штрихкод, таймер, файлы, awesome-шрифт, плавающие кнопки, voice, контейнеры, авторизация
 editor: markdown
 dateCreated: 2024-01-25T07:43:52.851Z
 ---
+
+> **[Основные элементы](/Documentation/ConstructionGuide/MainElements)**
+{.is-info}
 
 # Параметры экрана в конструкторе
 ## Common 
