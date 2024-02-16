@@ -1,1 +1,1 @@
-main functionality of the vector
+main functionality of the vector    
