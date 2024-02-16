@@ -2,7 +2,7 @@
 title: ConstructionGuide
 description: 
 published: true
-date: 2024-02-16T09:35:32.547Z
+date: 2024-02-16T09:36:55.325Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-07T12:03:40.417Z
@@ -11,6 +11,10 @@ dateCreated: 2024-02-07T12:03:40.417Z
 
 > **[Основные элементы](/Documentation/ConstructionGuide/MainElements)**
 {.is-info}
+
+> **[Выпадающие меню](/Documentation/ConstructionGuide/DropMenu)**
+{.is-info}
+
 # Основные элементы
 ## Common
 [![Pastedimage20240207171641.png](/files/Pastedimage20240207171641.png =700x)](/files/Pastedimage20240207171641.png)
