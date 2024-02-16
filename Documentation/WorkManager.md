@@ -2,7 +2,7 @@
 title: WorkManager
 description: 
 published: true
-date: 2024-02-16T12:58:58.617Z
+date: 2024-02-16T13:09:21.711Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-13T08:04:15.781Z
@@ -21,8 +21,7 @@ dateCreated: 2024-02-13T08:04:15.781Z
 > **[Однократные фоновые задания](/Documentation/WorkManager/OneTimeTasks)**
 {.is-info}
 
-> **[Периодические задания](/Documentation/WorkManager/PeriodicTasks)**
-{.is-info}
+
 
 > **[Остановка задач](/Documentation/WorkManager/StoppingTasks)**
 {.is-info}
