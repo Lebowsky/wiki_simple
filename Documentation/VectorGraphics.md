@@ -2,7 +2,7 @@
 title: VectorGraphics
 description: 
 published: true
-date: 2024-02-16T12:36:53.014Z
+date: 2024-02-19T08:03:48.722Z
 tags: event, события, векторная графика, карта, map
 editor: markdown
 dateCreated: 2024-01-25T07:44:04.628Z
@@ -98,7 +98,7 @@ hashMap.put("map_set_visibility",json.dumps(my_set))
 ```Python
 hashMap.put("map_edit_mode", "")
 ```
-- **map_background_picture** – установка фона – картинки. Принципы работы такие же как с картинками в [Simple UI](../GeneralFunctionsOfThePlatform/GeneralFunctionsOfThePlatform) 
+- **map_background_picture** – установка фона – картинки. Принципы работы такие же как с картинками в [Simple UI](../GeneralFunctionsOfThePlatform/ImagesCache) 
 ```Python
 hashMap.put("map_background_picture",hashMap.get("photo_path"))  # Получение из сделанного фото на устройстве
 ```
