@@ -2,7 +2,7 @@
 title: MainElements
 description: 
 published: true
-date: 2024-02-19T07:23:19.335Z
+date: 2024-02-19T07:23:44.695Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-16T08:23:34.390Z
@@ -33,7 +33,7 @@ dateCreated: 2024-02-16T08:23:34.390Z
 - Do not display in Menu - Скрывает процесс с главного экрана
 - Independent process - Независимый процесс (.suip). Подробнее про suip файл тут(Надо реализовать видимо Файлы-процессы .suip и сюда ссылку)
 
-В процессы можно добавлять различные экраны с различным наполнением(Elements, Common, Handlers), про наполнение экранов подробнее можно прочитать [тут](../Screens/Screens)
+В процессы можно добавлять различные экраны с различным наполнением(Elements, Common, Handlers), про наполнение экранов подробнее можно прочитать [тут](../Screens/ScreenSettings)
 
 ### Add CVOoperation
 Заполнить когда будет в конструкторе реализованы CVOoperation до конца
