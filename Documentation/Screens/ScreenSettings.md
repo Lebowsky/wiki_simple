@@ -2,7 +2,7 @@
 title: ScreenSettings
 description: 
 published: true
-date: 2024-02-16T10:08:12.387Z
+date: 2024-02-19T07:27:56.024Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-16T08:24:31.757Z
@@ -63,8 +63,8 @@ hashMap.put("text_info", jdata)
 ## Elements
 [![Pastedimage20240202125533.png](/files/Pastedimage20240202125533.png =650x)](/files/Pastedimage20240202125533.png)
 В элементы мы может добавить множество объектов, большинство из них описано в других статьях, поэтому долго на них не будем заострять внимание. А пройдемся по всем коротко
-- Cart - Корзина, подробнее [тут](../GeneralFunctionsOfThePlatform/GeneralFunctionsOfThePlatform)
-- Tiles - Плитки, подробнее [тут](../GeneralFunctionsOfThePlatform/GeneralFunctionsOfThePlatform)
+- Cart - Корзина, подробнее [тут](../GeneralFunctionsOfThePlatform/Basket)
+- Tiles - Плитки, подробнее [тут](../GeneralFunctionsOfThePlatform/Tiles)
 - HorizontalGaleery - Горизонтальная галерея мультимедиа, подробнее дальше по статье
 - Photo - Значок для открытия камеры
 - barcode - Открытие сканера штрихкодов
