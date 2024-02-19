@@ -2,7 +2,7 @@
 title: home
 description: 
 published: true
-date: 2024-02-19T06:26:54.086Z
+date: 2024-02-19T06:26:59.433Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-24T11:22:25.515Z
@@ -16,7 +16,7 @@ dateCreated: 2024-01-24T11:22:25.515Z
 
 Для последующего более глубокого понимания, советуем ознакомиться с разделами:
 - [Переменные](../Documentation/Variables)
-- [Экраны](../Documentation/Screens
+- [Экраны](../Documentation/Screens)
 - [Хранение данных](../Documentation/DataStorage)
 - [Основные команды](../Documentation/BasicСommands)
 - [Общие функции платформы](../Documentation/GeneralFunctionsOfThePlatform)
