@@ -2,7 +2,7 @@
 title: example№4
 description: 
 published: true
-date: 2024-02-19T07:20:32.426Z
+date: 2024-02-19T07:21:52.760Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-15T10:16:11.469Z
@@ -63,7 +63,7 @@ def object_detect(hashMap,_files=None,_data=None):
 - object - штрихкод 
 - caption - данные, которые мы хотим отображать
 , при наведении на штрихкод у нас будет выводиться информация, которую мы передали.
-Подробнее информация [тут](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVisionAndAugmentedRealityActiveCV)
+Подробнее информация [тут](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVision)
 
 Результат
 <details>  
