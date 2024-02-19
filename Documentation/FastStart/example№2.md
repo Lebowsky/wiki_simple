@@ -2,7 +2,7 @@
 title: example№2
 description: 
 published: true
-date: 2024-02-15T13:09:15.798Z
+date: 2024-02-19T07:19:23.747Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-15T10:16:07.819Z
@@ -10,7 +10,7 @@ dateCreated: 2024-02-15T10:16:07.819Z
 
 ## Пример 2. Работа с NoSQL(SimpleBase)
 
-Реализовать будем с помощью SimpleBase, подробнее прочитать можно [тут](../DataStorage/DataStorage).
+Реализовать будем с помощью SimpleBase, подробнее прочитать можно [тут](../DataStorage/NoSQL).
 ### Создание процесса и экрана
 1) Создадим процесс и добавим в него новый экран. Экран у нас будет содержать контейнер(LinearLayout), контейнер мы наполним следующими элементами: 
 - Поле для ввода новой информации. EditTextText, Value - @name_object, Variable - name_object
@@ -46,7 +46,7 @@ dateCreated: 2024-02-15T10:16:07.819Z
   ```Python 
   hashMap.put("noRefresh", "")
   ```
-  подробнее [тут](../Screens/Screens)
+  подробнее [тут](../Screens/ScreenSettings)
 <details>
 <summary>Фото</summary>
 <br>
