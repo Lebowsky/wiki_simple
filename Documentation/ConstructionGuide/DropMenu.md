@@ -2,7 +2,7 @@
 title: DropMenu
 description: 
 published: true
-date: 2024-02-16T13:28:07.534Z
+date: 2024-02-19T07:24:39.832Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-16T09:40:58.367Z
@@ -13,7 +13,7 @@ dateCreated: 2024-02-16T09:40:58.367Z
 - New Project - Создание нового продукта
 - Open Project - Открытие продукта из имеющихся
 - Save Project - Сохранение изменений в проекте
-- QR Settings - Открывает штрихкод, в котором хранится информация для обновления изменений в приложении.[Подробнее](../ApplicationSettings/ApplicationSettings)
+- QR Settings - Открывает штрихкод, в котором хранится информация для обновления изменений в приложении.[Подробнее](../ApplicationSettings/TransferringSettings)
 - Preview - Показывает как будет выглядить приложение
 - SQL Query - Окно для SQL запросов к БД
 - Send request - Отправка различных запросов к устройству по IP address
