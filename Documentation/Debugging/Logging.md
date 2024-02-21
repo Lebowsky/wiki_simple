@@ -2,7 +2,7 @@
 title: Logging
 description: 
 published: true
-date: 2024-02-21T09:35:16.954Z
+date: 2024-02-21T09:39:43.801Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-16T08:23:45.637Z
@@ -72,7 +72,15 @@ ui_global.send_debug_msg(hashMap,"line 4",str(a))
 ui_global.send_debug_query(hashMap,"sql","SELECT * FROM goods_bp","SELECT * FROM goods_bp",None)
 ```
 
-## Записывание логов
+## Добавление логов в код
+Класс **android.util.Log** позволяет разбивать сообщения по категориям в зависимости от важности. Для разбивки по категориям используются специальные методы, которые легко запомнить по первым буквам, указывающие на категорию:
+
+- Log.e() - ошибки (error)
+- Log.w() - предупреждения (warning)
+- Log.i() - информация (info)
+- Log.d() - отладка (degub)
+- Log.v() - подробности (verbose)
+
 ```python
 from android.util import Log
 
