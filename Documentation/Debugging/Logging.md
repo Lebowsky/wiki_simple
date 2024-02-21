@@ -2,7 +2,7 @@
 title: Logging
 description: 
 published: true
-date: 2024-02-16T13:18:47.744Z
+date: 2024-02-21T09:35:16.954Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-16T08:23:45.637Z
@@ -71,3 +71,15 @@ a += 1
 ui_global.send_debug_msg(hashMap,"line 4",str(a))
 ui_global.send_debug_query(hashMap,"sql","SELECT * FROM goods_bp","SELECT * FROM goods_bp",None)
 ```
+
+## Записывание логов
+```python
+from android.util import Log
+
+def start_log(hashMap, _files=None, _data=None):
+    Log.w("ТестовыйТег", "Наша информация")
+    return hashMap
+```
+
+![фото.png](/фото.png)
+
