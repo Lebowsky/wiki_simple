@@ -2,7 +2,7 @@
 title: example№4
 description: 
 published: true
-date: 2024-02-15T13:48:27.136Z
+date: 2024-02-19T07:21:52.760Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-15T10:16:11.469Z
@@ -10,9 +10,9 @@ dateCreated: 2024-02-15T10:16:11.469Z
 
 ## Пример 4. Режим дополненной реальности, вывод информации о товаре в реальном времени.
 
-Подробнее про компьютерное зрение можно прочитать [тут](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVisionAndAugmentedRealityActiveCV)
+Подробнее про компьютерное зрение можно прочитать [тут](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVision)
 Реализуем 2 процесса
-1) SimpleBase база данные, куда мы будем добавлять значения с помощью полей ввода и сохранять по нажатию кнопки. Подробнее про [SimpleBase](../DataStorage/DataStorage)
+1) SimpleBase база данные, куда мы будем добавлять значения с помощью полей ввода и сохранять по нажатию кнопки. Подробнее про [SimpleBase](../DataStorage/NoSQL)
 2) ActiveCV процесс, в котором при наведении на штрихкод, будет проверяться его значение в базе данных и если данные о продукте добавлены в базу данных, то будем выводить название и кол-во товара в реальном времени
 
 **Шаги реализации**
@@ -63,7 +63,7 @@ def object_detect(hashMap,_files=None,_data=None):
 - object - штрихкод 
 - caption - данные, которые мы хотим отображать
 , при наведении на штрихкод у нас будет выводиться информация, которую мы передали.
-Подробнее информация [тут](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVisionAndAugmentedRealityActiveCV)
+Подробнее информация [тут](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVision)
 
 Результат
 <details>  

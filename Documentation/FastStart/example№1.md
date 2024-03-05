@@ -2,7 +2,7 @@
 title: example№1
 description: 
 published: true
-date: 2024-02-15T12:46:21.208Z
+date: 2024-02-19T07:16:47.725Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-15T10:16:05.912Z
@@ -132,7 +132,7 @@ def input_example(hashMap, _files=None, _data=None):
     if hashMap.get("listener") == "btn_click":  
         hashMap.put("toast", "Вы нажали на кнопку!!!")  
 ```
-Подробнее про "toast" можно почитать [тут](../GeneralFunctionsOfThePlatform/GeneralFunctionsOfThePlatform) во вкладке "Уведомление и тосты"
+Подробнее про "toast" можно почитать [тут](../GeneralFunctionsOfThePlatform/NotificationsToasts) во вкладке "Уведомление и тосты"
 <details>
 <summary>Результаты</summary>
 <br>

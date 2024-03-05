@@ -2,7 +2,7 @@
 title: OtherScreenCommands
 description: 
 published: true
-date: 2024-02-16T12:13:26.784Z
+date: 2024-02-19T07:35:43.898Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-16T08:23:18.185Z
@@ -43,4 +43,4 @@ def test_html_input(hashMap, _files=None, _data=None):
 hashMap.put("PrintService","operation=print, barcode=123")
 ```
 Если print не работает - попробуйте view. Это зависит от устройства и софта.
-[Подробнее](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVisionAndAugmentedRealityActiveCV)
+[Подробнее](../ComputerVisionAndAugmentedRealityActiveCV/ComputerVision)
