@@ -2,7 +2,7 @@
 title: JavaScript
 description: 
 published: true
-date: 2024-03-05T09:45:36.401Z
+date: 2024-03-05T10:02:12.656Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T09:02:27.291Z
@@ -106,10 +106,17 @@ android.notification_cancel(2)
 ## Взаимодействие с key-value NoSQL СУБД  
 Иногда просто нужно хранить данные в режиме ключ-значение, для этого есть простая СУБД, доступная в т.ч. и из других обработчиков
 
-void **NoSQLPut**(String database, String key,String value) – положить в книгу значение с ключом
+**NoSQLPut**(String database, String key,String value) – положить в книгу значение с ключом
+```JavaScript
+android.NoSQLPut("base", "КЛЮЧ", "Придумали значение")
+```
+**NoSQLGet**(String database, String key) – достать значение по ключу
+```JavaScript
+let a = android.NoSQLGet("base", "КЛЮЧ")
+```
+**NoSQLDelete**(String database, String key) – удалить значение
+```JavaScript
+android.NoSQLDelete("base", "КЛЮЧ")
+```
 
-String **NoSQLGet**(String database, String key) – достать значение по ключу
-
-void **NoSQLDelete**(String database, String key) – удалить значение
-
-String **NoSQLGetAllKeys**(String database) – получить список всех ключей в книге
+**NoSQLGetAllKeys**(String database) – получить список всех ключей в книге
