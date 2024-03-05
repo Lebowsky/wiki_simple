@@ -2,7 +2,7 @@
 title: JavaScript
 description: 
 published: true
-date: 2024-03-05T10:02:37.137Z
+date: 2024-03-05T11:27:49.548Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T09:02:27.291Z
@@ -82,17 +82,27 @@ android.notification_cancel(2)
 Общие приемы – аналогичны, в частности перед началом работы нужно определить СУБД, с которой работаешь, создать таблицы, если их нет.
 
 **SQLExec**(String query, String params) – выполнить команду SQL (кроме SELECT)
-
+```JavaScript
+android.SQLExec("CREATE TABLE IF NOT EXISTS students(name TEXT, age INTEGER)","");
+let new_record=[hashMap.name,Number(hashMap.age)];
+let res = android.SQLExec("insert into students(name, age) values (?,?)",JSON.stringify(new_record));
+```
 **SQLExecMany**(String query, String params) - выполнить несколько команд  SQL (кроме SELECT) в BULK- режиме
 
 **SQLQuery**(String query, String params) – выполнить SELECT
-
+```JavaScript
+let res = android.SQLQuery("SELECT * from students","");
+```
 ## Взаимодействие с JSON-ориентированной СУБД SimpleBase
 
 Подробно описано в соответствующей статье и специальной [документации](./DataStorage/NoSQL), тут просто приведен интерфейс методов
 
 **SimpleBaseInsert**(String database, String collection_name,String value) – добавить документ(JSON)
-
+```JavaScript
+let new_record={"name":hashMap.name,"age":Number(hashMap.age)}
+var id = android.SimpleBaseInsert("my_db","students",JSON.stringify(new_record));
+android.toast("ID записи = "+String(id))
+```
 **SimpleBaseUpsert**(String database, String collection_name,String value) – добавить в режиме upsert
 
 **SimpleBaseUpdate**(String database, String collection_name,String condition,String value) – обновление документа выбранными значениями
@@ -100,7 +110,9 @@ android.notification_cancel(2)
 **SimpleBaseDelete**(String database, String collection_name,String condition) – удалить документ
 
 **SimpleBaseAll**(String database, String collection_name) – получить все документы
-
+```JavaScript
+let res = android.SimpleBaseAll("my_db","students");
+```
 **SimpleBaseFind**(String database, String collection_name,String condition) – найти документ по условию
 
 ## Взаимодействие с key-value NoSQL СУБД  
