@@ -2,7 +2,7 @@
 title: JavaScript
 description: 
 published: true
-date: 2024-03-05T09:33:46.981Z
+date: 2024-03-05T09:45:36.401Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T09:02:27.291Z
@@ -79,7 +79,7 @@ android.notification_cancel(2)
 
 Взаимодействие с SQLite описано в соответствующем разделе [документации](./DataStorage/SQL), приведенные ниже команды просто повторяют аналогичные команды через стек переменных, только возвращают результат сразу внутри обработчика.
 
-Общие приемы – аналогичны, в частности перед началом работы нужно определить СУБД, с которой работаешь, создать таблицы, если их нет – см. обработчики onLaunch в примере к этой статье
+Общие приемы – аналогичны, в частности перед началом работы нужно определить СУБД, с которой работаешь, создать таблицы, если их нет.
 
 **SQLExec**(String query, String params) – выполнить команду SQL (кроме SELECT)
 
@@ -91,17 +91,17 @@ android.notification_cancel(2)
 
 Подробно описано в соответствующей статье и специальной [документации](./DataStorage/NoSQL), тут просто приведен интерфейс методов
 
-String **SimpleBaseInsert**(String database, String collection_name,String value) – добавить документ(JSON)
+**SimpleBaseInsert**(String database, String collection_name,String value) – добавить документ(JSON)
 
-String **SimpleBaseUpsert**(String database, String collection_name,String value) – добавить в режиме upsert
+**SimpleBaseUpsert**(String database, String collection_name,String value) – добавить в режиме upsert
 
-String **SimpleBaseUpdate**(String database, String collection_name,String condition,String value) – обновление документа выбранными значениями
+**SimpleBaseUpdate**(String database, String collection_name,String condition,String value) – обновление документа выбранными значениями
 
-String **SimpleBaseDelete**(String database, String collection_name,String condition) – удалить документ
+**SimpleBaseDelete**(String database, String collection_name,String condition) – удалить документ
 
-String **SimpleBaseAll**(String database, String collection_name) – получить все документы
+**SimpleBaseAll**(String database, String collection_name) – получить все документы
 
-String SimpleBaseFind(String database, String collection_name,String condition) – найти документ по условию
+**SimpleBaseFind**(String database, String collection_name,String condition) – найти документ по условию
 
 ## Взаимодействие с key-value NoSQL СУБД  
 Иногда просто нужно хранить данные в режиме ключ-значение, для этого есть простая СУБД, доступная в т.ч. и из других обработчиков
