@@ -2,7 +2,7 @@
 title: JavaScript
 description: 
 published: true
-date: 2024-03-05T09:32:39.791Z
+date: 2024-03-05T09:33:46.981Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T09:02:27.291Z
@@ -89,7 +89,7 @@ android.notification_cancel(2)
 
 ## Взаимодействие с JSON-ориентированной СУБД SimpleBase
 
-Подробно описано в соответствующей статье и специальной документации [https://simplebase.readthedocs.io/en/latest/index.html](https://infostart.ru/redirect.php?url=aHR0cHM6Ly9zaW1wbGViYXNlLnJlYWR0aGVkb2NzLmlvL2VuL2xhdGVzdC9pbmRleC5odG1s), тут просто приведен интерфейс методов
+Подробно описано в соответствующей статье и специальной [документации](./DataStorage/NoSQL), тут просто приведен интерфейс методов
 
 String **SimpleBaseInsert**(String database, String collection_name,String value) – добавить документ(JSON)
 
