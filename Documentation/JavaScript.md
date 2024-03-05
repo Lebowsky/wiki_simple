@@ -2,12 +2,13 @@
 title: JavaScript
 description: 
 published: true
-date: 2024-03-05T09:12:33.929Z
+date: 2024-03-05T09:13:00.255Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T09:02:27.291Z
 ---
 
+# JavaScript
 1. **Исполнение JavaScript на Android:**
 	- JavaScript исполняется встроенным в Android браузером.
 	- Скрипты выполняются в рамках сессии, т.е. каждый скрипт вызывается и исполняется при событии.
