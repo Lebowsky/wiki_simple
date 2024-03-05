@@ -2,7 +2,7 @@
 title: JavaScript
 description: 
 published: true
-date: 2024-03-05T09:32:14.215Z
+date: 2024-03-05T09:32:36.121Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T09:02:27.291Z
@@ -80,12 +80,11 @@ android.notification_cancel(2)
 Взаимодействие с SQLite описано в соответствующем разделе [документации](./DataStorage/SQL), приведенные ниже команды просто повторяют аналогичные команды через стек переменных, только возвращают результат сразу внутри обработчика.
 
 Общие приемы – аналогичны, в частности перед началом работы нужно определить СУБД, с которой работаешь, создать таблицы, если их нет – см. обработчики onLaunch в примере к этой статье
+**SQLExec**(String query, String params) – выполнить команду SQL (кроме SELECT)
 
-boolean **SQLExec**(String query, String params) – выполнить команду SQL (кроме SELECT)
+**SQLExecMany**(String query, String params) - выполнить несколько команд  SQL (кроме SELECT) в BULK- режиме
 
-boolean **SQLExecMany**(String query, String params) - выполнить несколько команд  SQL (кроме SELECT) в BULK- режиме
-
-String **SQLQuery**(String query, String params) – выполнить SELECT
+**SQLQuery**(String query, String params) – выполнить SELECT
 
 ## Взаимодействие с JSON-ориентированной СУБД SimpleBase
 
