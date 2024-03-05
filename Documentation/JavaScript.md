@@ -2,7 +2,7 @@
 title: JavaScript
 description: 
 published: true
-date: 2024-03-05T10:02:12.656Z
+date: 2024-03-05T10:02:37.137Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T09:02:27.291Z
@@ -118,5 +118,7 @@ let a = android.NoSQLGet("base", "КЛЮЧ")
 ```JavaScript
 android.NoSQLDelete("base", "КЛЮЧ")
 ```
-
 **NoSQLGetAllKeys**(String database) – получить список всех ключей в книге
+```JavaScript
+android.NoSQLGetAllKeys("base")
+```
