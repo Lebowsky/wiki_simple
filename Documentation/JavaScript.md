@@ -2,7 +2,7 @@
 title: JavaScript
 description: 
 published: true
-date: 2024-03-05T09:13:58.555Z
+date: 2024-03-05T09:14:25.464Z
 tags: 
 editor: markdown
 dateCreated: 2024-03-05T09:02:27.291Z
@@ -87,7 +87,7 @@ boolean **SQLExecMany**(String query, String params) - выполнить не�
 
 String **SQLQuery**(String query, String params) – выполнить SELECT
 
-### Взаимодействие с JSON-ориентированной СУБД SimpleBase
+## Взаимодействие с JSON-ориентированной СУБД SimpleBase
 
 Подробно описано в соответствующей статье и специальной документации [https://simplebase.readthedocs.io/en/latest/index.html](https://infostart.ru/redirect.php?url=aHR0cHM6Ly9zaW1wbGViYXNlLnJlYWR0aGVkb2NzLmlvL2VuL2xhdGVzdC9pbmRleC5odG1s), тут просто приведен интерфейс методов
 
