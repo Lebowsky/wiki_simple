@@ -2,7 +2,7 @@
 title: DynamicChange
 description: 
 published: true
-date: 2024-03-12T11:01:11.666Z
+date: 2024-03-12T11:01:42.942Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-16T08:23:11.464Z
@@ -43,7 +43,7 @@ def screen_input(hashMap, _files=None, _data=None):
 [![лет.png](/лет.png =300x)](/лет.png)   [![лет2.png](/лет2.png =297x)](/лет2.png)
 
 
-
+### Динамическое изменение конфигурации
 **getJSONConfiguration** - считывает в переменную _configuration текущую конфигурацию 
 ```Python
 hashMap.put("getJSONConfiguration","")
