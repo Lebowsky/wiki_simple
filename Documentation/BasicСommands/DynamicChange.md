@@ -2,7 +2,7 @@
 title: DynamicChange
 description: 
 published: true
-date: 2024-03-12T10:06:03.691Z
+date: 2024-03-12T10:56:53.146Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-16T08:23:11.464Z
@@ -40,8 +40,10 @@ def screen_input(hashMap, _files=None, _data=None):
     hashMap.put("setJSONScreen", json.dumps(screen, ensure_ascii=False)) #Присваиваем к экрану новый вид
     return hashMap
 ```
-
-
+[![лет.png](/лет.png =350x)](/лет.png)
+[![лет2.png](/лет2.png =350x)](/лет2.png)
+![лет.png](/лет.png)
+![лет2.png](/лет2.png)
 
 
 **getJSONConfiguration** - считывает в переменную _configuration текущую конфигурацию 
