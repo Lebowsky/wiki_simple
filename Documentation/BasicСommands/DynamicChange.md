@@ -2,7 +2,7 @@
 title: DynamicChange
 description: 
 published: true
-date: 2024-03-12T09:57:31.675Z
+date: 2024-03-12T10:06:03.691Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-16T08:23:11.464Z
@@ -16,7 +16,34 @@ dateCreated: 2024-02-16T08:23:11.464Z
 ```Python
 hashMap.put("getJSONScreen","")
 ```
-**setJSONScreen** применяет измененную структуру экрана	
+**setJSONScreen** применяет измененную структуру экрана
+
+Пример кода
+```Python
+def screen_open(hashMap, _files=None, _data=None):
+    hashMap.put("getJSONScreen", "") #Записываем в переменную JSONScreen текущий экран
+    return hashMap
+
+def screen_input(hashMap, _files=None, _data=None):
+    screen = json.loads(hashMap.get('JSONScreen')) #Достаем данные из переменной JSONScreen
+    el = screen['Elements'][0] 
+    new_btn = {											#Создаем "образ" новой кнопки
+        "type": "Button",
+        "height": "wrap_content",
+        "width": "wrap_content",
+        "weight": "0",
+        "Value": "тест",
+        "Variable": "btn_change"
+    }
+    el['Elements'].append(new_btn) #Добавляем к экрану новую кнопку
+    hashMap.put("toast", json.dumps(screen, ensure_ascii=False))
+    hashMap.put("setJSONScreen", json.dumps(screen, ensure_ascii=False)) #Присваиваем к экрану новый вид
+    return hashMap
+```
+
+
+
+
 **getJSONConfiguration** - считывает в переменную _configuration текущую конфигурацию 
 ```Python
 hashMap.put("getJSONConfiguration","")
