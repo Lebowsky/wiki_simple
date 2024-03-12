@@ -2,7 +2,7 @@
 title: DynamicChange
 description: 
 published: true
-date: 2024-03-12T10:58:07.297Z
+date: 2024-03-12T11:01:11.666Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-16T08:23:11.464Z
