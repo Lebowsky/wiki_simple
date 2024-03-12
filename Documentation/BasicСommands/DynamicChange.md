@@ -2,7 +2,7 @@
 title: DynamicChange
 description: 
 published: true
-date: 2024-03-12T11:59:36.120Z
+date: 2024-03-12T12:05:42.587Z
 tags: 
 editor: markdown
 dateCreated: 2024-02-16T08:23:11.464Z
@@ -49,8 +49,23 @@ def screen_input(hashMap, _files=None, _data=None):
 ### Динамическое изменение конфигурации
 Можно менять конфигурацию динамически, то есть на время вызова до следующего считывания – добавлять или убирать процессы, заменять обработчики, формы – полностью все что есть.
 
-**getJSONConfiguration** - считывает в переменную **_configuration** текущую конфигурацию 
+**getJSONConfiguration** - Считывает в переменную **_configuration** текущую конфигурацию 
 ```Python
 hashMap.put("getJSONConfiguration","")
 ```
-**setJSONConfiguration** - применяет измененную конфигурацию немедленно.
+**setJSONConfiguration** - Применяет измененную конфигурацию немедленно.
+
+**UpdateConfigurations** - Обновление конфигурации
+
+```Python
+def dynamic_open(hashMap, _files=None, _data=None):
+    hashMap.put("getJSONConfiguration","")
+    return hashMap
+    
+def dynamic_input(hashMap, _files=None, _data=None):
+	config = json.loads(hashMap.get('_configuration')) #Забираем _configuration
+  config = изменяем по своему желанию
+  hashMap.put("setJSONConfiguration", json.dumps(config, ensure_ascii=False)) #Присваиваем новую конфигурацию
+	hashMap.put("UpdateConfigurations", "") #Обновляем конфигурацию
+
+```
