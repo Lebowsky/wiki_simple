@@ -2,10 +2,10 @@
 title: CommonsHandlers
 description: 
 published: true
-date: 2024-02-16T13:14:16.711Z
+date: 2024-04-04T14:39:26.242Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-16T08:24:06.963Z
+dateCreated: 2024-04-03T21:31:49.665Z
 ---
 
 # Общие обработчики
@@ -56,3 +56,25 @@ dateCreated: 2024-02-16T08:24:06.963Z
 > **onOpenFile**
 > Событие, в котором можно получить файл, открытый приложением. С приложением можно поделиться текстовым файлом любым способом (через Поделиться… и через Открыть с помощью…) даже если приложение не открыто. При этом срабатывает обработчик и в переменные content и extra_text помещается содержимое файла и ссылка на файл.
 {.is-info}
+
+> **onProcessClose
+> При закрытии любого экрана, будет отрабатывать наш обработчик
+>```python
+>            {
+>              "event": "onProcessClose",
+>              "listener": "",
+>              "action": "run",
+>              "type": "python",
+>              "method": "on_process_close",
+>              "postExecute": ""
+>            }
+>```
+>
+>```python
+>def on_process_close(hashMap, _files=None, _data=None):
+>    hashMap.put("toast", "Вышли с экрана")
+>    return hashMap
+>```
+>Пример кода
+{.is-info}
+
