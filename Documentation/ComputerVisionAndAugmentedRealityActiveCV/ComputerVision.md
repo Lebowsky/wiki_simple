@@ -2,10 +2,10 @@
 title: ComputerVision
 description: 
 published: true
-date: 2024-02-16T12:44:10.705Z
+date: 2024-04-04T08:48:44.864Z
 tags: 
 editor: markdown
-dateCreated: 2024-02-16T08:23:29.137Z
+dateCreated: 2024-04-03T21:30:53.740Z
 ---
 
 # Компьютерное зрение и дополненная реальность ActiveCV
@@ -35,10 +35,15 @@ dateCreated: 2024-02-16T08:23:29.137Z
 
 Входные переменные, задающие отображение объектов:
 
- - Списки по цветам: **green_list**, **red_list**, **yellow_list**, **gray_list**,**blue_list**, **hidden_list**. Разделитель - «;». Значения - текстовый идентификатор или штрихкод. При наведении объект будет окрашен в выбранный цвет.
+ - Списки по цветам: **green_list**, **red_list**, **yellow_list**, **gray_list**,**blue_list**, **hidden_list**. Разделитель - «;» или «>>>». Значения - текстовый идентификатор или штрихкод. При наведении объект будет окрашен в выбранный цвет.
   ```python
   green_list = ['740617303506']  
   hashMap.put("green_list", ';'.join(green_list))
+  ```
+  
+  ```python
+  green_list = ['740617303506']  
+  hashMap.put("green_list", '>>>'.join(green_list))
   ```
 <details>
 <summary>Фото пример</summary>
