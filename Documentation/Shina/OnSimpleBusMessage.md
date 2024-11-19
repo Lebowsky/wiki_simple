@@ -2,14 +2,14 @@
 title: OnSimpleBusMessage
 description: 
 published: true
-date: 2024-11-19T10:00:36.725Z
+date: 2024-11-19T10:35:43.233Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T09:54:50.650Z
 ---
 
 # OnSimpleBusMessage
-Общее событие, происходящие в момент приема сообщения, у пользователя, для которого предполагалось сообщение
+Общее событие, происходящие в момент приема сообщения, у пользователя, для которого предполагалось сообщение.
 
 <img src="/files/Pastedimage20241112120701.png" width=400>
 
