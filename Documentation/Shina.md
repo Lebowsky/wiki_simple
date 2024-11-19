@@ -2,7 +2,7 @@
 title: Шина
 description: 
 published: true
-date: 2024-11-19T11:34:43.749Z
+date: 2024-11-19T11:44:56.986Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T09:37:47.227Z
@@ -22,6 +22,9 @@ dateCreated: 2024-11-19T09:37:47.227Z
 {.is-info}
 
 > **[Отправка настроек](/Documentation/Shina/SendSettings)**
+{.is-info}
+
+> **[Групповая работа](/Documentation/Shina/GroupWork)**
 {.is-info}
 
 
