@@ -2,13 +2,13 @@
 title: StartShina
 description: 
 published: true
-date: 2024-11-19T12:23:21.631Z
+date: 2024-11-19T12:25:06.794Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T10:20:41.443Z
 ---
 
-# Старт Шины
+# Старт работы с Шиной
 Пример шины - [https://github.com/dvdocumentation/simplebus](https://github.com/dvdocumentation/simplebus) 
 Измените в simplebus..py строку №34 с 
 
