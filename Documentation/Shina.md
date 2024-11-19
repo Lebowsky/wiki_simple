@@ -2,7 +2,7 @@
 title: Шина
 description: 
 published: true
-date: 2024-11-19T11:48:34.462Z
+date: 2024-11-19T11:48:47.522Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T09:37:47.227Z
@@ -27,4 +27,4 @@ dateCreated: 2024-11-19T09:37:47.227Z
 > **[Групповая работа](/Documentation/Shina/GroupWork)**
 {.is-info}
 
-[Ссылка для скачивания тестов ui](https://drive.google.com/file/d/1G3MaVka4Vpfh4y_oDBmllEbvca-uGJIb/view?usp=sharing)
+[Ссылка для скачивания тестовой ui](https://drive.google.com/file/d/1G3MaVka4Vpfh4y_oDBmllEbvca-uGJIb/view?usp=sharing)
