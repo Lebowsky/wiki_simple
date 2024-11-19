@@ -2,7 +2,7 @@
 title: StartShina
 description: 
 published: true
-date: 2024-11-19T10:21:24.201Z
+date: 2024-11-19T11:26:36.177Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T10:20:41.443Z
@@ -32,7 +32,7 @@ http://URL:HTTPORT
 ```
 
 ## Подключение через настройки
-<img src="/files/Pastedimage20241106143743.png" width=400>
+<img src="/files/Pasted image 20241106143743.png" width=400>
 
 Где **URL** - ваш ip адрес
 **WSPort** - порт WEBSocket
@@ -42,4 +42,4 @@ http://URL:HTTPORT
 Далее - "Сохранить"
 
 Если все удачно, то получим в шине подобное сообщение
-<img src="/files/Pastedimage20241106144346.png" width=400>
+<img src="/files/Pasted image 20241106144346.png" width=400>
