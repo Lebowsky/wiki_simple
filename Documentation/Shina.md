@@ -2,11 +2,13 @@
 title: Шина
 description: 
 published: true
-date: 2024-11-19T09:37:47.227Z
+date: 2024-11-19T09:58:59.285Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T09:37:47.227Z
 ---
 
 # Header
-Your content here
+
+> **[OnSimpleBusMessage](/Documentation/Shina/OnSimpleBusMessage)**
+{.is-info}
