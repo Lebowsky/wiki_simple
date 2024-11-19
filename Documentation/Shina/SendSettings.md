@@ -2,7 +2,7 @@
 title: SendSettings
 description: 
 published: true
-date: 2024-11-19T11:33:27.932Z
+date: 2024-11-19T14:29:28.330Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T11:33:27.932Z
@@ -50,5 +50,5 @@ sender = sbmessage['sender']
 if "settings" in message:
 	settings = sbmessage.get('settings', None)
 	#Присвоим настройки устройству
-  hashMap.put("SetSettingsJSON", json.dumps(settings))
+	hashMap.put("SetSettingsJSON", json.dumps(settings))
 ```
