@@ -2,7 +2,7 @@
 title: OnSimpleBusMessage
 description: 
 published: true
-date: 2024-11-19T10:35:43.233Z
+date: 2024-11-19T11:27:55.713Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T09:54:50.650Z
@@ -11,7 +11,7 @@ dateCreated: 2024-11-19T09:54:50.650Z
 # OnSimpleBusMessage
 Общее событие, происходящие в момент приема сообщения, у пользователя, для которого предполагалось сообщение.
 
-<img src="/files/Pastedimage20241112120701.png" width=400>
+<img src="/files/Pasted image 20241112120701.png" width=1000>
 
 Пример работы:
 ```python
