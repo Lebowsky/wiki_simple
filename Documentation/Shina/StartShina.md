@@ -2,7 +2,7 @@
 title: StartShina
 description: 
 published: true
-date: 2024-11-19T11:26:36.177Z
+date: 2024-11-19T11:41:22.011Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T10:20:41.443Z
@@ -11,10 +11,13 @@ dateCreated: 2024-11-19T10:20:41.443Z
 # Старт Шины
 Пример шины - [https://github.com/dvdocumentation/simplebus](https://github.com/dvdocumentation/simplebus) 
 Измените в simplebus.py строку №34 с 
+
 ```python
 from persistqueue import Queue, PDict
 ```
+
 на
+
 ```python
 from persistqueue.queue import Queue
 ```
