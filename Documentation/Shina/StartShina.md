@@ -2,7 +2,7 @@
 title: StartShina
 description: 
 published: true
-date: 2024-11-19T10:20:41.443Z
+date: 2024-11-19T10:21:24.201Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T10:20:41.443Z
@@ -34,11 +34,11 @@ http://URL:HTTPORT
 ## Подключение через настройки
 <img src="/files/Pastedimage20241106143743.png" width=400>
 
-Где URL - ваш ip адрес
-WSPort - порт WEBSocket
-HTTPPort - порт HTTP
-Bus Password - пароль созданного пользователя
-SimpleBus ID - логин созданного пользователя
+Где **URL** - ваш ip адрес
+**WSPort** - порт WEBSocket
+**HTTPPort** - порт HTTP
+**Bus Password** - пароль созданного пользователя
+**SimpleBus ID** - логин созданного пользователя
 Далее - "Сохранить"
 
 Если все удачно, то получим в шине подобное сообщение
