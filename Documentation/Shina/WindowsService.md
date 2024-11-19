@@ -2,13 +2,14 @@
 title: WindowsService
 description: 
 published: true
-date: 2024-11-19T13:18:39.475Z
+date: 2024-11-19T14:06:32.978Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T13:18:39.475Z
 ---
 
 # Windows служба
+
 ```python
 import servicemanager
 import win32service
