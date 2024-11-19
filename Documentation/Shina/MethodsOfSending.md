@@ -2,7 +2,7 @@
 title: MethodsOfSending
 description: 
 published: true
-date: 2024-11-19T11:27:04.609Z
+date: 2024-11-19T11:27:22.474Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T10:15:08.193Z
@@ -110,7 +110,7 @@ self.hash_map.put("SendBus", json.dumps(message, ensure_ascii=False))
 
 Способ узнать текущий uid версии:
 
-<img src="/files/Pasted image 20241112115559.png" width=400>
+<img src="/files/Pasted image 20241112115559.png" width=800>
 
 Обращение по uid, в отправке сообщения SendBus можно указать одним из атрибутов
 
