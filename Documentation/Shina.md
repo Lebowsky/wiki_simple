@@ -2,7 +2,7 @@
 title: Шина
 description: 
 published: true
-date: 2024-11-19T13:20:55.276Z
+date: 2024-11-19T13:21:36.475Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T09:37:47.227Z
@@ -27,7 +27,7 @@ dateCreated: 2024-11-19T09:37:47.227Z
 > **[Групповая работа](/Documentation/Shina/GroupWork)**
 {.is-info}
 
-> **[Windows Служба(В разработке)](/Documentation/Shina/WindowsService)**
+> **[Windows Служба (в разработке, возможна нестабильная работа)](/Documentation/Shina/WindowsService)**
 {.is-info}
 
 
