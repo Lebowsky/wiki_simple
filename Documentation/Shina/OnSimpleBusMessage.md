@@ -2,7 +2,7 @@
 title: OnSimpleBusMessage
 description: 
 published: true
-date: 2024-11-19T09:58:07.176Z
+date: 2024-11-19T09:59:28.677Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T09:54:50.650Z
@@ -26,7 +26,7 @@ hashMap.put("basic_notification",
 			# Создание уведомления с информацией от кого сообщение и с его содержанием
 ```
 
-### SBMessage
+## SBMessage
 
 Содержит основную информацию о сообщении и о том кто ее отправил.
 
