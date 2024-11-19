@@ -2,7 +2,7 @@
 title: WindowsService
 description: 
 published: true
-date: 2024-11-19T14:06:32.978Z
+date: 2024-11-19T14:32:49.505Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T13:18:39.475Z
@@ -73,6 +73,7 @@ class SimpleBusService(win32serviceutil.ServiceFramework):
 
 
 if __name__ == "__main__":
+		#Запуск для дебага (python name --debug)
     if '--debug' in sys.argv:
         import time
 
