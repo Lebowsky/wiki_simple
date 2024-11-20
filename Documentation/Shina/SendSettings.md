@@ -2,7 +2,7 @@
 title: SendSettings
 description: 
 published: true
-date: 2024-11-19T14:29:28.330Z
+date: 2024-11-20T10:25:09.528Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T11:33:27.932Z
@@ -42,7 +42,7 @@ def send_settings_via_websocket(self, client):
 ## В общем обработчике OnSimpleBusMessage 
 
 ```python
-from general import *
+import json
 sbmessage = json.loads(hashMap.get("SBMessage"))
 message = sbmessage['message']
 sender = sbmessage['sender']
