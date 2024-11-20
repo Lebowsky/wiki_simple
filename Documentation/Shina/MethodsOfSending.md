@@ -2,7 +2,7 @@
 title: MethodsOfSending
 description: 
 published: true
-date: 2024-11-19T11:27:22.474Z
+date: 2024-11-20T10:28:04.522Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-19T10:15:08.193Z
@@ -71,6 +71,12 @@ response = requests.post(
 
 ```python
 message = {"to": ["@user1"], "message": "текст сообщения"}  
+self.hash_map.put("SendBus", json.dumps(message, ensure_ascii=False))
+```
+
+Отправка сообщния **всем** пользователяем, используем **$all**
+```python
+message = {"to": ["$all"], "message": "текст сообщения"}  
 self.hash_map.put("SendBus", json.dumps(message, ensure_ascii=False))
 ```
 
